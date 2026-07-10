@@ -8,8 +8,8 @@
   "S_logical": 189136,
   "S_unique": 130589,
   "D": 1.448,
-  "zstd_bytes": 16366,
-  "C": 13.265,
+  "zstd_bytes": 16378,
+  "C": 13.255,
   "input_bytes": 622319,
   "echo_copies": 0.3,
   "echo_bytes_est": 186695,
@@ -28,8 +28,11 @@
   "task": "ftask_00",
   "model": "deepseek/deepseek-v4-flash",
   "seed": "s1",
-  "wall_sec": 0.9,
+  "wall_sec": 1.0,
   "returncode": 0,
   "n_correct": 1,
-  "n_questions": 1
+  "n_questions": 1,
+  "benchmark_version": "v1.0-kdd",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "python": "3.12.7"
 }

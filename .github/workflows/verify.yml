@@ -12,12 +12,18 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.11"}
       - run: pip install zstandard fastcdc numpy
-      - name: meter calibration (known-duplication corpus)
-        run: python src/meter_calibration.py
+      - name: meter calibration
+        run: |
+          set -o pipefail
+          python src/meter_calibration.py 2>&1 | tee /tmp/o.log || { echo "::error title=calibration::$(tail -c 600 /tmp/o.log | tr '\n' '¦')"; exit 1; }
       - name: R scorer construct validation
-        run: python src/r_scorer_validation.py
+        run: |
+          set -o pipefail
+          python src/r_scorer_validation.py 2>&1 | tee /tmp/o.log || { echo "::error title=rvalidation::$(tail -c 600 /tmp/o.log | tr '\n' '¦')"; exit 1; }
       - name: regenerate published tables from archived data
-        run: python src/verify_expected.py
+        run: |
+          set -o pipefail
+          python src/verify_expected.py 2>&1 | tee /tmp/o.log || { echo "::error title=verify_expected::$(tail -c 600 /tmp/o.log | tr '\n' '¦')"; exit 1; }
 
   fixed-trace-smoke:
     runs-on: ubuntu-latest
@@ -30,20 +36,15 @@ jobs:
         env:
           FIXED_TRACE_FWS: openai_agents
         run: |
+          set -o pipefail
           export FOOTPRINT_PY_OPENAI_AGENTS=$(which python)
-          python src/fixed_trace.py
-          python - <<'EOF'
-          import json
-          rows = json.load(open("experiments/fixed_trace_runs/summary.json"))
-          r = [x for x in rows if x["framework"] == "openai_agents"][0]
-          assert r["n_correct"] == 1, f"fixed-trace answer failed: {r}"
-          assert r["S_total"] > 100_000, f"retention implausible: {r['S_total']}"
-          print("fixed-trace smoke OK:", r["S_total"], "bytes")
-          EOF
+          python src/fixed_trace.py 2>&1 | tee /tmp/o.log || { echo "::error title=fixedtrace::$(tail -c 600 /tmp/o.log | tr '\n' '¦')"; exit 1; }
+          python src/ci_smoke_check.py openai_agents 2>&1 | tee /tmp/s.log || { echo "::error title=smokecheck::$(tail -c 600 /tmp/s.log | tr '\n' '¦')"; exit 1; }
 
   image:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    continue-on-error: true
     permissions:
       contents: read
       packages: write
