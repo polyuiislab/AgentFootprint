@@ -46,8 +46,14 @@ def _find_tool(tools: list, key: str) -> str | None:
 
 
 def _n_reads_done(messages: list) -> int:
+    """当前任务段内已完成的读取数：只统计最后一条 user 消息之后的工具结果，
+    使同一会话连续多任务（长期共享库协议）下状态机仍正确。"""
+    last_user = -1
+    for i, m in enumerate(messages):
+        if m.get("role") == "user":
+            last_user = i
     n = 0
-    for m in messages:
+    for m in messages[last_user + 1:]:
         if m.get("role") == "tool":
             c = m.get("content") or ""
             if isinstance(c, list):
@@ -62,12 +68,14 @@ def build_response(body: dict) -> dict:
     tools = body.get("tools", [])
     done = _n_reads_done(messages)
     if done < len(READS):
-        # 批量发出剩余读取：反思型执行器一次拿全；顺序执行器自然降级为逐个
+        # 默认批量发出剩余读取；MOCK_SEQUENTIAL=1 时每轮只发一个（传输敏感性变体）
+        import os
         name, param = _pick_read_tool(tools)
+        todo = READS[done:done + 1] if os.environ.get("MOCK_SEQUENTIAL")             else READS[done:]
         calls = [{"id": f"call_{done + i}", "type": "function",
                   "function": {"name": name,
                                "arguments": json.dumps({param: t})}}
-                 for i, t in enumerate(READS[done:])]
+                 for i, t in enumerate(todo)]
         msg = {"role": "assistant", "content": None, "tool_calls": calls}
         finish = "tool_calls"
     else:

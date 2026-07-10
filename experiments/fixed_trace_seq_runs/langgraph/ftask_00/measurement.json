@@ -1,0 +1,38 @@
+{
+  "S_total": 1384448,
+  "S_total_delta": 1384448,
+  "modified_baseline_files": 0,
+  "modified_baseline_pre_bytes": 0,
+  "S_workspace": 0,
+  "S_home": 1384448,
+  "S_logical": 1345426,
+  "S_unique": 205802,
+  "D": 6.537,
+  "zstd_bytes": 21025,
+  "C": 65.848,
+  "input_bytes": 622319,
+  "echo_copies": 2.1,
+  "echo_bytes_est": 1306869,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "home/langgraph_checkpoints.sqlite",
+      "bytes": 1384448,
+      "logical_bytes": 1345426,
+      "probe_hits": 252
+    }
+  ],
+  "framework": "langgraph",
+  "task": "ftask_00",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 0.8,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1,
+  "benchmark_version": "v1.0-kdd",
+  "platform": "macOS-26.4.1-arm64-arm-64bit",
+  "python": "3.12.7"
+}

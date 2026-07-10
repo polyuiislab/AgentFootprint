@@ -3,18 +3,19 @@
 ## Intended use
 Measure the **post-run persistent storage footprint** of LLM agent
 frameworks under their documented durable-session configurations, and
-what those bytes buy (history-exact replayability, session resume).
+what those bytes buy (history-exact recoverability, session resume).
 Six metrics per run: `S_total`, store-channel composition, duplication
 factor `D` (logical streams), growth exponent `alpha`, compressibility
-`C`, replayability `R` (0–3).
+`C`, recoverability `R` (0–3).
 
-## Protocol track
+## Protocol tracks
 v1.0 is a **system-track** benchmark: documented default configurations
 measured end-to-end, so results include agent-policy effects (prompts,
 tool budgets, retries), not storage encoding alone. A **fixed-trace**
 companion protocol (replaying one recorded trajectory through each
-persistence backend) is planned; proxy-recorded trajectories that seed
-it ship in the artifact.
+persistence backend) ships as a first instantiation (`src/fixed_trace.py`, mock endpoint,
+zero API); a continuous shared-store protocol (`src/continuous_store.py`)
+measures marginal bytes/task on long-lived backends.
 
 ## Non-goals
 - Not a ranking of framework quality or reasoning ability.
@@ -34,7 +35,7 @@ difference). **Out of scope in v1.0:** system temp directories, remote
 telemetry. Framework setup-time staging is excluded from `S_total`
 and reported separately.
 
-## Replayability scoring
+## Recoverability scoring
 The automated scorer yields a *candidate* grade (probe completeness +
 per-call structure with a JSON-record gate). Framework-level `R=3`
 additionally requires the adapter's serialization contract to pass
@@ -54,7 +55,7 @@ version, new framework versions enter as new rows. Result schema =
 `measurement.json` per run (keys documented in `src/meter.py`).
 
 ## Cost
-Full main study ≈ 501 sandboxed runs on a budget model
+Full main study ≈ 509 sandboxed runs (incl. the fixed-trace control) on a budget model
 (DeepSeek-V4-Flash via OpenRouter), API cost on the order of a few USD;
 the meter and analysis run offline.
 

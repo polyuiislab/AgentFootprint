@@ -27,6 +27,8 @@ SUITES = {  # runs 目录 -> tasks 目录
     "edit_tasks_runs": "edit_tasks",
     "data_tasks_runs": "data_tasks",
     "docker_runs": "file_intensive",
+    "fixed_trace_runs": "fixed_trace",
+    "fixed_trace_seq_runs": "fixed_trace_seq",
 }
 
 

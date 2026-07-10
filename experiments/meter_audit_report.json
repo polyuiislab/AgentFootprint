@@ -568,5 +568,85 @@
     "home_base_bytes": 0,
     "same_size_home_files": 0,
     "same_size_home_bytes": 0
+  },
+  "fixed_trace_runs/llamaindex": {
+    "runs": 1,
+    "S_total": 192299,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "fixed_trace_runs/langgraph": {
+    "runs": 1,
+    "S_total": 606208,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "fixed_trace_runs/crewai": {
+    "runs": 1,
+    "S_total": 639288,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "fixed_trace_runs/infiagent": {
+    "runs": 1,
+    "S_total": 1283644,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 16,
+    "home_base_bytes": 630828,
+    "same_size_home_files": 16,
+    "same_size_home_bytes": 630828
+  },
+  "fixed_trace_runs/openai_agents": {
+    "runs": 1,
+    "S_total": 217088,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "fixed_trace_runs/agno": {
+    "runs": 1,
+    "S_total": 413696,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "fixed_trace_runs/autogen": {
+    "runs": 1,
+    "S_total": 568324,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "fixed_trace_seq_runs/langgraph": {
+    "runs": 1,
+    "S_total": 1384448,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
   }
 }
