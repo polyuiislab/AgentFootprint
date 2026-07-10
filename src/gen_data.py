@@ -38,7 +38,9 @@ def main() -> None:
                     u = rng.randint(10, 999)
                     totals[p] += u
                     rows.append(f"{p},{rgn},{u}")
-            rng.shuffle(rows[1:])
+            body = rows[1:]
+            rng.shuffle(body)          # 就地洗牌（旧版 rows[1:] 切片是 no-op，
+            rows[1:] = body            # 论文所用语料按旧版原样发布，仅行序受影响）
             (tdir / "corpus" / fname).write_text("\n".join(rows) + "\n",
                                                  encoding="utf-8")
         # 干扰文件

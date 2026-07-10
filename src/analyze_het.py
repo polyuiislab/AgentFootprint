@@ -21,16 +21,38 @@ NICE = {"langgraph": "LangGraph", "autogen": "AutoGen", "infiagent": "InfiAgent"
         "agno": "Agno"}
 
 
-def _content_ok(suite: str, q: dict, art: Path) -> bool:
+def _content_ok(suite: str, q: dict, art: Path, task: str) -> bool:
+    """规格级严格验证（round-6 起）：edit=全部 DATE 行 ISO 且集合与源一致；
+    data=表头+全部产品合计精确+降序。弱口径（仅含答案/含 top 行）已废弃。"""
+    import strict_graders as sg
     try:
-        text = art.read_text(encoding="utf-8", errors="replace")
+        if suite == "edit_tasks":
+            expected = sg.edit_truth(task)
+            got, bad = [], 0
+            for ln in art.read_text(encoding="utf-8", errors="replace").splitlines():
+                if ln.strip().startswith("DATE:"):
+                    v = ln.split("DATE:", 1)[1].strip()
+                    import re
+                    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", v):
+                        got.append(v)
+                    else:
+                        bad += 1
+            return bad == 0 and len(got) == len(expected) and set(got) == expected
+        truth = sg.data_truth(task)
+        lines = [l.strip() for l in art.read_text(encoding="utf-8",
+                 errors="replace").splitlines() if l.strip()]
+        if not lines or lines[0].lower().replace(" ", "") != "product,total":
+            return False
+        rows = []
+        for l in lines[1:]:
+            parts = [x.strip() for x in l.split(",")]
+            if len(parts) != 2 or not parts[1].lstrip("-").isdigit():
+                return False
+            rows.append((parts[0], int(parts[1])))
+        return (dict(rows) == truth and len(rows) == len(truth)
+                and rows == sorted(rows, key=lambda r: -r[1]))
     except Exception:
         return False
-    if suite == "edit_tasks":
-        return q["answer"] in text
-    # data: summary.csv 某一行同时含 product 与 total（容忍逗号/空格分隔）
-    prod, tot = q["answer"].split()
-    return any(prod in ln and tot in ln for ln in text.splitlines())
 
 
 def artifact_ok(suite: str, fw: str, task: str) -> tuple[bool, bool]:
@@ -39,10 +61,10 @@ def artifact_ok(suite: str, fw: str, task: str) -> tuple[bool, bool]:
     q = json.loads((tdir / "questions.json").read_text(encoding="utf-8"))[0]
     sandbox = ROOT / "experiments" / f"{suite}_runs" / fw / task
     ws_art = sandbox / "workspace" / q["artifact"]
-    if ws_art.exists() and _content_ok(suite, q, ws_art):
+    if ws_art.exists() and _content_ok(suite, q, ws_art, task):
         return True, False
     for cand in (sandbox / "home").rglob(q["artifact"]):
-        if _content_ok(suite, q, cand):
+        if _content_ok(suite, q, cand, task):
             return False, True
     return False, False
 

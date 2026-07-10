@@ -15,6 +15,9 @@ rsync -a "$ROOT/experiments/" "$STAGE/experiments/" \
   --include "answers*.json" --include "summary.json" \
   --include "cas_report.json" --include "calibration_report.json" \
   --include "report.json" --include "*.csv" \
+  --include "tierb/**" \
+  --include "ledger_fixed.md" --include "summary.txt" \
+  --include "meter_audit_report.json" --include "threshold_sensitivity.json" \
   --exclude "*"
 # tierb 缓存若为 json/csv 已被上面规则带上；replay_recon 证据单独补
 [ -d "$ROOT/experiments/replay_recon" ] && rsync -a "$ROOT/experiments/replay_recon/" "$STAGE/experiments/replay_recon/"
