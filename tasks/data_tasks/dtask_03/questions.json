@@ -1,0 +1,8 @@
+[
+  {
+    "qid": 0,
+    "question": "The workspace contains quarterly sales CSV exports. Compute the total units per product across all quarters, write a file summary.csv with header 'product,total' sorted by total descending, and answer with the top product and its total in the exact form 'PRODUCT TOTAL' (single space separated).",
+    "answer": "P-KITE 5927",
+    "artifact": "summary.csv"
+  }
+]

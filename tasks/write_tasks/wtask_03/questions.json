@@ -1,0 +1,9 @@
+[
+  {
+    "qid": 0,
+    "question": "Read records_ember.txt and records_juniper.txt. Then use the write_file tool to create a file named summary.txt in the workspace containing one line per department in the format '<dept>: <procurement-code>' for ember and juniper. Finally answer with the two procurement codes separated by a space.",
+    "answer": "QX-69658-PS",
+    "answer2": "QX-55061-RY",
+    "artifact": "summary.txt"
+  }
+]

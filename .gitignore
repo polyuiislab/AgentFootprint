@@ -1,10 +1,12 @@
 .venvs
 .env
-experiments/**/workspace/
+experiments/**/workspace/*
+!experiments/**/workspace/ledger_fixed.md
+!experiments/**/workspace/summary.csv
+!experiments/**/workspace/summary.txt
 experiments/**/home/
 experiments/**/cas_compacted/
 experiments/docker_runs/
-tasks/
 __pycache__/
 *.pyc
 .DS_Store

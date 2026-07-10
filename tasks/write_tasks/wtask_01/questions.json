@@ -1,0 +1,9 @@
+[
+  {
+    "qid": 0,
+    "question": "Read records_garnet.txt and records_indigo.txt. Then use the write_file tool to create a file named summary.txt in the workspace containing one line per department in the format '<dept>: <procurement-code>' for garnet and indigo. Finally answer with the two procurement codes separated by a space.",
+    "answer": "QX-51793-QV",
+    "answer2": "QX-69062-ZC",
+    "artifact": "summary.txt"
+  }
+]

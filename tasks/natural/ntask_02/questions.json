@@ -1,0 +1,17 @@
+[
+  {
+    "qid": 0,
+    "question": "You are helping with Project Aurora. Looking through the project documents in the workspace, what is the tracking id assigned to the storage requirement? Answer with the code only.",
+    "answer": "QX-40198-XC"
+  },
+  {
+    "qid": 1,
+    "question": "You are helping with Project Aurora. Looking through the project documents in the workspace, what is the budget code approved at the project kickoff? Answer with the code only.",
+    "answer": "QX-28606-GM"
+  },
+  {
+    "qid": 2,
+    "question": "You are helping with Project Aurora. Looking through the project documents in the workspace, what is the contract reference chosen for the selected vendor? Answer with the code only.",
+    "answer": "QX-92583-OZ"
+  }
+]

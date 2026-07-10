@@ -1,0 +1,27 @@
+[
+  {
+    "qid": 0,
+    "question": "Open and read the file records_harbor.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY procurement-code[harbor]. Answer with the code only.",
+    "answer": "QX-59310-PX"
+  },
+  {
+    "qid": 1,
+    "question": "Open and read the file records_garnet.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY audit-token[garnet]. Answer with the code only.",
+    "answer": "QX-17073-MJ"
+  },
+  {
+    "qid": 2,
+    "question": "Open and read the file records_harbor.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY escrow-id[harbor]. Answer with the code only.",
+    "answer": "QX-90884-AG"
+  },
+  {
+    "qid": 3,
+    "question": "Open and read the file records_dorian.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY procurement-code[dorian]. Answer with the code only.",
+    "answer": "QX-29913-DP"
+  },
+  {
+    "qid": 4,
+    "question": "Open and read the file records_harbor.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY audit-token[harbor]. Answer with the code only.",
+    "answer": "QX-40131-LJ"
+  }
+]

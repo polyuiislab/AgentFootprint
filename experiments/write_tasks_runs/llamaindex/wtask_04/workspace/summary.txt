@@ -1,0 +1,2 @@
+briar: QX-20742-WR
+juniper: QX-62204-HY

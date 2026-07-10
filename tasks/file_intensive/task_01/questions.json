@@ -1,0 +1,27 @@
+[
+  {
+    "qid": 0,
+    "question": "Open and read the file records_briar.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY procurement-code[briar]. Answer with the code only.",
+    "answer": "QX-45664-TH"
+  },
+  {
+    "qid": 1,
+    "question": "Open and read the file records_ember.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY audit-token[ember]. Answer with the code only.",
+    "answer": "QX-02332-LV"
+  },
+  {
+    "qid": 2,
+    "question": "Open and read the file records_briar.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY escrow-id[briar]. Answer with the code only.",
+    "answer": "QX-25985-BU"
+  },
+  {
+    "qid": 3,
+    "question": "Open and read the file records_juniper.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY procurement-code[juniper]. Answer with the code only.",
+    "answer": "QX-56761-NZ"
+  },
+  {
+    "qid": 4,
+    "question": "Open and read the file records_briar.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY audit-token[briar]. Answer with the code only.",
+    "answer": "QX-10955-KU"
+  }
+]

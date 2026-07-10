@@ -1,0 +1,27 @@
+[
+  {
+    "qid": 0,
+    "question": "Open and read the file records_algol.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY procurement-code[algol]. Answer with the code only.",
+    "answer": "QX-66061-FH"
+  },
+  {
+    "qid": 1,
+    "question": "Open and read the file records_cobalt.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY audit-token[cobalt]. Answer with the code only.",
+    "answer": "QX-04892-KN"
+  },
+  {
+    "qid": 2,
+    "question": "Open and read the file records_algol.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY escrow-id[algol]. Answer with the code only.",
+    "answer": "QX-82612-HC"
+  },
+  {
+    "qid": 3,
+    "question": "Open and read the file records_fjord.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY procurement-code[fjord]. Answer with the code only.",
+    "answer": "QX-57799-RT"
+  },
+  {
+    "qid": 4,
+    "question": "Open and read the file records_algol.txt in the workspace (you MUST re-read the file now to verify, even if you have seen it before) and report the exact value of REGISTRY-ENTRY audit-token[algol]. Answer with the code only.",
+    "answer": "QX-19341-RO"
+  }
+]

@@ -1,0 +1,2 @@
+garnet: QX-51793-QV
+indigo: QX-69062-ZC

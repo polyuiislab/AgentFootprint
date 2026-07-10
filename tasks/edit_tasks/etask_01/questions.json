@@ -1,0 +1,8 @@
+[
+  {
+    "qid": 0,
+    "question": "One of the workspace files is a shipment ledger whose DATE: lines use inconsistent formats. Write a corrected copy named ledger_fixed.md in which every DATE: line uses ISO YYYY-MM-DD format, then answer with the latest (most recent) date in the ledger, in ISO format only.",
+    "answer": "2026-12-09",
+    "artifact": "ledger_fixed.md"
+  }
+]

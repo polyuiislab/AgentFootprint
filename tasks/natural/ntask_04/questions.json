@@ -1,0 +1,17 @@
+[
+  {
+    "qid": 0,
+    "question": "You are helping with Project Aurora. Looking through the project documents in the workspace, what is the action-item id raised for documentation debt? Answer with the code only.",
+    "answer": "QX-95970-HQ"
+  },
+  {
+    "qid": 1,
+    "question": "You are helping with Project Aurora. Looking through the project documents in the workspace, what is the cost-center code the memo allocates the overrun to? Answer with the code only.",
+    "answer": "QX-06752-SC"
+  },
+  {
+    "qid": 2,
+    "question": "You are helping with Project Aurora. Looking through the project documents in the workspace, what is the budget code approved at the project kickoff? Answer with the code only.",
+    "answer": "QX-10692-UG"
+  }
+]
