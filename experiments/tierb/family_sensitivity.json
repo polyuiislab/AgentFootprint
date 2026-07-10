@@ -1,0 +1,137 @@
+{
+ "n_usable": 108,
+ "n_families": 63,
+ "families_with_multiple": {
+  "agentless-1.5": [
+   "20241028_agentless-1.5_gpt4o",
+   "20241202_agentless-1.5_claude-3.5-sonnet-20241022"
+  ],
+  "artemis": [
+   "20241120_artemis_agent",
+   "20250924_artemis_agent_v2"
+  ],
+  "augment": [
+   "20250316_augment_agent_v0",
+   "20250610_augment_agent_v1"
+  ],
+  "composio": [
+   "20241016_composio_swekit",
+   "20241025_composio_swekit"
+  ],
+  "cortexa": [
+   "20250410_cortexa",
+   "20250516_cortexa_o3"
+  ],
+  "deepswerl": [
+   "20250629_deepswerl_r2eagent",
+   "20250629_deepswerl_r2eagent_tts"
+  ],
+  "devlo": [
+   "20241108_devlo",
+   "20241213_devlo",
+   "20250519_devlo"
+  ],
+  "emergent": [
+   "20241023_emergent",
+   "20241223_emergent"
+  ],
+  "entropo": [
+   "20250901_entroPO_R2E_QwenCoder30BA3B",
+   "20250901_entroPO_R2E_QwenCoder30BA3B_tts"
+  ],
+  "epam-ai-run-claude-3-5-sonnet": [
+   "20241029_epam-ai-run-claude-3-5-sonnet",
+   "20241212_epam-ai-run-claude-3-5-sonnet",
+   "20250228_epam-ai-run-claude-3-5-sonnet"
+  ],
+  "epam-ai-run-gpt-4o": [
+   "20240820_epam-ai-run-gpt-4o",
+   "20241016_epam-ai-run-gpt-4o"
+  ],
+  "gru": [
+   "20240824_gru",
+   "20241208_gru"
+  ],
+  "lingma-agent": [
+   "20240918_lingma-agent_lingma-swe-gpt-72b",
+   "20240918_lingma-agent_lingma-swe-gpt-7b",
+   "20241002_lingma-agent_lingma-swe-gpt-72b",
+   "20241002_lingma-agent_lingma-swe-gpt-7b"
+  ],
+  "livesweagent": [
+   "20251120_livesweagent_gemini-3-pro-preview",
+   "20251215_livesweagent_claude-opus-4-5"
+  ],
+  "nfactorial": [
+   "20241001_nfactorial",
+   "20241007_nfactorial",
+   "20241030_nfactorial",
+   "20241105_nfactorial"
+  ],
+  "openhands": [
+   "20250203_openhands_4x_scaled",
+   "20250415_openhands",
+   "20250520_openhands_devstral_small",
+   "20250524_openhands_claude_4_sonnet",
+   "20250716_openhands_kimi_k2",
+   "20250807_openhands_gpt5",
+   "20251127_openhands_claude-opus-4-5"
+  ],
+  "refact": [
+   "20250515_Refact_Agent",
+   "20250603_Refact_Agent_claude-4-sonnet"
+  ],
+  "salesforceairesearch": [
+   "20251021_SalesforceAIResearch_SAGE_bash_only",
+   "20251103_SalesforceAIResearch_SAGE_OpenHands"
+  ],
+  "skywork-swe-32b": [
+   "20250616_Skywork-SWE-32B",
+   "20250616_Skywork-SWE-32B+TTS_Bo8"
+  ],
+  "solver": [
+   "20240920_solver",
+   "20240924_solver",
+   "20241028_solver"
+  ],
+  "sonar-foundation-agent": [
+   "20251103_sonar-foundation-agent_claude-sonnet-4-5",
+   "20251205_sonar-foundation-agent_claude-opus-4-5"
+  ],
+  "swe-agent": [
+   "20240402_sweagent_gpt4",
+   "20240620_sweagent_claude3.5sonnet",
+   "20240728_sweagent_gpt4o",
+   "20250511_sweagent_lm_32b",
+   "20250522_sweagent_claude-4-sonnet-20250514",
+   "20250725_sweagent_devstral_small_2507"
+  ],
+  "tools": [
+   "20241022_tools_claude-3-5-haiku",
+   "20241022_tools_claude-3-5-sonnet-updated",
+   "20250224_tools_claude-3-7-sonnet",
+   "20250522_tools_claude-4-opus",
+   "20250522_tools_claude-4-sonnet"
+  ],
+  "trae": [
+   "20250519_trae",
+   "20250612_trae",
+   "20250928_trae_doubao_seed_code"
+  ],
+  "warp": [
+   "20250623_warp",
+   "20250901_warp"
+  ]
+ },
+ "direct_tau_b_full": 0.0802,
+ "latest_per_family": {
+  "n": 63,
+  "direct_tau_b": 0.0622,
+  "permutation_p": 0.4758
+ },
+ "family_mean_aggregation": {
+  "n": 63,
+  "direct_tau_b": 0.0734,
+  "permutation_p": 0.4022
+ }
+}

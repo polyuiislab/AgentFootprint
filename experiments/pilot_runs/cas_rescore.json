@@ -1,0 +1,44 @@
+[
+ {
+  "framework": "langgraph",
+  "R_original": 3,
+  "R_after_cas_restore": 3,
+  "match": true
+ },
+ {
+  "framework": "autogen",
+  "R_original": 3,
+  "R_after_cas_restore": 3,
+  "match": true
+ },
+ {
+  "framework": "infiagent",
+  "R_original": 3,
+  "R_after_cas_restore": 3,
+  "match": true
+ },
+ {
+  "framework": "agno",
+  "R_original": 3,
+  "R_after_cas_restore": 3,
+  "match": true
+ },
+ {
+  "framework": "llamaindex",
+  "R_original": 3,
+  "R_after_cas_restore": 3,
+  "match": true
+ },
+ {
+  "framework": "openai_agents",
+  "R_original": 3,
+  "R_after_cas_restore": 3,
+  "match": true
+ },
+ {
+  "framework": "crewai",
+  "R_original": 1,
+  "R_after_cas_restore": 1,
+  "match": true
+ }
+]

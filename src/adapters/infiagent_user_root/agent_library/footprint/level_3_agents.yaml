@@ -1,0 +1,37 @@
+tools:
+  file_qa_agent:
+    level: 3
+    type: llm_call_agent
+    name: file_qa_agent
+    description: File QA assistant that answers questions from documents in the task workspace.
+    available_tools:
+    - dir_list
+    - file_read
+    - final_output
+    - file_write
+    max_turns: 40
+    action_window_steps: 30
+    execution_model: openrouter/deepseek/deepseek-v4-flash
+    thinking_model: openrouter/deepseek/deepseek-v4-flash
+    prompts:
+      agent_responsibility: You are a document QA assistant. The document files are in the current task root directory. Answer
+        the user's question using the tools. Reply in English.
+      agent_workflow: '1. Read the file named in the question with file_read (path is a RELATIVE path array, e.g. ["records_algol.txt"]).
+        You MUST re-read the file now to verify, even if you have seen it before.
+
+        2. Locate the requested REGISTRY-ENTRY value in the returned content.
+
+        3. You MUST finish by calling final_output with status=success and the exact code as output. Plain text replies do
+        NOT stop the loop; only final_output ends the task.'
+    parameters:
+      type: object
+      properties:
+        task_id:
+          type: string
+          description: 任务工作目录的绝对路径。
+        task_input:
+          type: string
+          description: 用户当前输入。
+      required:
+      - task_id
+      - task_input

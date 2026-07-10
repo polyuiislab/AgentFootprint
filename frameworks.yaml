@@ -1,0 +1,48 @@
+# AgentFootprint framework registry.
+# Add your agent here (3 lines) after writing an adapter — see docs/ADAPTER_CONTRACT.md
+#
+# Fields per framework:
+#   python   interpreter that runs the adapter (absolute, or relative to repo root)
+#   model    backend model string passed to the adapter via $FOOTPRINT_MODEL
+#   litellm  true if the adapter uses litellm-style names ("openrouter/" prefix
+#            is applied automatically by --model-override)
+#   percall_hints  (optional) filename substrings that mark per-LLM-call
+#            structures in this framework's retention; used by replay_probe.py
+#            to score replayability. Omit only if the framework retains nothing.
+
+frameworks:
+  langgraph:
+    python: .venvs/langgraph/bin/python
+    model: deepseek/deepseek-v4-flash
+    percall_hints: [checkpoints, sqlite]
+  autogen:
+    python: .venvs/autogen/bin/python
+    model: deepseek/deepseek-v4-flash
+    percall_hints: [agent_state_q, autogen_events]
+  crewai:
+    python: .venvs/crewai/bin/python
+    model: openrouter/deepseek/deepseek-v4-flash
+    litellm: true
+  smolagents:
+    python: .venvs/smolagents/bin/python
+    model: openrouter/deepseek/deepseek-v4-flash
+    litellm: true
+  openai_agents:
+    python: .venvs/openai_agents/bin/python
+    model: deepseek/deepseek-v4-flash
+    percall_hints: [agents_sessions]
+  llamaindex:
+    python: .venvs/llamaindex/bin/python
+    model: deepseek/deepseek-v4-flash
+    percall_hints: [ctx_q]
+  agno:
+    python: .venvs/agno/bin/python
+    model: deepseek/deepseek-v4-flash
+    litellm: true
+    percall_hints: [agno_sessions]
+  infiagent:
+    # requires the InfiAgent SDK on this interpreter; see README "InfiAgent note"
+    python: .venvs/infiagent/bin/python  # any interpreter with the InfiAgent SDK installed
+    model: openrouter/deepseek/deepseek-v4-flash
+    litellm: true
+    percall_hints: [llm_debug.jsonl, raw_io.jsonl, _actions.json]

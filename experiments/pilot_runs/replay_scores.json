@@ -1,0 +1,1022 @@
+[
+ {
+  "framework": "langgraph",
+  "task": "task_00",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_01",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_02",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_03",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_04",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_05",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_06",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_07",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_08",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "langgraph",
+  "task": "task_09",
+  "R": 3,
+  "per_call_coverage": {
+   "langgraph_checkpoints.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "langgraph_checkpoints.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_00",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q3.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_01",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "agent_state_q3.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "agent_state_q3.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_02",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "agent_state_q3.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "agent_state_q3.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_03",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "agent_state_q3.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "agent_state_q3.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_04",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q3.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_05",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "agent_state_q3.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "agent_state_q3.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_06",
+  "R": 2,
+  "per_call_coverage": {
+   "agent_state_q4.json": 0.67,
+   "agent_state_q3.json": 0.67,
+   "autogen_events.log": 0.67,
+   "agent_state_q2.json": 0.33,
+   "agent_state_q1.json": 0.33,
+   "agent_state_q0.json": 0.0
+  },
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_07",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "agent_state_q3.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "agent_state_q3.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_08",
+  "R": 2,
+  "per_call_coverage": {
+   "agent_state_q4.json": 0.67,
+   "agent_state_q3.json": 0.67,
+   "autogen_events.log": 0.67,
+   "agent_state_q2.json": 0.33,
+   "agent_state_q1.json": 0.33,
+   "agent_state_q0.json": 0.0
+  },
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "autogen",
+  "task": "task_09",
+  "R": 3,
+  "per_call_coverage": {
+   "agent_state_q4.json": 1.0,
+   "agent_state_q3.json": 1.0,
+   "autogen_events.log": 1.0,
+   "agent_state_q2.json": 0.67,
+   "agent_state_q1.json": 0.67,
+   "agent_state_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "agent_state_q4.json",
+   "agent_state_q3.json",
+   "autogen_events.log"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_00",
+  "R": 3,
+  "per_call_coverage": {
+   "8a5bee2b_qa_run_a0_raw_io.jsonl": 1.0,
+   "8a5bee2b_qa_run_a0_file_qa_agent_040b887fb677_actions.json": 0.33,
+   "8a5bee2b_qa_run_a0_file_qa_agent_478ab62dde7a_actions.json": 0.33,
+   "8a5bee2b_qa_run_a0_file_qa_agent_f7cf7141c40f_actions.json": 0.33,
+   "8a5bee2b_qa_run_a0_file_qa_agent_a0bf75eb1f8b_actions.json": 0.33,
+   "8a5bee2b_qa_run_a0_file_qa_agent_96d5022e82f2_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "8a5bee2b_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_01",
+  "R": 3,
+  "per_call_coverage": {
+   "56b641a1_qa_run_a0_raw_io.jsonl": 1.0,
+   "56b641a1_qa_run_a0_file_qa_agent_bbc339a7de9e_actions.json": 0.33,
+   "56b641a1_qa_run_a0_file_qa_agent_b0d037bcb951_actions.json": 0.33,
+   "56b641a1_qa_run_a0_file_qa_agent_971f1d3ec2a7_actions.json": 0.33,
+   "56b641a1_qa_run_a0_file_qa_agent_02bef9300aa6_actions.json": 0.33,
+   "56b641a1_qa_run_a0_file_qa_agent_474c09e2f799_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "56b641a1_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_02",
+  "R": 3,
+  "per_call_coverage": {
+   "76233e7f_qa_run_a0_raw_io.jsonl": 1.0,
+   "76233e7f_qa_run_a0_file_qa_agent_1a1767934d8e_actions.json": 0.33,
+   "76233e7f_qa_run_a0_file_qa_agent_3644717b9181_actions.json": 0.33,
+   "76233e7f_qa_run_a0_file_qa_agent_923723ea82d0_actions.json": 0.33,
+   "76233e7f_qa_run_a0_file_qa_agent_a7da6ecc244f_actions.json": 0.33,
+   "76233e7f_qa_run_a0_file_qa_agent_0ceb2a3a9a40_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "76233e7f_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_03",
+  "R": 3,
+  "per_call_coverage": {
+   "3ad61c73_qa_run_a0_raw_io.jsonl": 1.0,
+   "3ad61c73_qa_run_a0_file_qa_agent_8a62689d5c33_actions.json": 0.33,
+   "3ad61c73_qa_run_a0_file_qa_agent_ef51251e819d_actions.json": 0.33,
+   "3ad61c73_qa_run_a0_file_qa_agent_0e5cbaeee2ce_actions.json": 0.33,
+   "3ad61c73_qa_run_a0_file_qa_agent_3f6b96ee9dec_actions.json": 0.33,
+   "3ad61c73_qa_run_a0_file_qa_agent_eb1f9dfc556e_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "3ad61c73_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_04",
+  "R": 3,
+  "per_call_coverage": {
+   "3434df85_qa_run_a0_raw_io.jsonl": 1.0,
+   "3434df85_qa_run_a0_file_qa_agent_f5dac16302e2_actions.json": 0.33,
+   "3434df85_qa_run_a0_file_qa_agent_de40675dde02_actions.json": 0.33,
+   "3434df85_qa_run_a0_file_qa_agent_9b133f740b8a_actions.json": 0.33,
+   "3434df85_qa_run_a0_file_qa_agent_ddc80c61c847_actions.json": 0.33,
+   "3434df85_qa_run_a0_file_qa_agent_52df526ff11a_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "3434df85_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_05",
+  "R": 3,
+  "per_call_coverage": {
+   "60825093_qa_run_a0_raw_io.jsonl": 1.0,
+   "60825093_qa_run_a0_file_qa_agent_1615169c8fb7_actions.json": 0.33,
+   "60825093_qa_run_a0_file_qa_agent_d28bd4e18a7d_actions.json": 0.33,
+   "60825093_qa_run_a0_file_qa_agent_33633b433700_actions.json": 0.33,
+   "60825093_qa_run_a0_file_qa_agent_2b0bdcc8d8d0_actions.json": 0.33,
+   "60825093_qa_run_a0_file_qa_agent_6731e3ccddef_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "60825093_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_06",
+  "R": 3,
+  "per_call_coverage": {
+   "b629cf74_qa_run_a0_raw_io.jsonl": 1.0,
+   "b629cf74_qa_run_a0_file_qa_agent_ae94b2abe57d_actions.json": 0.33,
+   "b629cf74_qa_run_a0_file_qa_agent_d6056407d11d_actions.json": 0.33,
+   "b629cf74_qa_run_a0_file_qa_agent_1d4e2765f581_actions.json": 0.33,
+   "b629cf74_qa_run_a0_file_qa_agent_b7c734127737_actions.json": 0.33,
+   "b629cf74_qa_run_a0_file_qa_agent_91dcf1f26e78_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "b629cf74_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_07",
+  "R": 3,
+  "per_call_coverage": {
+   "9d46e5d9_qa_run_a0_raw_io.jsonl": 1.0,
+   "9d46e5d9_qa_run_a0_file_qa_agent_30b975a3b763_actions.json": 0.33,
+   "9d46e5d9_qa_run_a0_file_qa_agent_7e61c77ed988_actions.json": 0.33,
+   "9d46e5d9_qa_run_a0_file_qa_agent_00b7ce35f6ba_actions.json": 0.33,
+   "9d46e5d9_qa_run_a0_file_qa_agent_50e8b05e787e_actions.json": 0.33,
+   "9d46e5d9_qa_run_a0_file_qa_agent_9e0cd098e8b7_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "9d46e5d9_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_08",
+  "R": 3,
+  "per_call_coverage": {
+   "cf4b57c7_qa_run_a0_raw_io.jsonl": 1.0,
+   "cf4b57c7_qa_run_a0_file_qa_agent_8b0dd726fe2f_actions.json": 0.33,
+   "cf4b57c7_qa_run_a0_file_qa_agent_99d57184cb80_actions.json": 0.33,
+   "cf4b57c7_qa_run_a0_file_qa_agent_ce6e865f4103_actions.json": 0.33,
+   "cf4b57c7_qa_run_a0_file_qa_agent_32e813008d6e_actions.json": 0.33,
+   "cf4b57c7_qa_run_a0_file_qa_agent_d9fdaf0b3e16_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "cf4b57c7_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "infiagent",
+  "task": "task_09",
+  "R": 3,
+  "per_call_coverage": {
+   "04cad189_qa_run_a0_raw_io.jsonl": 1.0,
+   "04cad189_qa_run_a0_file_qa_agent_1c815b79e94f_actions.json": 0.33,
+   "04cad189_qa_run_a0_file_qa_agent_20866e6d564e_actions.json": 0.33,
+   "04cad189_qa_run_a0_file_qa_agent_594275f22b77_actions.json": 0.33,
+   "04cad189_qa_run_a0_file_qa_agent_e94d6098ef3a_actions.json": 0.33,
+   "04cad189_qa_run_a0_file_qa_agent_095e90669017_actions.json": 0.33
+  },
+  "full_copy_channels": [
+   "04cad189_qa_run_a0_raw_io.jsonl"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_00",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_01",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_02",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_03",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_04",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_05",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_06",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_07",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_08",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "crewai",
+  "task": "task_09",
+  "R": 1,
+  "per_call_coverage": {},
+  "full_copy_channels": [],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_00",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_01",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_02",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_03",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_04",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_05",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_06",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_07",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_08",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "smolagents",
+  "task": "task_09",
+  "R": 0,
+  "evidence": "no task-attributable artifacts retained"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_00",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_01",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_02",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_03",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_04",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_05",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_06",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_07",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_08",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "openai_agents",
+  "task": "task_09",
+  "R": 3,
+  "per_call_coverage": {
+   "agents_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agents_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_00",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_01",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_02",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_03",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_04",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_05",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_06",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_07",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_08",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "llamaindex",
+  "task": "task_09",
+  "R": 3,
+  "per_call_coverage": {
+   "ctx_q3.json": 1.0,
+   "ctx_q4.json": 1.0,
+   "ctx_q1.json": 0.67,
+   "ctx_q2.json": 0.67,
+   "ctx_q0.json": 0.33
+  },
+  "full_copy_channels": [
+   "ctx_q3.json",
+   "ctx_q4.json"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_00",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_01",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_02",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_03",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_04",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_05",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_06",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_07",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_08",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ },
+ {
+  "framework": "agno",
+  "task": "task_09",
+  "R": 3,
+  "per_call_coverage": {
+   "agno_sessions.sqlite": 1.0
+  },
+  "full_copy_channels": [
+   "agno_sessions.sqlite"
+  ],
+  "questions_found": "5/5"
+ }
+]

@@ -1,0 +1,174 @@
+{
+  "S_total": 4270109,
+  "S_logical": 4270109,
+  "S_unique": 933211,
+  "D": 4.576,
+  "zstd_bytes": 5257,
+  "C": 812.271,
+  "input_bytes": 2102,
+  "echo_copies": 301.25,
+  "echo_bytes_est": 633227,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 50,
+  "files_top": [
+    {
+      "path": "home/ctx_q49.json",
+      "bytes": 167073,
+      "logical_bytes": 167073,
+      "probe_hits": 144
+    },
+    {
+      "path": "home/ctx_q48.json",
+      "bytes": 163768,
+      "logical_bytes": 163768,
+      "probe_hits": 141
+    },
+    {
+      "path": "home/ctx_q47.json",
+      "bytes": 160605,
+      "logical_bytes": 160605,
+      "probe_hits": 138
+    },
+    {
+      "path": "home/ctx_q46.json",
+      "bytes": 157274,
+      "logical_bytes": 157274,
+      "probe_hits": 135
+    },
+    {
+      "path": "home/ctx_q45.json",
+      "bytes": 153741,
+      "logical_bytes": 153741,
+      "probe_hits": 132
+    },
+    {
+      "path": "home/ctx_q44.json",
+      "bytes": 150434,
+      "logical_bytes": 150434,
+      "probe_hits": 129
+    },
+    {
+      "path": "home/ctx_q43.json",
+      "bytes": 147079,
+      "logical_bytes": 147079,
+      "probe_hits": 126
+    },
+    {
+      "path": "home/ctx_q42.json",
+      "bytes": 143657,
+      "logical_bytes": 143657,
+      "probe_hits": 123
+    },
+    {
+      "path": "home/ctx_q41.json",
+      "bytes": 140205,
+      "logical_bytes": 140205,
+      "probe_hits": 120
+    },
+    {
+      "path": "home/ctx_q40.json",
+      "bytes": 136872,
+      "logical_bytes": 136872,
+      "probe_hits": 117
+    },
+    {
+      "path": "home/ctx_q39.json",
+      "bytes": 133490,
+      "logical_bytes": 133490,
+      "probe_hits": 114
+    },
+    {
+      "path": "home/ctx_q38.json",
+      "bytes": 130183,
+      "logical_bytes": 130183,
+      "probe_hits": 111
+    },
+    {
+      "path": "home/ctx_q37.json",
+      "bytes": 126872,
+      "logical_bytes": 126872,
+      "probe_hits": 108
+    },
+    {
+      "path": "home/ctx_q36.json",
+      "bytes": 123367,
+      "logical_bytes": 123367,
+      "probe_hits": 105
+    },
+    {
+      "path": "home/ctx_q35.json",
+      "bytes": 119882,
+      "logical_bytes": 119882,
+      "probe_hits": 102
+    },
+    {
+      "path": "home/ctx_q34.json",
+      "bytes": 116466,
+      "logical_bytes": 116466,
+      "probe_hits": 99
+    },
+    {
+      "path": "home/ctx_q33.json",
+      "bytes": 113134,
+      "logical_bytes": 113134,
+      "probe_hits": 96
+    },
+    {
+      "path": "home/ctx_q32.json",
+      "bytes": 109712,
+      "logical_bytes": 109712,
+      "probe_hits": 93
+    },
+    {
+      "path": "home/ctx_q31.json",
+      "bytes": 106114,
+      "logical_bytes": 106114,
+      "probe_hits": 90
+    },
+    {
+      "path": "home/ctx_q30.json",
+      "bytes": 102782,
+      "logical_bytes": 102782,
+      "probe_hits": 87
+    },
+    {
+      "path": "home/ctx_q29.json",
+      "bytes": 99446,
+      "logical_bytes": 99446,
+      "probe_hits": 84
+    },
+    {
+      "path": "home/ctx_q28.json",
+      "bytes": 96000,
+      "logical_bytes": 96000,
+      "probe_hits": 81
+    },
+    {
+      "path": "home/ctx_q27.json",
+      "bytes": 92459,
+      "logical_bytes": 92459,
+      "probe_hits": 78
+    },
+    {
+      "path": "home/ctx_q26.json",
+      "bytes": 89292,
+      "logical_bytes": 89292,
+      "probe_hits": 75
+    },
+    {
+      "path": "home/ctx_q25.json",
+      "bytes": 85868,
+      "logical_bytes": 85868,
+      "probe_hits": 72
+    }
+  ],
+  "framework": "llamaindex",
+  "task": "lh_T050",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 463.3,
+  "returncode": 0,
+  "n_correct": 48,
+  "n_questions": 50
+}

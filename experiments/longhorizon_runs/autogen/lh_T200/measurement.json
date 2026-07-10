@@ -1,0 +1,173 @@
+{
+  "S_total": 87986022,
+  "S_logical": 87986022,
+  "S_unique": 19995712,
+  "D": 4.4,
+  "zstd_bytes": 49890,
+  "C": 1763.6,
+  "input_bytes": 2102,
+  "echo_copies": 30677.0,
+  "echo_bytes_est": 64483054,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 201,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 50530211,
+      "logical_bytes": 50530211,
+      "probe_hits": 215580
+    },
+    {
+      "path": "home/agent_state_q199.json",
+      "bytes": 312129,
+      "logical_bytes": 312129,
+      "probe_hits": 1224
+    },
+    {
+      "path": "home/agent_state_q198.json",
+      "bytes": 309344,
+      "logical_bytes": 309344,
+      "probe_hits": 1212
+    },
+    {
+      "path": "home/agent_state_q197.json",
+      "bytes": 309045,
+      "logical_bytes": 309045,
+      "probe_hits": 1212
+    },
+    {
+      "path": "home/agent_state_q196.json",
+      "bytes": 308746,
+      "logical_bytes": 308746,
+      "probe_hits": 1212
+    },
+    {
+      "path": "home/agent_state_q195.json",
+      "bytes": 305968,
+      "logical_bytes": 305968,
+      "probe_hits": 1200
+    },
+    {
+      "path": "home/agent_state_q194.json",
+      "bytes": 303190,
+      "logical_bytes": 303190,
+      "probe_hits": 1188
+    },
+    {
+      "path": "home/agent_state_q193.json",
+      "bytes": 302891,
+      "logical_bytes": 302891,
+      "probe_hits": 1188
+    },
+    {
+      "path": "home/agent_state_q192.json",
+      "bytes": 300113,
+      "logical_bytes": 300113,
+      "probe_hits": 1176
+    },
+    {
+      "path": "home/agent_state_q191.json",
+      "bytes": 299814,
+      "logical_bytes": 299814,
+      "probe_hits": 1176
+    },
+    {
+      "path": "home/agent_state_q190.json",
+      "bytes": 297042,
+      "logical_bytes": 297042,
+      "probe_hits": 1164
+    },
+    {
+      "path": "home/agent_state_q189.json",
+      "bytes": 296743,
+      "logical_bytes": 296743,
+      "probe_hits": 1164
+    },
+    {
+      "path": "home/agent_state_q188.json",
+      "bytes": 293965,
+      "logical_bytes": 293965,
+      "probe_hits": 1152
+    },
+    {
+      "path": "home/agent_state_q187.json",
+      "bytes": 293666,
+      "logical_bytes": 293666,
+      "probe_hits": 1152
+    },
+    {
+      "path": "home/agent_state_q186.json",
+      "bytes": 290894,
+      "logical_bytes": 290894,
+      "probe_hits": 1140
+    },
+    {
+      "path": "home/agent_state_q185.json",
+      "bytes": 290595,
+      "logical_bytes": 290595,
+      "probe_hits": 1140
+    },
+    {
+      "path": "home/agent_state_q184.json",
+      "bytes": 290296,
+      "logical_bytes": 290296,
+      "probe_hits": 1140
+    },
+    {
+      "path": "home/agent_state_q183.json",
+      "bytes": 289997,
+      "logical_bytes": 289997,
+      "probe_hits": 1140
+    },
+    {
+      "path": "home/agent_state_q182.json",
+      "bytes": 289698,
+      "logical_bytes": 289698,
+      "probe_hits": 1140
+    },
+    {
+      "path": "home/agent_state_q181.json",
+      "bytes": 286926,
+      "logical_bytes": 286926,
+      "probe_hits": 1128
+    },
+    {
+      "path": "home/agent_state_q180.json",
+      "bytes": 286627,
+      "logical_bytes": 286627,
+      "probe_hits": 1128
+    },
+    {
+      "path": "home/agent_state_q179.json",
+      "bytes": 286328,
+      "logical_bytes": 286328,
+      "probe_hits": 1128
+    },
+    {
+      "path": "home/agent_state_q178.json",
+      "bytes": 286029,
+      "logical_bytes": 286029,
+      "probe_hits": 1128
+    },
+    {
+      "path": "home/agent_state_q177.json",
+      "bytes": 285730,
+      "logical_bytes": 285730,
+      "probe_hits": 1128
+    },
+    {
+      "path": "home/agent_state_q176.json",
+      "bytes": 282958,
+      "logical_bytes": 282958,
+      "probe_hits": 1116
+    }
+  ],
+  "framework": "autogen",
+  "task": "lh_T200",
+  "model": "deepseek/deepseek-v4-flash",
+  "wall_sec": 2164.5,
+  "returncode": 0,
+  "n_correct": 195,
+  "n_questions": 200
+}

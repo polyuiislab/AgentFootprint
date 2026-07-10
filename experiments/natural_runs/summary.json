@@ -1,0 +1,1787 @@
+[
+  {
+    "S_total": 3563520,
+    "S_workspace": 0,
+    "S_home": 3563520,
+    "S_logical": 3513592,
+    "S_unique": 399552,
+    "D": 8.794,
+    "zstd_bytes": 41629,
+    "C": 85.602,
+    "input_bytes": 248228,
+    "echo_copies": 13.5,
+    "echo_bytes_est": 3351078,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/langgraph_checkpoints.sqlite",
+        "bytes": 3563520,
+        "logical_bytes": 3513592,
+        "probe_hits": 972
+      }
+    ],
+    "framework": "langgraph",
+    "task": "ntask_00",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 64.5,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 5017600,
+    "S_workspace": 0,
+    "S_home": 5017600,
+    "S_logical": 4967748,
+    "S_unique": 416842,
+    "D": 11.918,
+    "zstd_bytes": 44337,
+    "C": 113.17,
+    "input_bytes": 248501,
+    "echo_copies": 19.167,
+    "echo_bytes_est": 4762935,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/langgraph_checkpoints.sqlite",
+        "bytes": 5017600,
+        "logical_bytes": 4967748,
+        "probe_hits": 1380
+      }
+    ],
+    "framework": "langgraph",
+    "task": "ntask_01",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 73.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 2400256,
+    "S_workspace": 0,
+    "S_home": 2400256,
+    "S_logical": 2355964,
+    "S_unique": 374878,
+    "D": 6.285,
+    "zstd_bytes": 39412,
+    "C": 60.902,
+    "input_bytes": 248238,
+    "echo_copies": 9.0,
+    "echo_bytes_est": 2234142,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/langgraph_checkpoints.sqlite",
+        "bytes": 2400256,
+        "logical_bytes": 2355964,
+        "probe_hits": 648
+      }
+    ],
+    "framework": "langgraph",
+    "task": "ntask_02",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 40.5,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 2359296,
+    "S_workspace": 0,
+    "S_home": 2359296,
+    "S_logical": 2307542,
+    "S_unique": 399704,
+    "D": 5.773,
+    "zstd_bytes": 41245,
+    "C": 57.202,
+    "input_bytes": 248277,
+    "echo_copies": 8.5,
+    "echo_bytes_est": 2110354,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/langgraph_checkpoints.sqlite",
+        "bytes": 2359296,
+        "logical_bytes": 2307542,
+        "probe_hits": 612
+      }
+    ],
+    "framework": "langgraph",
+    "task": "ntask_03",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 34.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 2416640,
+    "S_workspace": 0,
+    "S_home": 2416640,
+    "S_logical": 2366081,
+    "S_unique": 380708,
+    "D": 6.215,
+    "zstd_bytes": 39469,
+    "C": 61.229,
+    "input_bytes": 249362,
+    "echo_copies": 9.0,
+    "echo_bytes_est": 2244258,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/langgraph_checkpoints.sqlite",
+        "bytes": 2416640,
+        "logical_bytes": 2366081,
+        "probe_hits": 648
+      }
+    ],
+    "framework": "langgraph",
+    "task": "ntask_04",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 36.4,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 404180,
+    "S_workspace": 0,
+    "S_home": 404180,
+    "S_logical": 404180,
+    "S_unique": 143097,
+    "D": 2.825,
+    "zstd_bytes": 14055,
+    "C": 28.757,
+    "input_bytes": 248228,
+    "echo_copies": 1.5,
+    "echo_bytes_est": 372342,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 4,
+    "files_top": [
+      {
+        "path": "home/autogen_events.log",
+        "bytes": 274572,
+        "logical_bytes": 274572,
+        "probe_hits": 72
+      },
+      {
+        "path": "home/agent_state_q2.json",
+        "bytes": 85554,
+        "logical_bytes": 85554,
+        "probe_hits": 24
+      },
+      {
+        "path": "home/agent_state_q1.json",
+        "bytes": 43265,
+        "logical_bytes": 43265,
+        "probe_hits": 12
+      },
+      {
+        "path": "home/agent_state_q0.json",
+        "bytes": 789,
+        "logical_bytes": 789,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "autogen",
+    "task": "ntask_00",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 52.5,
+    "returncode": 0,
+    "n_correct": 2,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1656178,
+    "S_workspace": 0,
+    "S_home": 1656178,
+    "S_logical": 1656178,
+    "S_unique": 340711,
+    "D": 4.861,
+    "zstd_bytes": 33632,
+    "C": 49.244,
+    "input_bytes": 248501,
+    "echo_copies": 6.5,
+    "echo_bytes_est": 1615256,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 4,
+    "files_top": [
+      {
+        "path": "home/autogen_events.log",
+        "bytes": 1109445,
+        "logical_bytes": 1109445,
+        "probe_hits": 312
+      },
+      {
+        "path": "home/agent_state_q2.json",
+        "bytes": 294101,
+        "logical_bytes": 294101,
+        "probe_hits": 84
+      },
+      {
+        "path": "home/agent_state_q1.json",
+        "bytes": 251840,
+        "logical_bytes": 251840,
+        "probe_hits": 72
+      },
+      {
+        "path": "home/agent_state_q0.json",
+        "bytes": 792,
+        "logical_bytes": 792,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "autogen",
+    "task": "ntask_01",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 53.0,
+    "returncode": 0,
+    "n_correct": 0,
+    "n_questions": 3
+  },
+  {
+    "S_total": 408372,
+    "S_workspace": 0,
+    "S_home": 408372,
+    "S_logical": 408372,
+    "S_unique": 148583,
+    "D": 2.748,
+    "zstd_bytes": 13417,
+    "C": 30.437,
+    "input_bytes": 248238,
+    "echo_copies": 1.5,
+    "echo_bytes_est": 372357,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 4,
+    "files_top": [
+      {
+        "path": "home/autogen_events.log",
+        "bytes": 275578,
+        "logical_bytes": 275578,
+        "probe_hits": 72
+      },
+      {
+        "path": "home/agent_state_q2.json",
+        "bytes": 86550,
+        "logical_bytes": 86550,
+        "probe_hits": 24
+      },
+      {
+        "path": "home/agent_state_q1.json",
+        "bytes": 44220,
+        "logical_bytes": 44220,
+        "probe_hits": 12
+      },
+      {
+        "path": "home/agent_state_q0.json",
+        "bytes": 2024,
+        "logical_bytes": 2024,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "autogen",
+    "task": "ntask_02",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 14.3,
+    "returncode": 0,
+    "n_correct": 2,
+    "n_questions": 3
+  },
+  {
+    "S_total": 400508,
+    "S_workspace": 0,
+    "S_home": 400508,
+    "S_logical": 400508,
+    "S_unique": 161233,
+    "D": 2.484,
+    "zstd_bytes": 13447,
+    "C": 29.784,
+    "input_bytes": 248277,
+    "echo_copies": 1.5,
+    "echo_bytes_est": 372415,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 4,
+    "files_top": [
+      {
+        "path": "home/autogen_events.log",
+        "bytes": 270505,
+        "logical_bytes": 270505,
+        "probe_hits": 72
+      },
+      {
+        "path": "home/agent_state_q2.json",
+        "bytes": 85604,
+        "logical_bytes": 85604,
+        "probe_hits": 24
+      },
+      {
+        "path": "home/agent_state_q1.json",
+        "bytes": 43313,
+        "logical_bytes": 43313,
+        "probe_hits": 12
+      },
+      {
+        "path": "home/agent_state_q0.json",
+        "bytes": 1086,
+        "logical_bytes": 1086,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "autogen",
+    "task": "ntask_03",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 25.9,
+    "returncode": 0,
+    "n_correct": 1,
+    "n_questions": 3
+  },
+  {
+    "S_total": 398726,
+    "S_workspace": 0,
+    "S_home": 398726,
+    "S_logical": 398726,
+    "S_unique": 131804,
+    "D": 3.025,
+    "zstd_bytes": 13222,
+    "C": 30.156,
+    "input_bytes": 249362,
+    "echo_copies": 1.5,
+    "echo_bytes_est": 374043,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 4,
+    "files_top": [
+      {
+        "path": "home/autogen_events.log",
+        "bytes": 268822,
+        "logical_bytes": 268822,
+        "probe_hits": 72
+      },
+      {
+        "path": "home/agent_state_q2.json",
+        "bytes": 85767,
+        "logical_bytes": 85767,
+        "probe_hits": 24
+      },
+      {
+        "path": "home/agent_state_q1.json",
+        "bytes": 43286,
+        "logical_bytes": 43286,
+        "probe_hits": 12
+      },
+      {
+        "path": "home/agent_state_q0.json",
+        "bytes": 851,
+        "logical_bytes": 851,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "autogen",
+    "task": "ntask_04",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 27.1,
+    "returncode": 0,
+    "n_correct": 2,
+    "n_questions": 3
+  },
+  {
+    "S_total": 774456,
+    "S_workspace": 0,
+    "S_home": 774456,
+    "S_logical": 757530,
+    "S_unique": 335818,
+    "D": 2.256,
+    "zstd_bytes": 33367,
+    "C": 23.21,
+    "input_bytes": 248228,
+    "echo_copies": 3.0,
+    "echo_bytes_est": 744684,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+        "bytes": 774144,
+        "logical_bytes": 757218,
+        "probe_hits": 216
+      },
+      {
+        "path": "home/Library/Application Support/workspace/.crewai_user.json",
+        "bytes": 268,
+        "logical_bytes": 268,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/Library/Application Support/crewai/credentials/secret.key",
+        "bytes": 44,
+        "logical_bytes": 44,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "crewai",
+    "task": "ntask_00",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 71.0,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 606520,
+    "S_workspace": 0,
+    "S_home": 606520,
+    "S_logical": 592052,
+    "S_unique": 292491,
+    "D": 2.024,
+    "zstd_bytes": 33341,
+    "C": 18.191,
+    "input_bytes": 248501,
+    "echo_copies": 2.333,
+    "echo_bytes_est": 579835,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+        "bytes": 606208,
+        "logical_bytes": 591740,
+        "probe_hits": 168
+      },
+      {
+        "path": "home/Library/Application Support/workspace/.crewai_user.json",
+        "bytes": 268,
+        "logical_bytes": 268,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/Library/Application Support/crewai/credentials/secret.key",
+        "bytes": 44,
+        "logical_bytes": 44,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "crewai",
+    "task": "ntask_01",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 95.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1024312,
+    "S_workspace": 0,
+    "S_home": 1024312,
+    "S_logical": 1007920,
+    "S_unique": 342840,
+    "D": 2.94,
+    "zstd_bytes": 34157,
+    "C": 29.988,
+    "input_bytes": 248238,
+    "echo_copies": 4.0,
+    "echo_bytes_est": 992952,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+        "bytes": 1024000,
+        "logical_bytes": 1007608,
+        "probe_hits": 288
+      },
+      {
+        "path": "home/Library/Application Support/workspace/.crewai_user.json",
+        "bytes": 268,
+        "logical_bytes": 268,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/Library/Application Support/crewai/credentials/secret.key",
+        "bytes": 44,
+        "logical_bytes": 44,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "crewai",
+    "task": "ntask_02",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 70.2,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 811320,
+    "S_workspace": 0,
+    "S_home": 811320,
+    "S_logical": 801429,
+    "S_unique": 353859,
+    "D": 2.265,
+    "zstd_bytes": 33489,
+    "C": 24.226,
+    "input_bytes": 248277,
+    "echo_copies": 3.167,
+    "echo_bytes_est": 786210,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+        "bytes": 811008,
+        "logical_bytes": 801117,
+        "probe_hits": 228
+      },
+      {
+        "path": "home/Library/Application Support/workspace/.crewai_user.json",
+        "bytes": 268,
+        "logical_bytes": 268,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/Library/Application Support/crewai/credentials/secret.key",
+        "bytes": 44,
+        "logical_bytes": 44,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "crewai",
+    "task": "ntask_03",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 163.5,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 356664,
+    "S_workspace": 0,
+    "S_home": 356664,
+    "S_logical": 342214,
+    "S_unique": 263873,
+    "D": 1.297,
+    "zstd_bytes": 32384,
+    "C": 11.014,
+    "input_bytes": 249362,
+    "echo_copies": 1.333,
+    "echo_bytes_est": 332482,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+        "bytes": 356352,
+        "logical_bytes": 341902,
+        "probe_hits": 96
+      },
+      {
+        "path": "home/Library/Application Support/workspace/.crewai_user.json",
+        "bytes": 268,
+        "logical_bytes": 268,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/Library/Application Support/crewai/credentials/secret.key",
+        "bytes": 44,
+        "logical_bytes": 44,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "crewai",
+    "task": "ntask_04",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 57.1,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 0,
+    "S_workspace": 0,
+    "S_home": 0,
+    "S_logical": 0,
+    "S_unique": 0,
+    "D": null,
+    "zstd_bytes": 0,
+    "C": null,
+    "input_bytes": 248228,
+    "echo_copies": 0.0,
+    "echo_bytes_est": 0,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 0,
+    "files_top": [],
+    "framework": "smolagents",
+    "task": "ntask_00",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 736.6,
+    "returncode": 0,
+    "n_correct": 2,
+    "n_questions": 3
+  },
+  {
+    "S_total": 0,
+    "S_workspace": 0,
+    "S_home": 0,
+    "S_logical": 0,
+    "S_unique": 0,
+    "D": null,
+    "zstd_bytes": 0,
+    "C": null,
+    "input_bytes": 248501,
+    "echo_copies": 0.0,
+    "echo_bytes_est": 0,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 0,
+    "files_top": [],
+    "framework": "smolagents",
+    "task": "ntask_01",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 1200.1,
+    "returncode": -9,
+    "n_correct": 0,
+    "n_questions": 3
+  },
+  {
+    "S_total": 0,
+    "S_workspace": 0,
+    "S_home": 0,
+    "S_logical": 0,
+    "S_unique": 0,
+    "D": null,
+    "zstd_bytes": 0,
+    "C": null,
+    "input_bytes": 248238,
+    "echo_copies": 0.0,
+    "echo_bytes_est": 0,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 0,
+    "files_top": [],
+    "framework": "smolagents",
+    "task": "ntask_02",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 1024.5,
+    "returncode": 0,
+    "n_correct": 2,
+    "n_questions": 3
+  },
+  {
+    "S_total": 0,
+    "S_workspace": 0,
+    "S_home": 0,
+    "S_logical": 0,
+    "S_unique": 0,
+    "D": null,
+    "zstd_bytes": 0,
+    "C": null,
+    "input_bytes": 248277,
+    "echo_copies": 0.0,
+    "echo_bytes_est": 0,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 0,
+    "files_top": [],
+    "framework": "smolagents",
+    "task": "ntask_03",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 509.6,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 0,
+    "S_workspace": 0,
+    "S_home": 0,
+    "S_logical": 0,
+    "S_unique": 0,
+    "D": null,
+    "zstd_bytes": 0,
+    "C": null,
+    "input_bytes": 249362,
+    "echo_copies": 0.0,
+    "echo_bytes_est": 0,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 0,
+    "files_top": [],
+    "framework": "smolagents",
+    "task": "ntask_04",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 43.5,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 364544,
+    "S_workspace": 0,
+    "S_home": 364544,
+    "S_logical": 336944,
+    "S_unique": 262340,
+    "D": 1.284,
+    "zstd_bytes": 32403,
+    "C": 11.25,
+    "input_bytes": 248228,
+    "echo_copies": 1.333,
+    "echo_bytes_est": 330970,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agents_sessions.sqlite",
+        "bytes": 364544,
+        "logical_bytes": 336944,
+        "probe_hits": 96
+      }
+    ],
+    "framework": "openai_agents",
+    "task": "ntask_00",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 52.2,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 364544,
+    "S_workspace": 0,
+    "S_home": 364544,
+    "S_logical": 337614,
+    "S_unique": 259342,
+    "D": 1.302,
+    "zstd_bytes": 32600,
+    "C": 11.182,
+    "input_bytes": 248501,
+    "echo_copies": 1.333,
+    "echo_bytes_est": 331334,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agents_sessions.sqlite",
+        "bytes": 364544,
+        "logical_bytes": 337614,
+        "probe_hits": 96
+      }
+    ],
+    "framework": "openai_agents",
+    "task": "ntask_01",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 63.1,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 577536,
+    "S_workspace": 0,
+    "S_home": 577536,
+    "S_logical": 547267,
+    "S_unique": 279199,
+    "D": 1.96,
+    "zstd_bytes": 33200,
+    "C": 17.396,
+    "input_bytes": 248238,
+    "echo_copies": 2.167,
+    "echo_bytes_est": 537849,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agents_sessions.sqlite",
+        "bytes": 577536,
+        "logical_bytes": 547267,
+        "probe_hits": 156
+      }
+    ],
+    "framework": "openai_agents",
+    "task": "ntask_02",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 130.7,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 323584,
+    "S_workspace": 0,
+    "S_home": 323584,
+    "S_logical": 295500,
+    "S_unique": 259334,
+    "D": 1.139,
+    "zstd_bytes": 32388,
+    "C": 9.991,
+    "input_bytes": 248277,
+    "echo_copies": 1.167,
+    "echo_bytes_est": 289656,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agents_sessions.sqlite",
+        "bytes": 323584,
+        "logical_bytes": 295500,
+        "probe_hits": 84
+      }
+    ],
+    "framework": "openai_agents",
+    "task": "ntask_03",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 46.0,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 323584,
+    "S_workspace": 0,
+    "S_home": 323584,
+    "S_logical": 296823,
+    "S_unique": 258123,
+    "D": 1.15,
+    "zstd_bytes": 32436,
+    "C": 9.976,
+    "input_bytes": 249362,
+    "echo_copies": 1.167,
+    "echo_bytes_est": 290922,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agents_sessions.sqlite",
+        "bytes": 323584,
+        "logical_bytes": 296823,
+        "probe_hits": 84
+      }
+    ],
+    "framework": "openai_agents",
+    "task": "ntask_04",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 60.6,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1125604,
+    "S_workspace": 0,
+    "S_home": 1125604,
+    "S_logical": 1125604,
+    "S_unique": 327156,
+    "D": 3.441,
+    "zstd_bytes": 33292,
+    "C": 33.81,
+    "input_bytes": 248228,
+    "echo_copies": 3.444,
+    "echo_bytes_est": 855007,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/ctx_q2.json",
+        "bytes": 561304,
+        "logical_bytes": 561304,
+        "probe_hits": 124
+      },
+      {
+        "path": "home/ctx_q1.json",
+        "bytes": 304356,
+        "logical_bytes": 304356,
+        "probe_hits": 64
+      },
+      {
+        "path": "home/ctx_q0.json",
+        "bytes": 259944,
+        "logical_bytes": 259944,
+        "probe_hits": 60
+      }
+    ],
+    "framework": "llamaindex",
+    "task": "ntask_00",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 70.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 694990,
+    "S_workspace": 0,
+    "S_home": 694990,
+    "S_logical": 694990,
+    "S_unique": 273010,
+    "D": 2.546,
+    "zstd_bytes": 32768,
+    "C": 21.209,
+    "input_bytes": 248501,
+    "echo_copies": 2.222,
+    "echo_bytes_est": 552224,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/ctx_q2.json",
+        "bytes": 346845,
+        "logical_bytes": 346845,
+        "probe_hits": 81
+      },
+      {
+        "path": "home/ctx_q1.json",
+        "bytes": 302273,
+        "logical_bytes": 302273,
+        "probe_hits": 69
+      },
+      {
+        "path": "home/ctx_q0.json",
+        "bytes": 45872,
+        "logical_bytes": 45872,
+        "probe_hits": 10
+      }
+    ],
+    "framework": "llamaindex",
+    "task": "ntask_01",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 155.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1122558,
+    "S_workspace": 0,
+    "S_home": 1122558,
+    "S_logical": 1122558,
+    "S_unique": 323087,
+    "D": 3.474,
+    "zstd_bytes": 32924,
+    "C": 34.095,
+    "input_bytes": 248238,
+    "echo_copies": 3.722,
+    "echo_bytes_est": 923997,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/ctx_q2.json",
+        "bytes": 559157,
+        "logical_bytes": 559157,
+        "probe_hits": 134
+      },
+      {
+        "path": "home/ctx_q1.json",
+        "bytes": 303610,
+        "logical_bytes": 303610,
+        "probe_hits": 73
+      },
+      {
+        "path": "home/ctx_q0.json",
+        "bytes": 259791,
+        "logical_bytes": 259791,
+        "probe_hits": 61
+      }
+    ],
+    "framework": "llamaindex",
+    "task": "ntask_02",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 70.0,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 994801,
+    "S_workspace": 0,
+    "S_home": 994801,
+    "S_logical": 994801,
+    "S_unique": 347081,
+    "D": 2.866,
+    "zstd_bytes": 33907,
+    "C": 29.339,
+    "input_bytes": 248277,
+    "echo_copies": 3.236,
+    "echo_bytes_est": 803451,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/ctx_q2.json",
+        "bytes": 646110,
+        "logical_bytes": 646110,
+        "probe_hits": 146
+      },
+      {
+        "path": "home/ctx_q1.json",
+        "bytes": 302924,
+        "logical_bytes": 302924,
+        "probe_hits": 75
+      },
+      {
+        "path": "home/ctx_q0.json",
+        "bytes": 45767,
+        "logical_bytes": 45767,
+        "probe_hits": 12
+      }
+    ],
+    "framework": "llamaindex",
+    "task": "ntask_03",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 89.4,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 948474,
+    "S_workspace": 0,
+    "S_home": 948474,
+    "S_logical": 948474,
+    "S_unique": 279197,
+    "D": 3.397,
+    "zstd_bytes": 31971,
+    "C": 29.667,
+    "input_bytes": 249362,
+    "echo_copies": 3.014,
+    "echo_bytes_est": 751549,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 3,
+    "files_top": [
+      {
+        "path": "home/ctx_q2.json",
+        "bytes": 388936,
+        "logical_bytes": 388936,
+        "probe_hits": 87
+      },
+      {
+        "path": "home/ctx_q1.json",
+        "bytes": 301805,
+        "logical_bytes": 301805,
+        "probe_hits": 70
+      },
+      {
+        "path": "home/ctx_q0.json",
+        "bytes": 257733,
+        "logical_bytes": 257733,
+        "probe_hits": 60
+      }
+    ],
+    "framework": "llamaindex",
+    "task": "ntask_04",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 68.6,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1077248,
+    "S_workspace": 0,
+    "S_home": 1077248,
+    "S_logical": 527533,
+    "S_unique": 322738,
+    "D": 1.635,
+    "zstd_bytes": 35411,
+    "C": 30.421,
+    "input_bytes": 248228,
+    "echo_copies": 1.667,
+    "echo_bytes_est": 413713,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agno_sessions.sqlite",
+        "bytes": 1077248,
+        "logical_bytes": 527533,
+        "probe_hits": 120
+      }
+    ],
+    "framework": "agno",
+    "task": "ntask_00",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 42.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1081344,
+    "S_workspace": 0,
+    "S_home": 1081344,
+    "S_logical": 528491,
+    "S_unique": 296544,
+    "D": 1.782,
+    "zstd_bytes": 36291,
+    "C": 29.796,
+    "input_bytes": 248501,
+    "echo_copies": 1.639,
+    "echo_bytes_est": 407265,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agno_sessions.sqlite",
+        "bytes": 1081344,
+        "logical_bytes": 528491,
+        "probe_hits": 118
+      }
+    ],
+    "framework": "agno",
+    "task": "ntask_01",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 37.1,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1331200,
+    "S_workspace": 0,
+    "S_home": 1331200,
+    "S_logical": 694591,
+    "S_unique": 331895,
+    "D": 2.093,
+    "zstd_bytes": 36445,
+    "C": 36.526,
+    "input_bytes": 248238,
+    "echo_copies": 2.361,
+    "echo_bytes_est": 586117,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agno_sessions.sqlite",
+        "bytes": 1331200,
+        "logical_bytes": 694591,
+        "probe_hits": 170
+      }
+    ],
+    "framework": "agno",
+    "task": "ntask_02",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 75.5,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1519616,
+    "S_workspace": 0,
+    "S_home": 1519616,
+    "S_logical": 790404,
+    "S_unique": 406758,
+    "D": 1.943,
+    "zstd_bytes": 38274,
+    "C": 39.704,
+    "input_bytes": 248277,
+    "echo_copies": 2.528,
+    "echo_bytes_est": 627589,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agno_sessions.sqlite",
+        "bytes": 1519616,
+        "logical_bytes": 790404,
+        "probe_hits": 182
+      }
+    ],
+    "framework": "agno",
+    "task": "ntask_03",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 72.9,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 1101824,
+    "S_workspace": 0,
+    "S_home": 1101824,
+    "S_logical": 537469,
+    "S_unique": 318609,
+    "D": 1.687,
+    "zstd_bytes": 35981,
+    "C": 30.622,
+    "input_bytes": 249362,
+    "echo_copies": 1.667,
+    "echo_bytes_est": 415603,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/agno_sessions.sqlite",
+        "bytes": 1101824,
+        "logical_bytes": 537469,
+        "probe_hits": 120
+      }
+    ],
+    "framework": "agno",
+    "task": "ntask_04",
+    "model": "deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 41.5,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 4069543,
+    "S_workspace": 0,
+    "S_home": 4069543,
+    "S_logical": 4033307,
+    "S_unique": 1886368,
+    "D": 2.138,
+    "zstd_bytes": 65350,
+    "C": 62.273,
+    "input_bytes": 248228,
+    "echo_copies": 8.319,
+    "echo_bytes_est": 2065119,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 12,
+    "files_top": [
+      {
+        "path": "home/user_root/training_traces/658c87af_qa_run_a0_raw_io.jsonl",
+        "bytes": 1683232,
+        "logical_bytes": 1683217,
+        "probe_hits": 236
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0_file_qa_agent_c9ade5fc6fd8_actions.json",
+        "bytes": 1007740,
+        "logical_bytes": 1007740,
+        "probe_hits": 177
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0_file_qa_agent_76ccd3fe5881_actions.json",
+        "bytes": 981609,
+        "logical_bytes": 981609,
+        "probe_hits": 177
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0_llm_debug.jsonl",
+        "bytes": 171747,
+        "logical_bytes": 171732,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0_file_qa_agent_4e521c698308_actions.json",
+        "bytes": 169963,
+        "logical_bytes": 169963,
+        "probe_hits": 9
+      },
+      {
+        "path": "home/user_root/runtime/task_history/task_history.db",
+        "bytes": 49152,
+        "logical_bytes": 12946,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0_share_context.json",
+        "bytes": 5433,
+        "logical_bytes": 5433,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+        "bytes": 532,
+        "logical_bytes": 532,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0_stack.json",
+        "bytes": 65,
+        "logical_bytes": 65,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+        "bytes": 36,
+        "logical_bytes": 36,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+        "bytes": 34,
+        "logical_bytes": 34,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/658c87af_qa_run_a0.lock",
+        "bytes": 0,
+        "logical_bytes": 0,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "infiagent",
+    "task": "ntask_00",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 124.8,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 3352742,
+    "S_workspace": 0,
+    "S_home": 3352742,
+    "S_logical": 3316513,
+    "S_unique": 2266069,
+    "D": 1.464,
+    "zstd_bytes": 68970,
+    "C": 48.612,
+    "input_bytes": 248501,
+    "echo_copies": 7.319,
+    "echo_bytes_est": 1818889,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 12,
+    "files_top": [
+      {
+        "path": "home/user_root/training_traces/e4de5539_qa_run_a0_raw_io.jsonl",
+        "bytes": 1059671,
+        "logical_bytes": 1059658,
+        "probe_hits": 140
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0_file_qa_agent_552c2db56a26_actions.json",
+        "bytes": 981645,
+        "logical_bytes": 981645,
+        "probe_hits": 177
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0_file_qa_agent_de5079f2b6f9_actions.json",
+        "bytes": 941912,
+        "logical_bytes": 941912,
+        "probe_hits": 177
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0_file_qa_agent_cf2292b74c4d_actions.json",
+        "bytes": 165918,
+        "logical_bytes": 165918,
+        "probe_hits": 30
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0_llm_debug.jsonl",
+        "bytes": 148342,
+        "logical_bytes": 148329,
+        "probe_hits": 3
+      },
+      {
+        "path": "home/user_root/runtime/task_history/task_history.db",
+        "bytes": 49152,
+        "logical_bytes": 12949,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0_share_context.json",
+        "bytes": 5435,
+        "logical_bytes": 5435,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+        "bytes": 532,
+        "logical_bytes": 532,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0_stack.json",
+        "bytes": 65,
+        "logical_bytes": 65,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+        "bytes": 36,
+        "logical_bytes": 36,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+        "bytes": 34,
+        "logical_bytes": 34,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/e4de5539_qa_run_a0.lock",
+        "bytes": 0,
+        "logical_bytes": 0,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "infiagent",
+    "task": "ntask_01",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 309.4,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 2366016,
+    "S_workspace": 0,
+    "S_home": 2366016,
+    "S_logical": 2329701,
+    "S_unique": 1559326,
+    "D": 1.494,
+    "zstd_bytes": 60828,
+    "C": 38.897,
+    "input_bytes": 248238,
+    "echo_copies": 5.139,
+    "echo_bytes_est": 1275667,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 12,
+    "files_top": [
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0_file_qa_agent_cdaa5220fd30_actions.json",
+        "bytes": 961729,
+        "logical_bytes": 961729,
+        "probe_hits": 183
+      },
+      {
+        "path": "home/user_root/training_traces/1570472f_qa_run_a0_raw_io.jsonl",
+        "bytes": 867026,
+        "logical_bytes": 867013,
+        "probe_hits": 110
+      },
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0_file_qa_agent_ecc7e1f2612b_actions.json",
+        "bytes": 169754,
+        "logical_bytes": 169754,
+        "probe_hits": 36
+      },
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0_file_qa_agent_0388f2227ada_actions.json",
+        "bytes": 167664,
+        "logical_bytes": 167664,
+        "probe_hits": 36
+      },
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0_llm_debug.jsonl",
+        "bytes": 144606,
+        "logical_bytes": 144593,
+        "probe_hits": 5
+      },
+      {
+        "path": "home/user_root/runtime/task_history/task_history.db",
+        "bytes": 49152,
+        "logical_bytes": 12863,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0_share_context.json",
+        "bytes": 5418,
+        "logical_bytes": 5418,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+        "bytes": 532,
+        "logical_bytes": 532,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0_stack.json",
+        "bytes": 65,
+        "logical_bytes": 65,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+        "bytes": 36,
+        "logical_bytes": 36,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+        "bytes": 34,
+        "logical_bytes": 34,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/1570472f_qa_run_a0.lock",
+        "bytes": 0,
+        "logical_bytes": 0,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "infiagent",
+    "task": "ntask_02",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 174.6,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 3511787,
+    "S_workspace": 0,
+    "S_home": 3511787,
+    "S_logical": 3475454,
+    "S_unique": 1699871,
+    "D": 2.045,
+    "zstd_bytes": 61602,
+    "C": 57.008,
+    "input_bytes": 248277,
+    "echo_copies": 8.042,
+    "echo_bytes_est": 1996560,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 12,
+    "files_top": [
+      {
+        "path": "home/user_root/training_traces/bdfc95a0_qa_run_a0_raw_io.jsonl",
+        "bytes": 1178197,
+        "logical_bytes": 1178184,
+        "probe_hits": 165
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0_file_qa_agent_69a45c68dac8_actions.json",
+        "bytes": 989215,
+        "logical_bytes": 989215,
+        "probe_hits": 189
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0_file_qa_agent_d81d67235505_actions.json",
+        "bytes": 986887,
+        "logical_bytes": 986887,
+        "probe_hits": 189
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0_file_qa_agent_f9c0e3f1c845_actions.json",
+        "bytes": 166351,
+        "logical_bytes": 166351,
+        "probe_hits": 36
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0_llm_debug.jsonl",
+        "bytes": 135912,
+        "logical_bytes": 135899,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/runtime/task_history/task_history.db",
+        "bytes": 49152,
+        "logical_bytes": 12845,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0_share_context.json",
+        "bytes": 5406,
+        "logical_bytes": 5406,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+        "bytes": 532,
+        "logical_bytes": 532,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0_stack.json",
+        "bytes": 65,
+        "logical_bytes": 65,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+        "bytes": 36,
+        "logical_bytes": 36,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+        "bytes": 34,
+        "logical_bytes": 34,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/bdfc95a0_qa_run_a0.lock",
+        "bytes": 0,
+        "logical_bytes": 0,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "infiagent",
+    "task": "ntask_03",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 148.1,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  },
+  {
+    "S_total": 2452972,
+    "S_workspace": 0,
+    "S_home": 2452972,
+    "S_logical": 2416638,
+    "S_unique": 1630000,
+    "D": 1.483,
+    "zstd_bytes": 61415,
+    "C": 39.941,
+    "input_bytes": 249362,
+    "echo_copies": 4.819,
+    "echo_bytes_est": 1201786,
+    "n_probes": 72,
+    "excluded_bytes": 0,
+    "n_files": 12,
+    "files_top": [
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0_file_qa_agent_1812337baace_actions.json",
+        "bytes": 973150,
+        "logical_bytes": 973150,
+        "probe_hits": 180
+      },
+      {
+        "path": "home/user_root/training_traces/f10dd778_qa_run_a0_raw_io.jsonl",
+        "bytes": 930817,
+        "logical_bytes": 930804,
+        "probe_hits": 116
+      },
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0_file_qa_agent_b4efee39835e_actions.json",
+        "bytes": 169042,
+        "logical_bytes": 169042,
+        "probe_hits": 21
+      },
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0_file_qa_agent_b477b6bd05ad_actions.json",
+        "bytes": 168578,
+        "logical_bytes": 168578,
+        "probe_hits": 30
+      },
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0_llm_debug.jsonl",
+        "bytes": 156158,
+        "logical_bytes": 156145,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/runtime/task_history/task_history.db",
+        "bytes": 49152,
+        "logical_bytes": 12844,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0_share_context.json",
+        "bytes": 5408,
+        "logical_bytes": 5408,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+        "bytes": 532,
+        "logical_bytes": 532,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0_stack.json",
+        "bytes": 65,
+        "logical_bytes": 65,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+        "bytes": 36,
+        "logical_bytes": 36,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+        "bytes": 34,
+        "logical_bytes": 34,
+        "probe_hits": 0
+      },
+      {
+        "path": "home/user_root/conversations/f10dd778_qa_run_a0.lock",
+        "bytes": 0,
+        "logical_bytes": 0,
+        "probe_hits": 0
+      }
+    ],
+    "framework": "infiagent",
+    "task": "ntask_04",
+    "model": "openrouter/deepseek/deepseek-v4-flash",
+    "seed": "s1",
+    "wall_sec": 128.2,
+    "returncode": 0,
+    "n_correct": 3,
+    "n_questions": 3
+  }
+]

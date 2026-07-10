@@ -1,0 +1,572 @@
+{
+  "pilot_runs/autogen-abl": {
+    "runs": 5,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/llamaindex": {
+    "runs": 31,
+    "S_total": 30135946,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/langgraph": {
+    "runs": 36,
+    "S_total": 194224128,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/crewai": {
+    "runs": 30,
+    "S_total": 10208398,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/langgraph-abl": {
+    "runs": 5,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/smolagents": {
+    "runs": 30,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/openai_agents-abl": {
+    "runs": 5,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/infiagent": {
+    "runs": 31,
+    "S_total": 69071717,
+    "pre_bytes_in_changed": 18008,
+    "ws_modified_files": 0,
+    "home_base_files": 496,
+    "home_base_bytes": 19510233,
+    "same_size_home_files": 465,
+    "same_size_home_bytes": 19490396
+  },
+  "pilot_runs/autogen-finalsave": {
+    "runs": 5,
+    "S_total": 11130491,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/openai_agents": {
+    "runs": 36,
+    "S_total": 12316672,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/llamaindex-abl": {
+    "runs": 5,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/agno": {
+    "runs": 31,
+    "S_total": 37302272,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/infiagent-abl": {
+    "runs": 10,
+    "S_total": 13318715,
+    "pre_bytes_in_changed": 5810,
+    "ws_modified_files": 0,
+    "home_base_files": 160,
+    "home_base_bytes": 6293135,
+    "same_size_home_files": 150,
+    "same_size_home_bytes": 6286735
+  },
+  "pilot_runs/autogen": {
+    "runs": 36,
+    "S_total": 93295965,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "pilot_runs/agno-abl": {
+    "runs": 5,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/llamaindex": {
+    "runs": 4,
+    "S_total": 89127809,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/langgraph": {
+    "runs": 5,
+    "S_total": 572825600,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/crewai": {
+    "runs": 4,
+    "S_total": 2348256,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/smolagents": {
+    "runs": 3,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/infiagent": {
+    "runs": 4,
+    "S_total": 65290996,
+    "pre_bytes_in_changed": 2324,
+    "ws_modified_files": 0,
+    "home_base_files": 28,
+    "home_base_bytes": 38250,
+    "same_size_home_files": 24,
+    "same_size_home_bytes": 35690
+  },
+  "longhorizon_runs/autogen-finalsave": {
+    "runs": 3,
+    "S_total": 23988751,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/openai_agents": {
+    "runs": 5,
+    "S_total": 1564672,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/agno": {
+    "runs": 4,
+    "S_total": 6733824,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "longhorizon_runs/autogen": {
+    "runs": 5,
+    "S_total": 145149823,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/llamaindex": {
+    "runs": 5,
+    "S_total": 4886427,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/langgraph": {
+    "runs": 5,
+    "S_total": 15757312,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/crewai": {
+    "runs": 5,
+    "S_total": 3573272,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/smolagents": {
+    "runs": 5,
+    "S_total": 0,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/infiagent": {
+    "runs": 5,
+    "S_total": 15753060,
+    "pre_bytes_in_changed": 2905,
+    "ws_modified_files": 0,
+    "home_base_files": 60,
+    "home_base_bytes": 1285166,
+    "same_size_home_files": 55,
+    "same_size_home_bytes": 1281966
+  },
+  "natural_runs/openai_agents": {
+    "runs": 5,
+    "S_total": 1953792,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/agno": {
+    "runs": 5,
+    "S_total": 6111232,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "natural_runs/autogen": {
+    "runs": 5,
+    "S_total": 3267964,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/llamaindex": {
+    "runs": 5,
+    "S_total": 654623,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/langgraph": {
+    "runs": 5,
+    "S_total": 4710596,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/crewai": {
+    "runs": 5,
+    "S_total": 698075,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/smolagents": {
+    "runs": 5,
+    "S_total": 119,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/infiagent": {
+    "runs": 5,
+    "S_total": 5232479,
+    "pre_bytes_in_changed": 2905,
+    "ws_modified_files": 0,
+    "home_base_files": 50,
+    "home_base_bytes": 1286530,
+    "same_size_home_files": 45,
+    "same_size_home_bytes": 1283330
+  },
+  "write_tasks_runs/openai_agents": {
+    "runs": 5,
+    "S_total": 762052,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/agno": {
+    "runs": 5,
+    "S_total": 1458371,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "write_tasks_runs/autogen": {
+    "runs": 5,
+    "S_total": 1914095,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/llamaindex": {
+    "runs": 5,
+    "S_total": 121776,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/langgraph": {
+    "runs": 5,
+    "S_total": 841636,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/crewai": {
+    "runs": 5,
+    "S_total": 208311,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/smolagents": {
+    "runs": 5,
+    "S_total": 14642,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/infiagent": {
+    "runs": 5,
+    "S_total": 1471238,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 45,
+    "home_base_bytes": 242562,
+    "same_size_home_files": 45,
+    "same_size_home_bytes": 242562
+  },
+  "edit_tasks_runs/openai_agents": {
+    "runs": 5,
+    "S_total": 223133,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/agno": {
+    "runs": 5,
+    "S_total": 337830,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "edit_tasks_runs/autogen": {
+    "runs": 5,
+    "S_total": 31353,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/llamaindex": {
+    "runs": 5,
+    "S_total": 45143,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/langgraph": {
+    "runs": 5,
+    "S_total": 635366,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/crewai": {
+    "runs": 5,
+    "S_total": 83964,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/smolagents": {
+    "runs": 5,
+    "S_total": 293,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/infiagent": {
+    "runs": 5,
+    "S_total": 1451742,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 45,
+    "home_base_bytes": 48664,
+    "same_size_home_files": 45,
+    "same_size_home_bytes": 48664
+  },
+  "data_tasks_runs/openai_agents": {
+    "runs": 5,
+    "S_total": 168422,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/agno": {
+    "runs": 5,
+    "S_total": 242150,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "data_tasks_runs/autogen": {
+    "runs": 5,
+    "S_total": 32800,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  },
+  "docker_runs/langgraph-docker": {
+    "runs": 3,
+    "S_total": 16936960,
+    "pre_bytes_in_changed": 0,
+    "ws_modified_files": 0,
+    "home_base_files": 0,
+    "home_base_bytes": 0,
+    "same_size_home_files": 0,
+    "same_size_home_bytes": 0
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/openai_agents/task_01",
+  "n_files": 1,
+  "S_before": 344064,
+  "S_after": 72622,
+  "skeleton_bytes": 32768,
+  "cas_bytes": 39854,
+  "ratio": 4.74,
+  "restore_verified": 1,
+  "restore_failed": 0
+}

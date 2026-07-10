@@ -1,0 +1,47 @@
+[
+  {
+    "task": "task_00",
+    "docker": {
+      "S_total": 5697536,
+      "D": 14.029,
+      "echo_copies": 8.5,
+      "n_correct": 5
+    },
+    "process": {
+      "S_total": 5632000,
+      "D": 12.246,
+      "echo_copies": 8.5,
+      "n_correct": 5
+    }
+  },
+  {
+    "task": "task_01",
+    "docker": {
+      "S_total": 5615616,
+      "D": 14.184,
+      "echo_copies": 8.5,
+      "n_correct": 5
+    },
+    "process": {
+      "S_total": 5615616,
+      "D": 14.434,
+      "echo_copies": 8.5,
+      "n_correct": 5
+    }
+  },
+  {
+    "task": "task_02",
+    "docker": {
+      "S_total": 5623808,
+      "D": 13.408,
+      "echo_copies": 8.5,
+      "n_correct": 5
+    },
+    "process": {
+      "S_total": 5181440,
+      "D": 12.79,
+      "echo_copies": 7.8,
+      "n_correct": 5
+    }
+  }
+]

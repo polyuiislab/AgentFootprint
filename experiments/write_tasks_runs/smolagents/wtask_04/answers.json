@@ -1,0 +1,3 @@
+{
+  "0": "Calling tools:\n[{'id': 'chatcmpl-tool-97e99119a8fd8f63', 'type': 'function', 'function': {'name': 'write_file', 'arguments': {'filename': 'summary.txt', 'content': 'briar: QX-20742-WR\\njuniper: QX-62204-HY'}}}]"
+}

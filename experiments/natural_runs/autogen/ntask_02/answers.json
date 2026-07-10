@@ -1,0 +1,5 @@
+{
+  "0": "<｜｜DSML｜｜tool_calls>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"path\" string=\"true\">aurora_product-spec.md</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"path\" string=\"true\">aurora_risk-register.md</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"path\" string=\"true\">aurora_budget-memo.md</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"path\" string=\"true\">aurora_kickoff-minutes.md</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"path\" string=\"true\">aurora_retro-notes.md</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"path\" string=\"true\">aurora_vendor-review.md</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n</｜｜DSML｜｜tool_calls>",
+  "1": "QX-28606-GM",
+  "2": "QX-92583-OZ"
+}

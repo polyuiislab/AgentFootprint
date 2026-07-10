@@ -1,0 +1,51 @@
+[
+  {
+    "case": "true-percall",
+    "intended": 3,
+    "auto_R": 3,
+    "verdict": "OK",
+    "note": "真逐调用记录+完整观测"
+  },
+  {
+    "case": "aggregate-hintname",
+    "intended": 1,
+    "auto_R": 1,
+    "verdict": "OK",
+    "note": "纯观测聚合、无逐调用结构，但文件名命中提示"
+  },
+  {
+    "case": "aggregate-neutral",
+    "intended": 1,
+    "auto_R": 1,
+    "verdict": "OK",
+    "note": "同上但中性文件名"
+  },
+  {
+    "case": "shuffled-order",
+    "intended": "3*",
+    "auto_R": 3,
+    "verdict": "insensitive (disclosed)",
+    "note": "逐调用但顺序打乱"
+  },
+  {
+    "case": "missing-args",
+    "intended": "3*",
+    "auto_R": 3,
+    "verdict": "insensitive (disclosed)",
+    "note": "逐调用但工具参数缺失"
+  },
+  {
+    "case": "truncated-obs",
+    "intended": 2,
+    "auto_R": 2,
+    "verdict": "OK",
+    "note": "逐调用但观测截断"
+  },
+  {
+    "case": "summary-only",
+    "intended": 2,
+    "auto_R": 2,
+    "verdict": "OK",
+    "note": "逐调用但只有摘要"
+  }
+]

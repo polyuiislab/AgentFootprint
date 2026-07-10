@@ -1,0 +1,4 @@
+./.venvs/autogen/lib/python3.12/site-packages/autogen_agentchat/agents/_assistant_agent.py:1109: UserWarning: Resolved model mismatch: deepseek/deepseek-v4-flash != deepseek/deepseek-v4-flash-20260423. Model mapping in autogen_ext.models.openai may be incorrect. Set the model to deepseek/deepseek-v4-flash-20260423 to enhance token/cost estimation and suppress this warning.
+  model_result = await model_client.create(
+./.venvs/autogen/lib/python3.12/site-packages/autogen_agentchat/agents/_assistant_agent.py:1450: UserWarning: Resolved model mismatch: deepseek/deepseek-v4-flash != deepseek/deepseek-v4-flash-20260423. Model mapping in autogen_ext.models.openai may be incorrect. Set the model to deepseek/deepseek-v4-flash-20260423 to enhance token/cost estimation and suppress this warning.
+  reflection_result = await model_client.create(

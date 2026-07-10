@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/autogen/task_02",
+  "n_files": 6,
+  "S_before": 2862839,
+  "S_after": 79252,
+  "skeleton_bytes": 55588,
+  "cas_bytes": 23664,
+  "ratio": 36.12,
+  "restore_verified": 6,
+  "restore_failed": 0
+}

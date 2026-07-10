@@ -1,0 +1,38 @@
+{
+  "S_total": 147496,
+  "S_workspace": 40,
+  "S_home": 147456,
+  "S_logical": 126526,
+  "S_unique": 126526,
+  "D": 1.0,
+  "zstd_bytes": 16490,
+  "C": 8.945,
+  "input_bytes": 248296,
+  "echo_copies": 0.5,
+  "echo_bytes_est": 124148,
+  "n_probes": 48,
+  "excluded_bytes": 0,
+  "n_files": 2,
+  "files_top": [
+    {
+      "path": "home/agents_sessions.sqlite",
+      "bytes": 147456,
+      "logical_bytes": 126486,
+      "probe_hits": 24
+    },
+    {
+      "path": "workspace/summary.txt",
+      "bytes": 40,
+      "logical_bytes": 40,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "openai_agents",
+  "task": "wtask_01",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 21.5,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}

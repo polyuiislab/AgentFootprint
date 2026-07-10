@@ -1,0 +1,176 @@
+{
+  "S_total": 10537662,
+  "S_workspace": 0,
+  "S_home": 10537662,
+  "S_logical": 10537662,
+  "S_unique": 7883454,
+  "D": 1.337,
+  "zstd_bytes": 13793,
+  "C": 763.986,
+  "input_bytes": 2102,
+  "echo_copies": 3825.0,
+  "echo_bytes_est": 8040150,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 51,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 6967801,
+      "logical_bytes": 6967801,
+      "probe_hits": 30600
+    },
+    {
+      "path": "home/agent_state_q49.json",
+      "bytes": 139923,
+      "logical_bytes": 139923,
+      "probe_hits": 600
+    },
+    {
+      "path": "home/agent_state_q48.json",
+      "bytes": 137126,
+      "logical_bytes": 137126,
+      "probe_hits": 588
+    },
+    {
+      "path": "home/agent_state_q47.json",
+      "bytes": 134329,
+      "logical_bytes": 134329,
+      "probe_hits": 576
+    },
+    {
+      "path": "home/agent_state_q46.json",
+      "bytes": 131532,
+      "logical_bytes": 131532,
+      "probe_hits": 564
+    },
+    {
+      "path": "home/agent_state_q45.json",
+      "bytes": 128735,
+      "logical_bytes": 128735,
+      "probe_hits": 552
+    },
+    {
+      "path": "home/agent_state_q44.json",
+      "bytes": 125938,
+      "logical_bytes": 125938,
+      "probe_hits": 540
+    },
+    {
+      "path": "home/agent_state_q43.json",
+      "bytes": 123141,
+      "logical_bytes": 123141,
+      "probe_hits": 528
+    },
+    {
+      "path": "home/agent_state_q42.json",
+      "bytes": 120344,
+      "logical_bytes": 120344,
+      "probe_hits": 516
+    },
+    {
+      "path": "home/agent_state_q41.json",
+      "bytes": 117547,
+      "logical_bytes": 117547,
+      "probe_hits": 504
+    },
+    {
+      "path": "home/agent_state_q40.json",
+      "bytes": 114750,
+      "logical_bytes": 114750,
+      "probe_hits": 492
+    },
+    {
+      "path": "home/agent_state_q39.json",
+      "bytes": 111953,
+      "logical_bytes": 111953,
+      "probe_hits": 480
+    },
+    {
+      "path": "home/agent_state_q38.json",
+      "bytes": 109156,
+      "logical_bytes": 109156,
+      "probe_hits": 468
+    },
+    {
+      "path": "home/agent_state_q37.json",
+      "bytes": 106359,
+      "logical_bytes": 106359,
+      "probe_hits": 456
+    },
+    {
+      "path": "home/agent_state_q36.json",
+      "bytes": 103562,
+      "logical_bytes": 103562,
+      "probe_hits": 444
+    },
+    {
+      "path": "home/agent_state_q35.json",
+      "bytes": 100765,
+      "logical_bytes": 100765,
+      "probe_hits": 432
+    },
+    {
+      "path": "home/agent_state_q34.json",
+      "bytes": 97968,
+      "logical_bytes": 97968,
+      "probe_hits": 420
+    },
+    {
+      "path": "home/agent_state_q33.json",
+      "bytes": 95171,
+      "logical_bytes": 95171,
+      "probe_hits": 408
+    },
+    {
+      "path": "home/agent_state_q32.json",
+      "bytes": 92374,
+      "logical_bytes": 92374,
+      "probe_hits": 396
+    },
+    {
+      "path": "home/agent_state_q31.json",
+      "bytes": 89577,
+      "logical_bytes": 89577,
+      "probe_hits": 384
+    },
+    {
+      "path": "home/agent_state_q30.json",
+      "bytes": 86780,
+      "logical_bytes": 86780,
+      "probe_hits": 372
+    },
+    {
+      "path": "home/agent_state_q29.json",
+      "bytes": 83983,
+      "logical_bytes": 83983,
+      "probe_hits": 360
+    },
+    {
+      "path": "home/agent_state_q28.json",
+      "bytes": 81186,
+      "logical_bytes": 81186,
+      "probe_hits": 348
+    },
+    {
+      "path": "home/agent_state_q27.json",
+      "bytes": 78389,
+      "logical_bytes": 78389,
+      "probe_hits": 336
+    },
+    {
+      "path": "home/agent_state_q26.json",
+      "bytes": 75592,
+      "logical_bytes": 75592,
+      "probe_hits": 324
+    }
+  ],
+  "framework": "autogen",
+  "task": "lh_T050",
+  "model": "openai/gpt-4o-mini",
+  "seed": "m2",
+  "wall_sec": 131.9,
+  "returncode": 0,
+  "n_correct": 50,
+  "n_questions": 50
+}

@@ -1,0 +1,50 @@
+{
+  "S_total": 398726,
+  "S_workspace": 0,
+  "S_home": 398726,
+  "S_logical": 398726,
+  "S_unique": 131804,
+  "D": 3.025,
+  "zstd_bytes": 13222,
+  "C": 30.156,
+  "input_bytes": 249362,
+  "echo_copies": 1.5,
+  "echo_bytes_est": 374043,
+  "n_probes": 72,
+  "excluded_bytes": 0,
+  "n_files": 4,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 268822,
+      "logical_bytes": 268822,
+      "probe_hits": 72
+    },
+    {
+      "path": "home/agent_state_q2.json",
+      "bytes": 85767,
+      "logical_bytes": 85767,
+      "probe_hits": 24
+    },
+    {
+      "path": "home/agent_state_q1.json",
+      "bytes": 43286,
+      "logical_bytes": 43286,
+      "probe_hits": 12
+    },
+    {
+      "path": "home/agent_state_q0.json",
+      "bytes": 851,
+      "logical_bytes": 851,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "autogen",
+  "task": "ntask_04",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 27.1,
+  "returncode": 0,
+  "n_correct": 2,
+  "n_questions": 3
+}

@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/llamaindex/task_05",
+  "n_files": 5,
+  "S_before": 970759,
+  "S_after": 93833,
+  "skeleton_bytes": 8280,
+  "cas_bytes": 85553,
+  "ratio": 10.35,
+  "restore_verified": 5,
+  "restore_failed": 0
+}

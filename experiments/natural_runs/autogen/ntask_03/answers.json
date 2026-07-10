@@ -1,0 +1,5 @@
+{
+  "0": "\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"read_file\">\n<｜DSML｜parameter name=\"file_path\" string=\"true\">aurora_kickoff-minutes.md</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>",
+  "1": "ADAPTER_ERROR: Reflect on tool use produced no valid text response.",
+  "2": "QX-98586-ZW"
+}

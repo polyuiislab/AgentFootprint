@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/agno/task_08",
+  "n_files": 1,
+  "S_before": 1204224,
+  "S_after": 58721,
+  "skeleton_bytes": 32768,
+  "cas_bytes": 25953,
+  "ratio": 20.51,
+  "restore_verified": 1,
+  "restore_failed": 0
+}

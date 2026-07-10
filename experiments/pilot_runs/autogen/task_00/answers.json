@@ -1,0 +1,7 @@
+{
+  "0": "QX-90430-EU",
+  "1": "GNT-2024-ALPHA-77",
+  "2": "QX-75021-NT",
+  "3": "\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"read_file\">\n<｜DSML｜parameter name=\"filename\" string=\"true\">records_fjord.txt</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>",
+  "4": "<｜｜DSML｜｜tool_calls>\n<｜｜DSML｜｜invoke name=\"read_file\">\n<｜｜DSML｜｜parameter name=\"filename\" string=\"true\">records_briar.txt</｜｜DSML｜｜parameter>\n</｜｜DSML｜｜invoke>\n</｜｜DSML｜｜tool_calls>"
+}

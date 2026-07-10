@@ -1,0 +1,173 @@
+{
+  "S_total": 10490716,
+  "S_logical": 10490716,
+  "S_unique": 3585504,
+  "D": 2.926,
+  "zstd_bytes": 15655,
+  "C": 670.119,
+  "input_bytes": 2102,
+  "echo_copies": 3825.0,
+  "echo_bytes_est": 8040150,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 51,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 6943149,
+      "logical_bytes": 6943149,
+      "probe_hits": 30600
+    },
+    {
+      "path": "home/agent_state_q49.json",
+      "bytes": 139068,
+      "logical_bytes": 139068,
+      "probe_hits": 600
+    },
+    {
+      "path": "home/agent_state_q48.json",
+      "bytes": 136275,
+      "logical_bytes": 136275,
+      "probe_hits": 588
+    },
+    {
+      "path": "home/agent_state_q47.json",
+      "bytes": 133496,
+      "logical_bytes": 133496,
+      "probe_hits": 576
+    },
+    {
+      "path": "home/agent_state_q46.json",
+      "bytes": 130717,
+      "logical_bytes": 130717,
+      "probe_hits": 564
+    },
+    {
+      "path": "home/agent_state_q45.json",
+      "bytes": 127932,
+      "logical_bytes": 127932,
+      "probe_hits": 552
+    },
+    {
+      "path": "home/agent_state_q44.json",
+      "bytes": 125153,
+      "logical_bytes": 125153,
+      "probe_hits": 540
+    },
+    {
+      "path": "home/agent_state_q43.json",
+      "bytes": 122373,
+      "logical_bytes": 122373,
+      "probe_hits": 528
+    },
+    {
+      "path": "home/agent_state_q42.json",
+      "bytes": 119593,
+      "logical_bytes": 119593,
+      "probe_hits": 516
+    },
+    {
+      "path": "home/agent_state_q41.json",
+      "bytes": 116814,
+      "logical_bytes": 116814,
+      "probe_hits": 504
+    },
+    {
+      "path": "home/agent_state_q40.json",
+      "bytes": 114034,
+      "logical_bytes": 114034,
+      "probe_hits": 492
+    },
+    {
+      "path": "home/agent_state_q39.json",
+      "bytes": 111255,
+      "logical_bytes": 111255,
+      "probe_hits": 480
+    },
+    {
+      "path": "home/agent_state_q38.json",
+      "bytes": 108476,
+      "logical_bytes": 108476,
+      "probe_hits": 468
+    },
+    {
+      "path": "home/agent_state_q37.json",
+      "bytes": 105697,
+      "logical_bytes": 105697,
+      "probe_hits": 456
+    },
+    {
+      "path": "home/agent_state_q36.json",
+      "bytes": 102917,
+      "logical_bytes": 102917,
+      "probe_hits": 444
+    },
+    {
+      "path": "home/agent_state_q35.json",
+      "bytes": 100138,
+      "logical_bytes": 100138,
+      "probe_hits": 432
+    },
+    {
+      "path": "home/agent_state_q34.json",
+      "bytes": 97359,
+      "logical_bytes": 97359,
+      "probe_hits": 420
+    },
+    {
+      "path": "home/agent_state_q33.json",
+      "bytes": 94580,
+      "logical_bytes": 94580,
+      "probe_hits": 408
+    },
+    {
+      "path": "home/agent_state_q32.json",
+      "bytes": 91801,
+      "logical_bytes": 91801,
+      "probe_hits": 396
+    },
+    {
+      "path": "home/agent_state_q31.json",
+      "bytes": 89021,
+      "logical_bytes": 89021,
+      "probe_hits": 384
+    },
+    {
+      "path": "home/agent_state_q30.json",
+      "bytes": 86241,
+      "logical_bytes": 86241,
+      "probe_hits": 372
+    },
+    {
+      "path": "home/agent_state_q29.json",
+      "bytes": 83456,
+      "logical_bytes": 83456,
+      "probe_hits": 360
+    },
+    {
+      "path": "home/agent_state_q28.json",
+      "bytes": 80676,
+      "logical_bytes": 80676,
+      "probe_hits": 348
+    },
+    {
+      "path": "home/agent_state_q27.json",
+      "bytes": 77896,
+      "logical_bytes": 77896,
+      "probe_hits": 336
+    },
+    {
+      "path": "home/agent_state_q26.json",
+      "bytes": 75116,
+      "logical_bytes": 75116,
+      "probe_hits": 324
+    }
+  ],
+  "framework": "autogen",
+  "task": "lh_T050",
+  "model": "deepseek/deepseek-v4-flash",
+  "wall_sec": 537.5,
+  "returncode": 0,
+  "n_correct": 50,
+  "n_questions": 50
+}

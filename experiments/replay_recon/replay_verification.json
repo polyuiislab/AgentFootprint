@@ -1,0 +1,62 @@
+[
+ {
+  "framework": "langgraph",
+  "n_calls": 10,
+  "input_exact": 10,
+  "history_exact": 10,
+  "mismatches": [],
+  "notes": [
+   "system prompt: none configured (create_react_agent default)"
+  ]
+ },
+ {
+  "framework": "autogen",
+  "n_calls": 10,
+  "input_exact": 0,
+  "history_exact": 10,
+  "mismatches": [],
+  "notes": [
+   "system message not present in retained state (config-side)"
+  ]
+ },
+ {
+  "framework": "openai_agents",
+  "n_calls": 10,
+  "input_exact": 0,
+  "history_exact": 10,
+  "mismatches": [],
+  "notes": [
+   "instructions (system) not stored in session db (config-side)"
+  ]
+ },
+ {
+  "framework": "llamaindex",
+  "n_calls": 10,
+  "input_exact": 0,
+  "history_exact": 10,
+  "mismatches": [],
+  "notes": [
+   "messages recovered via recursive scan of serialized Context"
+  ]
+ },
+ {
+  "framework": "agno",
+  "n_calls": 10,
+  "input_exact": 10,
+  "history_exact": 10,
+  "mismatches": [],
+  "notes": [
+   "per-run message arrays concatenated in run order; single leading system message"
+  ]
+ },
+ {
+  "framework": "infiagent",
+  "n_calls": 15,
+  "input_exact": 15,
+  "history_exact": 15,
+  "mismatches": [],
+  "notes": [
+   "raw_io stores full request payloads; returning per-call message arrays"
+  ]
+ }
+]

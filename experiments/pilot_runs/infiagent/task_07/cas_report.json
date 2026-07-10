@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/infiagent/task_07",
+  "n_files": 14,
+  "S_before": 2214046,
+  "S_after": 378930,
+  "skeleton_bytes": 211741,
+  "cas_bytes": 167189,
+  "ratio": 5.84,
+  "restore_verified": 14,
+  "restore_failed": 0
+}

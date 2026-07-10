@@ -1,0 +1,56 @@
+{
+  "S_total": 970113,
+  "S_workspace": 0,
+  "S_home": 970113,
+  "S_logical": 970113,
+  "S_unique": 222305,
+  "D": 4.364,
+  "zstd_bytes": 24124,
+  "C": 40.214,
+  "input_bytes": 621447,
+  "echo_copies": 1.342,
+  "echo_bytes_est": 833774,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 5,
+  "files_top": [
+    {
+      "path": "home/ctx_q4.json",
+      "bytes": 322102,
+      "logical_bytes": 322102,
+      "probe_hits": 52
+    },
+    {
+      "path": "home/ctx_q3.json",
+      "bytes": 258024,
+      "logical_bytes": 258024,
+      "probe_hits": 41
+    },
+    {
+      "path": "home/ctx_q2.json",
+      "bytes": 194080,
+      "logical_bytes": 194080,
+      "probe_hits": 34
+    },
+    {
+      "path": "home/ctx_q1.json",
+      "bytes": 130041,
+      "logical_bytes": 130041,
+      "probe_hits": 23
+    },
+    {
+      "path": "home/ctx_q0.json",
+      "bytes": 65866,
+      "logical_bytes": 65866,
+      "probe_hits": 11
+    }
+  ],
+  "returncode": 0,
+  "seed": "s3",
+  "n_correct": 5,
+  "framework": "llamaindex",
+  "model": "deepseek/deepseek-v4-flash",
+  "n_questions": 5,
+  "wall_sec": 55.3,
+  "task": "task_04"
+}

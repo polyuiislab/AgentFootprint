@@ -1,0 +1,173 @@
+{
+  "S_total": 2228865,
+  "S_logical": 2228865,
+  "S_unique": 1868417,
+  "D": 1.193,
+  "zstd_bytes": 7864,
+  "C": 283.426,
+  "input_bytes": 2102,
+  "echo_copies": 785.0,
+  "echo_bytes_est": 1650070,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 26,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 1445397,
+      "logical_bytes": 1445397,
+      "probe_hits": 6096
+    },
+    {
+      "path": "home/agent_state_q24.json",
+      "bytes": 59436,
+      "logical_bytes": 59436,
+      "probe_hits": 252
+    },
+    {
+      "path": "home/agent_state_q23.json",
+      "bytes": 56665,
+      "logical_bytes": 56665,
+      "probe_hits": 240
+    },
+    {
+      "path": "home/agent_state_q22.json",
+      "bytes": 53895,
+      "logical_bytes": 53895,
+      "probe_hits": 228
+    },
+    {
+      "path": "home/agent_state_q21.json",
+      "bytes": 51125,
+      "logical_bytes": 51125,
+      "probe_hits": 216
+    },
+    {
+      "path": "home/agent_state_q20.json",
+      "bytes": 48355,
+      "logical_bytes": 48355,
+      "probe_hits": 204
+    },
+    {
+      "path": "home/agent_state_q19.json",
+      "bytes": 48058,
+      "logical_bytes": 48058,
+      "probe_hits": 204
+    },
+    {
+      "path": "home/agent_state_q18.json",
+      "bytes": 45288,
+      "logical_bytes": 45288,
+      "probe_hits": 192
+    },
+    {
+      "path": "home/agent_state_q17.json",
+      "bytes": 44991,
+      "logical_bytes": 44991,
+      "probe_hits": 192
+    },
+    {
+      "path": "home/agent_state_q16.json",
+      "bytes": 42221,
+      "logical_bytes": 42221,
+      "probe_hits": 180
+    },
+    {
+      "path": "home/agent_state_q15.json",
+      "bytes": 39451,
+      "logical_bytes": 39451,
+      "probe_hits": 168
+    },
+    {
+      "path": "home/agent_state_q14.json",
+      "bytes": 36680,
+      "logical_bytes": 36680,
+      "probe_hits": 156
+    },
+    {
+      "path": "home/agent_state_q13.json",
+      "bytes": 33910,
+      "logical_bytes": 33910,
+      "probe_hits": 144
+    },
+    {
+      "path": "home/agent_state_q12.json",
+      "bytes": 31140,
+      "logical_bytes": 31140,
+      "probe_hits": 132
+    },
+    {
+      "path": "home/agent_state_q11.json",
+      "bytes": 28369,
+      "logical_bytes": 28369,
+      "probe_hits": 120
+    },
+    {
+      "path": "home/agent_state_q10.json",
+      "bytes": 25599,
+      "logical_bytes": 25599,
+      "probe_hits": 108
+    },
+    {
+      "path": "home/agent_state_q9.json",
+      "bytes": 25302,
+      "logical_bytes": 25302,
+      "probe_hits": 108
+    },
+    {
+      "path": "home/agent_state_q8.json",
+      "bytes": 22532,
+      "logical_bytes": 22532,
+      "probe_hits": 96
+    },
+    {
+      "path": "home/agent_state_q7.json",
+      "bytes": 19762,
+      "logical_bytes": 19762,
+      "probe_hits": 84
+    },
+    {
+      "path": "home/agent_state_q6.json",
+      "bytes": 16993,
+      "logical_bytes": 16993,
+      "probe_hits": 72
+    },
+    {
+      "path": "home/agent_state_q5.json",
+      "bytes": 14224,
+      "logical_bytes": 14224,
+      "probe_hits": 60
+    },
+    {
+      "path": "home/agent_state_q4.json",
+      "bytes": 11454,
+      "logical_bytes": 11454,
+      "probe_hits": 48
+    },
+    {
+      "path": "home/agent_state_q3.json",
+      "bytes": 11158,
+      "logical_bytes": 11158,
+      "probe_hits": 48
+    },
+    {
+      "path": "home/agent_state_q2.json",
+      "bytes": 8389,
+      "logical_bytes": 8389,
+      "probe_hits": 36
+    },
+    {
+      "path": "home/agent_state_q1.json",
+      "bytes": 5620,
+      "logical_bytes": 5620,
+      "probe_hits": 24
+    }
+  ],
+  "framework": "autogen",
+  "task": "lh_T025",
+  "model": "deepseek/deepseek-v4-flash",
+  "wall_sec": 216.3,
+  "returncode": 0,
+  "n_correct": 25,
+  "n_questions": 25
+}

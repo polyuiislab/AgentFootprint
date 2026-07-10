@@ -1,0 +1,92 @@
+{
+  "S_total": 1044232,
+  "S_workspace": 0,
+  "S_home": 1044232,
+  "S_logical": 1008694,
+  "S_unique": 640048,
+  "D": 1.576,
+  "zstd_bytes": 34413,
+  "C": 30.344,
+  "input_bytes": 505590,
+  "echo_copies": 2.083,
+  "echo_bytes_est": 1053312,
+  "n_probes": 156,
+  "excluded_bytes": 0,
+  "n_files": 11,
+  "files_top": [
+    {
+      "path": "home/user_root/conversations/ea6c76b8_qa_run_a0_file_qa_agent_7884490b5477_actions.json",
+      "bytes": 522011,
+      "logical_bytes": 522011,
+      "probe_hits": 129
+    },
+    {
+      "path": "home/user_root/training_traces/ea6c76b8_qa_run_a0_raw_io.jsonl",
+      "bytes": 437154,
+      "logical_bytes": 437150,
+      "probe_hits": 134
+    },
+    {
+      "path": "home/user_root/runtime/task_history/task_history.db",
+      "bytes": 40960,
+      "logical_bytes": 5430,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/conversations/ea6c76b8_qa_run_a0_llm_debug.jsonl",
+      "bytes": 40558,
+      "logical_bytes": 40554,
+      "probe_hits": 50
+    },
+    {
+      "path": "home/user_root/conversations/ea6c76b8_qa_run_a0_share_context.json",
+      "bytes": 2843,
+      "logical_bytes": 2843,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+      "bytes": 532,
+      "logical_bytes": 532,
+      "probe_hits": 12
+    },
+    {
+      "path": "home/user_root/conversations/ea6c76b8_qa_run_a0_stack.json",
+      "bytes": 65,
+      "logical_bytes": 65,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/tasks/qa_run_a0/summary.txt",
+      "bytes": 39,
+      "logical_bytes": 39,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+      "bytes": 36,
+      "logical_bytes": 36,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+      "bytes": 34,
+      "logical_bytes": 34,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/conversations/ea6c76b8_qa_run_a0.lock",
+      "bytes": 0,
+      "logical_bytes": 0,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "infiagent",
+  "task": "wtask_02",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 105.1,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}

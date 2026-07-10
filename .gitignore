@@ -1,0 +1,10 @@
+.venvs
+.env
+experiments/**/workspace/
+experiments/**/home/
+experiments/**/cas_compacted/
+experiments/docker_runs/
+tasks/
+__pycache__/
+*.pyc
+.DS_Store

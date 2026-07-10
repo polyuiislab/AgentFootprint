@@ -1,0 +1,44 @@
+{
+  "S_total": 340280,
+  "S_workspace": 0,
+  "S_home": 340280,
+  "S_logical": 320090,
+  "S_unique": 210162,
+  "D": 1.523,
+  "zstd_bytes": 24629,
+  "C": 13.816,
+  "input_bytes": 622034,
+  "echo_copies": 0.5,
+  "echo_bytes_est": 311017,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 3,
+  "files_top": [
+    {
+      "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+      "bytes": 339968,
+      "logical_bytes": 319778,
+      "probe_hits": 60
+    },
+    {
+      "path": "home/Library/Application Support/workspace/.crewai_user.json",
+      "bytes": 268,
+      "logical_bytes": 268,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/Library/Application Support/crewai/credentials/secret.key",
+      "bytes": 44,
+      "logical_bytes": 44,
+      "probe_hits": 0
+    }
+  ],
+  "returncode": 0,
+  "seed": "s3",
+  "n_correct": 5,
+  "framework": "crewai",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "n_questions": 5,
+  "wall_sec": 65.8,
+  "task": "task_03"
+}

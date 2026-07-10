@@ -1,0 +1,5 @@
+{
+  "0": "Based on my analysis of the files, the **retro notes** file contains a `REGISTRY-ENTRY` for an action-item id, which is the code representing an action item raised during the retrospective. The answer is:\n\nQX-95970-HQ",
+  "1": "The memo contains the line:\n\n`REGISTRY-ENTRY cost-center code: QX-06752-SC`\n\nThis is the cost-center code the memo allocates the overrun to.\n\nQX-06752-SC",
+  "2": "The budget code approved at the project kickoff is:\n\n**QX-10692-UG**"
+}

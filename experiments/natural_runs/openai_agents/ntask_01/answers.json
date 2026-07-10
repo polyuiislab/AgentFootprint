@@ -1,0 +1,5 @@
+{
+  "0": "Based on the documents, I can see that each file has a `REGISTRY-ENTRY` line. The memo file (`aurora_budget-memo.md`) contains:\n\n`REGISTRY-ENTRY cost-center code: QX-36265-YP`\n\nThis is the cost-center code the memo allocates the overrun to.\n\nQX-36265-YP",
+  "1": "QX-33711-KR",
+  "2": "QX-79906-BK"
+}

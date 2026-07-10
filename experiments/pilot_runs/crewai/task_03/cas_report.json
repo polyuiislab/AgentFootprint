@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/crewai/task_03",
+  "n_files": 3,
+  "S_before": 340279,
+  "S_after": 55606,
+  "skeleton_bytes": 12578,
+  "cas_bytes": 43028,
+  "ratio": 6.12,
+  "restore_verified": 3,
+  "restore_failed": 0
+}

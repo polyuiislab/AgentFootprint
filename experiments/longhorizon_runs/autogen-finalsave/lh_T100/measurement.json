@@ -1,0 +1,38 @@
+{
+  "S_total": 15046868,
+  "S_workspace": 0,
+  "S_home": 15046868,
+  "S_logical": 15046868,
+  "S_unique": 7164706,
+  "D": 2.1,
+  "zstd_bytes": 21160,
+  "C": 711.1,
+  "input_bytes": 2102,
+  "echo_copies": 5423.0,
+  "echo_bytes_est": 11399146,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 2,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 14878485,
+      "logical_bytes": 14878485,
+      "probe_hits": 64404
+    },
+    {
+      "path": "home/agent_state_q99.json",
+      "bytes": 168383,
+      "logical_bytes": 168383,
+      "probe_hits": 672
+    }
+  ],
+  "framework": "autogen-finalsave",
+  "task": "lh_T100",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 486.3,
+  "returncode": 0,
+  "n_correct": 100,
+  "n_questions": 100
+}

@@ -1,0 +1,38 @@
+{
+  "S_total": 130784,
+  "S_workspace": 40,
+  "S_home": 130744,
+  "S_logical": 130784,
+  "S_unique": 130784,
+  "D": 1.0,
+  "zstd_bytes": 16306,
+  "C": 8.021,
+  "input_bytes": 248986,
+  "echo_copies": 0.458,
+  "echo_bytes_est": 114118,
+  "n_probes": 48,
+  "excluded_bytes": 0,
+  "n_files": 2,
+  "files_top": [
+    {
+      "path": "home/ctx_q0.json",
+      "bytes": 130744,
+      "logical_bytes": 130744,
+      "probe_hits": 22
+    },
+    {
+      "path": "workspace/summary.txt",
+      "bytes": 40,
+      "logical_bytes": 40,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "llamaindex",
+  "task": "wtask_04",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 22.3,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}

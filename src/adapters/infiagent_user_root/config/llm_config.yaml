@@ -1,0 +1,26 @@
+temperature: 0
+max_tokens: 0
+max_context_window: 500000
+base_url: https://openrouter.ai/api/v1
+api_key: __OPENROUTER_KEY__
+timeout: 600
+stream_timeout: 120
+first_chunk_timeout: 120
+tool_choice:
+  execution: auto
+  thinking: auto
+  compressor: auto
+models:
+- name: openrouter/deepseek/deepseek-v4-flash
+  default: true
+  tool_choice: auto
+compressor_models:
+- name: openrouter/deepseek/deepseek-v4-flash
+  default: true
+  tool_choice: auto
+thinking_models:
+- name: openrouter/deepseek/deepseek-v4-flash
+  default: true
+  tool_choice: auto
+multimodal: false
+compressor_multimodal: false

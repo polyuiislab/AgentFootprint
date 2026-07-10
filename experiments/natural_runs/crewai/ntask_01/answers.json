@@ -1,0 +1,5 @@
+{
+  "0": "The document contains a registry entry with the cost-center code. Let me extract it.\n\nThe exact code is: **QX-36265-YP**",
+  "1": "Based on my review of the project documents, the **product spec** document contains the registry entry with a tracking id.\n\nThe file `aurora_product-spec.md` contains:\n\n```\nREGISTRY-ENTRY tracking id: QX-33711-KR\n```\n\nQX-33711-KR",
+  "2": "Based on my review of the project documents, the risk register (`aurora_risk-register.md`) contains the mitigation ticket entry for the top schedule risk.\n\nThe exact code is: **QX-79906-BK**"
+}

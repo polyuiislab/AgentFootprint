@@ -1,0 +1,62 @@
+{
+  "S_total": 1919337,
+  "S_workspace": 0,
+  "S_home": 1919337,
+  "S_logical": 1919337,
+  "S_unique": 276471,
+  "D": 6.942,
+  "zstd_bytes": 24456,
+  "C": 78.481,
+  "input_bytes": 621447,
+  "echo_copies": 3.0,
+  "echo_bytes_est": 1864341,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 6,
+  "files_top": [
+    {
+      "path": "home/autogen_events.log",
+      "bytes": 1283186,
+      "logical_bytes": 1283186,
+      "probe_hits": 240
+    },
+    {
+      "path": "home/agent_state_q4.json",
+      "bytes": 253399,
+      "logical_bytes": 253399,
+      "probe_hits": 48
+    },
+    {
+      "path": "home/agent_state_q3.json",
+      "bytes": 190359,
+      "logical_bytes": 190359,
+      "probe_hits": 36
+    },
+    {
+      "path": "home/agent_state_q2.json",
+      "bytes": 127163,
+      "logical_bytes": 127163,
+      "probe_hits": 24
+    },
+    {
+      "path": "home/agent_state_q1.json",
+      "bytes": 64125,
+      "logical_bytes": 64125,
+      "probe_hits": 12
+    },
+    {
+      "path": "home/agent_state_q0.json",
+      "bytes": 1105,
+      "logical_bytes": 1105,
+      "probe_hits": 0
+    }
+  ],
+  "returncode": 0,
+  "seed": "m2",
+  "n_correct": 4,
+  "framework": "autogen",
+  "model": "openai/gpt-4o-mini",
+  "n_questions": 5,
+  "wall_sec": 29.3,
+  "task": "task_04"
+}

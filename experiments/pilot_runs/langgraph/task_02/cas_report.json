@@ -1,0 +1,11 @@
+{
+  "sandbox": "./experiments/pilot_runs/langgraph/task_02",
+  "n_files": 1,
+  "S_before": 5181440,
+  "S_after": 514510,
+  "skeleton_bytes": 45056,
+  "cas_bytes": 469454,
+  "ratio": 10.07,
+  "restore_verified": 1,
+  "restore_failed": 0
+}

@@ -1,0 +1,32 @@
+{
+  "S_total": 348160,
+  "S_workspace": 0,
+  "S_home": 348160,
+  "S_logical": 317255,
+  "S_unique": 199103,
+  "D": 1.593,
+  "zstd_bytes": 24240,
+  "C": 14.363,
+  "input_bytes": 622766,
+  "echo_copies": 0.5,
+  "echo_bytes_est": 311383,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "home/agents_sessions.sqlite",
+      "bytes": 348160,
+      "logical_bytes": 317255,
+      "probe_hits": 60
+    }
+  ],
+  "returncode": 0,
+  "seed": "s3",
+  "n_correct": 5,
+  "framework": "openai_agents",
+  "model": "deepseek/deepseek-v4-flash",
+  "n_questions": 5,
+  "wall_sec": 61.3,
+  "task": "task_02"
+}

@@ -1,0 +1,32 @@
+{
+  "S_total": 39,
+  "S_workspace": 39,
+  "S_home": 0,
+  "S_logical": 39,
+  "S_unique": 39,
+  "D": 1.0,
+  "zstd_bytes": 48,
+  "C": 0.812,
+  "input_bytes": 248296,
+  "echo_copies": 0.0,
+  "echo_bytes_est": 0,
+  "n_probes": 48,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "workspace/summary.txt",
+      "bytes": 39,
+      "logical_bytes": 39,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "smolagents",
+  "task": "wtask_01",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 356.7,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}

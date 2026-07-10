@@ -1,0 +1,177 @@
+{
+  "single-esc": {
+    "S_total": 207749,
+    "S_workspace": 0,
+    "S_home": 207749,
+    "S_logical": 207700,
+    "S_unique": 41540,
+    "D": 5.0,
+    "zstd_bytes": 6047,
+    "C": 34.356,
+    "input_bytes": 40960,
+    "echo_copies": 5.0,
+    "echo_bytes_est": 204800,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.jsonl",
+        "bytes": 207749,
+        "logical_bytes": 207700,
+        "probe_hits": 60
+      }
+    ],
+    "naive_D": 2.08
+  },
+  "sqlite-exact": {
+    "S_total": 241664,
+    "S_workspace": 0,
+    "S_home": 241664,
+    "S_logical": 204800,
+    "S_unique": 40960,
+    "D": 5.0,
+    "zstd_bytes": 6836,
+    "C": 35.352,
+    "input_bytes": 40960,
+    "echo_copies": 5.0,
+    "echo_bytes_est": 204800,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.db",
+        "bytes": 241664,
+        "logical_bytes": 204800,
+        "probe_hits": 60
+      }
+    ],
+    "naive_D": 1.62
+  },
+  "double-esc": {
+    "S_total": 210849,
+    "S_workspace": 0,
+    "S_home": 210849,
+    "S_logical": 210800,
+    "S_unique": 42160,
+    "D": 5.0,
+    "zstd_bytes": 6093,
+    "C": 34.605,
+    "input_bytes": 40960,
+    "echo_copies": 1.667,
+    "echo_bytes_est": 68266,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.jsonl",
+        "bytes": 210849,
+        "logical_bytes": 210800,
+        "probe_hits": 20
+      }
+    ],
+    "naive_D": 2.4
+  },
+  "triple-esc": {
+    "S_total": 216499,
+    "S_workspace": 0,
+    "S_home": 216499,
+    "S_logical": 216450,
+    "S_unique": 43290,
+    "D": 5.0,
+    "zstd_bytes": 6039,
+    "C": 35.85,
+    "input_bytes": 40960,
+    "echo_copies": 1.667,
+    "echo_bytes_est": 68266,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.jsonl",
+        "bytes": 216499,
+        "logical_bytes": 216450,
+        "probe_hits": 20
+      }
+    ],
+    "naive_D": 2.08
+  },
+  "near-dup": {
+    "S_total": 207721,
+    "S_workspace": 0,
+    "S_home": 207721,
+    "S_logical": 207672,
+    "S_unique": 207672,
+    "D": 1.0,
+    "zstd_bytes": 11754,
+    "C": 17.672,
+    "input_bytes": 40960,
+    "echo_copies": 2.0,
+    "echo_bytes_est": 81920,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.jsonl",
+        "bytes": 207721,
+        "logical_bytes": 207672,
+        "probe_hits": 24
+      }
+    ],
+    "naive_D": 1.0
+  },
+  "zlib-prefix": {
+    "S_total": 53248,
+    "S_workspace": 0,
+    "S_home": 53248,
+    "S_logical": 34698,
+    "S_unique": 30959,
+    "D": 1.121,
+    "zstd_bytes": 27893,
+    "C": 1.909,
+    "input_bytes": 40960,
+    "echo_copies": 0.0,
+    "echo_bytes_est": 0,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.db",
+        "bytes": 53248,
+        "logical_bytes": 34698,
+        "probe_hits": 0
+      }
+    ],
+    "naive_D": 1.0
+  },
+  "small-lines": {
+    "S_total": 333759,
+    "S_workspace": 0,
+    "S_home": 333759,
+    "S_logical": 332960,
+    "S_unique": 41620,
+    "D": 8.0,
+    "zstd_bytes": 6787,
+    "C": 49.176,
+    "input_bytes": 40960,
+    "echo_copies": 8.0,
+    "echo_bytes_est": 327680,
+    "n_probes": 12,
+    "excluded_bytes": 0,
+    "n_files": 1,
+    "files_top": [
+      {
+        "path": "home/store.jsonl",
+        "bytes": 333759,
+        "logical_bytes": 332960,
+        "probe_hits": 96
+      }
+    ],
+    "naive_D": 1.02
+  }
+}

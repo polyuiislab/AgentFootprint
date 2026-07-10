@@ -1,0 +1,32 @@
+{
+  "S_total": 5632000,
+  "S_workspace": 0,
+  "S_home": 5632000,
+  "S_logical": 5572067,
+  "S_unique": 443758,
+  "D": 12.557,
+  "zstd_bytes": 39299,
+  "C": 143.312,
+  "input_bytes": 622319,
+  "echo_copies": 8.5,
+  "echo_bytes_est": 5289711,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "home/langgraph_checkpoints.sqlite",
+      "bytes": 5632000,
+      "logical_bytes": 5572067,
+      "probe_hits": 1020
+    }
+  ],
+  "returncode": 0,
+  "seed": "m2",
+  "n_correct": 5,
+  "framework": "langgraph",
+  "model": "openai/gpt-4o-mini",
+  "n_questions": 5,
+  "wall_sec": 20.2,
+  "task": "task_00"
+}

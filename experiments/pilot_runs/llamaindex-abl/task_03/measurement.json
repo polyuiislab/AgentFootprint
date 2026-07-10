@@ -1,0 +1,23 @@
+{
+  "S_total": 0,
+  "S_logical": 0,
+  "S_unique": 0,
+  "D": null,
+  "zstd_bytes": 0,
+  "C": null,
+  "input_bytes": 622034,
+  "echo_copies": 0.0,
+  "echo_bytes_est": 0,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 0,
+  "files_top": [],
+  "framework": "llamaindex-abl",
+  "task": "task_03",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 71.0,
+  "returncode": 0,
+  "n_correct": 5,
+  "n_questions": 5
+}

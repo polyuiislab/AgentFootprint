@@ -1,0 +1,110 @@
+{
+  "S_total": 2197444,
+  "S_workspace": 0,
+  "S_home": 2197444,
+  "S_logical": 2147509,
+  "S_unique": 1208622,
+  "D": 1.777,
+  "zstd_bytes": 51238,
+  "C": 42.887,
+  "input_bytes": 622034,
+  "echo_copies": 1.4,
+  "echo_bytes_est": 870847,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 14,
+  "files_top": [
+    {
+      "path": "home/user_root/training_traces/64b09932_qa_run_a0_raw_io.jsonl",
+      "bytes": 718089,
+      "logical_bytes": 718074,
+      "probe_hits": 42
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_file_qa_agent_be6ed3aa72b9_actions.json",
+      "bytes": 253464,
+      "logical_bytes": 253464,
+      "probe_hits": 27
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_file_qa_agent_ff098d9f29ed_actions.json",
+      "bytes": 248945,
+      "logical_bytes": 248945,
+      "probe_hits": 27
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_file_qa_agent_34a062d65d7f_actions.json",
+      "bytes": 246854,
+      "logical_bytes": 246854,
+      "probe_hits": 9
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_file_qa_agent_6e7375b68cfc_actions.json",
+      "bytes": 246582,
+      "logical_bytes": 246582,
+      "probe_hits": 27
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_file_qa_agent_02c93b131414_actions.json",
+      "bytes": 245732,
+      "logical_bytes": 245732,
+      "probe_hits": 36
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_llm_debug.jsonl",
+      "bytes": 154520,
+      "logical_bytes": 154505,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/runtime/task_history/task_history.db",
+      "bytes": 73728,
+      "logical_bytes": 23823,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_share_context.json",
+      "bytes": 8863,
+      "logical_bytes": 8863,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/tasks/qa_run_a0/system-add.file_qa_agent.md",
+      "bytes": 532,
+      "logical_bytes": 532,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0_stack.json",
+      "bytes": 65,
+      "logical_bytes": 65,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/knowledge/experience/footprint/file_qa_agent.md",
+      "bytes": 36,
+      "logical_bytes": 36,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/tasks/qa_run_a0/experience/file_qa_agent.md",
+      "bytes": 34,
+      "logical_bytes": 34,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/user_root/conversations/64b09932_qa_run_a0.lock",
+      "bytes": 0,
+      "logical_bytes": 0,
+      "probe_hits": 0
+    }
+  ],
+  "returncode": 0,
+  "seed": "s2",
+  "n_correct": 5,
+  "framework": "infiagent",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "n_questions": 5,
+  "wall_sec": 123.5,
+  "task": "task_03"
+}

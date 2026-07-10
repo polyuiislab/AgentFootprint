@@ -1,0 +1,32 @@
+{
+  "S_total": 1212416,
+  "S_workspace": 0,
+  "S_home": 1212416,
+  "S_logical": 655142,
+  "S_unique": 267630,
+  "D": 2.448,
+  "zstd_bytes": 28598,
+  "C": 42.395,
+  "input_bytes": 622319,
+  "echo_copies": 0.417,
+  "echo_bytes_est": 259299,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "home/agno_sessions.sqlite",
+      "bytes": 1212416,
+      "logical_bytes": 655142,
+      "probe_hits": 50
+    }
+  ],
+  "framework": "agno",
+  "task": "task_00",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "rp",
+  "wall_sec": 67.7,
+  "returncode": 0,
+  "n_correct": 5,
+  "n_questions": 5
+}

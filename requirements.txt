@@ -1,0 +1,5 @@
+fastcdc>=1.6
+zstandard>=0.22
+pyyaml>=6.0
+matplotlib>=3.8
+numpy>=1.26

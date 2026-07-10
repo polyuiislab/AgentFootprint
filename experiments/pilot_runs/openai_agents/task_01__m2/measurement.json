@@ -1,0 +1,32 @@
+{
+  "S_total": 344064,
+  "S_workspace": 0,
+  "S_home": 344064,
+  "S_logical": 316772,
+  "S_unique": 199642,
+  "D": 1.587,
+  "zstd_bytes": 24176,
+  "C": 14.232,
+  "input_bytes": 622145,
+  "echo_copies": 0.5,
+  "echo_bytes_est": 311072,
+  "n_probes": 120,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "home/agents_sessions.sqlite",
+      "bytes": 344064,
+      "logical_bytes": 316772,
+      "probe_hits": 60
+    }
+  ],
+  "returncode": 0,
+  "seed": "m2",
+  "n_correct": 5,
+  "framework": "openai_agents",
+  "model": "openai/gpt-4o-mini",
+  "n_questions": 5,
+  "wall_sec": 44.6,
+  "task": "task_01"
+}

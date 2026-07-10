@@ -1,0 +1,41 @@
+{
+  "S_total": 569656,
+  "S_logical": 490121,
+  "S_unique": 490121,
+  "D": 1.0,
+  "zstd_bytes": 11639,
+  "C": 48.944,
+  "input_bytes": 2102,
+  "echo_copies": 100.0,
+  "echo_bytes_est": 210200,
+  "n_probes": 12,
+  "excluded_bytes": 0,
+  "n_files": 3,
+  "files_top": [
+    {
+      "path": "home/Library/Application Support/workspace/latest_kickoff_task_outputs.db",
+      "bytes": 569344,
+      "logical_bytes": 489809,
+      "probe_hits": 1200
+    },
+    {
+      "path": "home/Library/Application Support/workspace/.crewai_user.json",
+      "bytes": 268,
+      "logical_bytes": 268,
+      "probe_hits": 0
+    },
+    {
+      "path": "home/Library/Application Support/crewai/credentials/secret.key",
+      "bytes": 44,
+      "logical_bytes": 44,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "crewai",
+  "task": "lh_T100",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "wall_sec": 804.7,
+  "returncode": 0,
+  "n_correct": 100,
+  "n_questions": 100
+}

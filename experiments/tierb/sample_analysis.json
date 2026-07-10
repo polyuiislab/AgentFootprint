@@ -1,0 +1,253 @@
+[
+ {
+  "submission": "20240721_amazon-q-developer-agent-20240719-dev",
+  "resolve_rate": 0.388,
+  "mean_bytes": 9120,
+  "instances": [
+   {
+    "bytes": 4960,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-12907"
+   },
+   {
+    "bytes": 5790,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13033"
+   },
+   {
+    "bytes": 4968,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13236"
+   },
+   {
+    "bytes": 18367,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13398"
+   },
+   {
+    "bytes": 10808,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13453"
+   }
+  ],
+  "D_intra_mean": 1.0
+ },
+ {
+  "submission": "20250623_warp",
+  "resolve_rate": 0.71,
+  "mean_bytes": 90703,
+  "instances": [
+   {
+    "bytes": 53278,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-12907.txt"
+   },
+   {
+    "bytes": 97789,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13033.txt"
+   },
+   {
+    "bytes": 101806,
+    "n_units": 1,
+    "D_intra": 1.042,
+    "front_half_share": null,
+    "key": "astropy__astropy-13236.txt"
+   },
+   {
+    "bytes": 168888,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13398.txt"
+   },
+   {
+    "bytes": 117741,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "astropy__astropy-13453.txt"
+   }
+  ],
+  "D_intra_mean": 1.008
+ },
+ {
+  "submission": "20250710_bloop",
+  "resolve_rate": 0.712,
+  "mean_bytes": 196012,
+  "instances": [
+   {
+    "bytes": 148167,
+    "n_units": 56,
+    "D_intra": 1.002,
+    "front_half_share": 0.558,
+    "key": "astropy__astropy-12907.json"
+   },
+   {
+    "bytes": 149461,
+    "n_units": 65,
+    "D_intra": 1.003,
+    "front_half_share": 0.448,
+    "key": "astropy__astropy-13033.json"
+   },
+   {
+    "bytes": 164745,
+    "n_units": 82,
+    "D_intra": 1.004,
+    "front_half_share": 0.453,
+    "key": "astropy__astropy-13236.json"
+   },
+   {
+    "bytes": 220979,
+    "n_units": 59,
+    "D_intra": 1.004,
+    "front_half_share": 0.583,
+    "key": "astropy__astropy-13398.json"
+   },
+   {
+    "bytes": 242762,
+    "n_units": 94,
+    "D_intra": 1.001,
+    "front_half_share": 0.513,
+    "key": "astropy__astropy-13453.json"
+   }
+  ],
+  "D_intra_mean": 1.003
+ },
+ {
+  "submission": "20240728_sweagent_gpt4o",
+  "resolve_rate": 0.232,
+  "mean_bytes": 312163,
+  "instances": [
+   {
+    "bytes": 480965,
+    "n_units": 116,
+    "D_intra": 2.69,
+    "front_half_share": 0.488,
+    "key": "astropy__astropy-12907.traj"
+   },
+   {
+    "bytes": 69570,
+    "n_units": 20,
+    "D_intra": 1.0,
+    "front_half_share": 0.727,
+    "key": "astropy__astropy-13033.traj"
+   },
+   {
+    "bytes": 83884,
+    "n_units": 22,
+    "D_intra": 1.0,
+    "front_half_share": 0.781,
+    "key": "astropy__astropy-13236.traj"
+   },
+   {
+    "bytes": 511826,
+    "n_units": 100,
+    "D_intra": 1.219,
+    "front_half_share": 0.567,
+    "key": "astropy__astropy-13398.traj"
+   },
+   {
+    "bytes": 402766,
+    "n_units": 120,
+    "D_intra": 1.114,
+    "front_half_share": 0.514,
+    "key": "astropy__astropy-13453.traj"
+   }
+  ],
+  "D_intra_mean": 1.405
+ },
+ {
+  "submission": "20250112_ugaiforge",
+  "resolve_rate": 0.416,
+  "mean_bytes": 4777088,
+  "instances": [
+   {
+    "bytes": 200,
+    "n_units": 1,
+    "D_intra": 1.0,
+    "front_half_share": null,
+    "key": "link_to_trajs.txt"
+   },
+   {
+    "bytes": 11693697,
+    "n_units": 500,
+    "D_intra": 2.627,
+    "front_half_share": 0.621,
+    "key": "loc_outputs.jsonl"
+   },
+   {
+    "bytes": 5212190,
+    "n_units": 500,
+    "D_intra": 1.101,
+    "front_half_share": 0.467,
+    "key": "passing_tests.jsonl"
+   },
+   {
+    "bytes": 2202266,
+    "n_units": 500,
+    "D_intra": 1.0,
+    "front_half_share": 0.463,
+    "key": "problem_statement_outputs.jsonl"
+   }
+  ],
+  "D_intra_mean": 1.432
+ },
+ {
+  "submission": "20241106_navie-2-gpt4o-sonnet",
+  "resolve_rate": 0.472,
+  "mean_bytes": 5129127,
+  "instances": [
+   {
+    "bytes": 1634306,
+    "n_units": 76,
+    "D_intra": 2.0,
+    "front_half_share": 0.5,
+    "key": "astropy__astropy-12907.jsonl"
+   },
+   {
+    "bytes": 11876596,
+    "n_units": 526,
+    "D_intra": 8.2,
+    "front_half_share": 0.5,
+    "key": "astropy__astropy-13033.jsonl"
+   },
+   {
+    "bytes": 3674187,
+    "n_units": 259,
+    "D_intra": 1.754,
+    "front_half_share": 0.491,
+    "key": "astropy__astropy-13236.jsonl"
+   },
+   {
+    "bytes": 1724427,
+    "n_units": 66,
+    "D_intra": 1.473,
+    "front_half_share": 0.716,
+    "key": "astropy__astropy-13398.jsonl"
+   },
+   {
+    "bytes": 8307376,
+    "n_units": 520,
+    "D_intra": 3.313,
+    "front_half_share": 0.5,
+    "key": "astropy__astropy-13453.jsonl"
+   }
+  ],
+  "D_intra_mean": 3.348
+ }
+]

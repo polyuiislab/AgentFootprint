@@ -1,0 +1,7 @@
+{
+  "0": "\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"read_file\">\n<｜DSML｜invoke name=\"read_file\">\n<｜DSML｜parameter name=\"file_path\" string=\"true\">/workspace/records_dorian.txt</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>",
+  "1": "QX-61135-EX",
+  "2": "QX-43025-KZ",
+  "3": "QX-08095-VS",
+  "4": "QX-97650-LS"
+}
