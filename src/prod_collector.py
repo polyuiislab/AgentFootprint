@@ -35,7 +35,10 @@ CHANNEL_RULES = [  # (子串, 通道)
     ("logs", "service_log"),
     ("tasks", "task_store"),
 ]
-SAFE_TOOL_KEYS = ("tool", "tool_name", "name", "role", "type", "event")
+SAFE_TOOL_KEYS = ("tool", "tool_name", "role", "type", "event", "kind",
+                  "debug_label", "direction", "method", "finish_reason")
+NEVER_DESCEND = ("content", "arguments", "text", "prompt", "output",
+                 "observation", "result", "data", "payload_text")
 
 
 def channel_of(rel: str) -> str:
@@ -53,10 +56,31 @@ def month_of(p: Path) -> str:
         return "unknown"
 
 
+def _extract_safe(obj, out: Counter, depth: int = 0) -> None:
+    """有界递归提取白名单键；内容类键（content/arguments/...）永不下潜。"""
+    if depth > 4:
+        return
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            kl = str(k).lower()
+            if kl in NEVER_DESCEND:
+                continue
+            if kl in SAFE_TOOL_KEYS and isinstance(v, str) and len(v) <= 40:
+                out[f"{kl}:{v}"] += 1
+            elif kl == "function" and isinstance(v, dict):
+                name = v.get("name")
+                if isinstance(name, str) and len(name) <= 40:
+                    out[f"tool:{name}"] += 1
+            elif isinstance(v, (dict, list)):
+                _extract_safe(v, out, depth + 1)
+    elif isinstance(obj, list):
+        for v in obj[:50]:
+            _extract_safe(v, out, depth + 1)
+
+
 def jsonl_stats(p: Path, max_lines: int = 200000) -> dict:
-    """只统计行数与 role/tool 名计数；从不读取 content 值。"""
-    roles: Counter = Counter()
-    tools: Counter = Counter()
+    """只统计行数与白名单字段计数；从不读取内容字段的值。"""
+    counts: Counter = Counter()
     n = 0
     try:
         with open(p, "r", encoding="utf-8", errors="replace") as f:
@@ -71,13 +95,10 @@ def jsonl_stats(p: Path, max_lines: int = 200000) -> dict:
                     obj = json.loads(line)
                 except Exception:
                     continue
-                for k in SAFE_TOOL_KEYS:
-                    v = obj.get(k)
-                    if isinstance(v, str) and len(v) <= 40:
-                        (roles if k == "role" else tools)[f"{k}:{v}"] += 1
+                _extract_safe(obj, counts)
     except OSError:
         pass
-    return {"lines": n, "field_counts": dict((roles + tools).most_common(30))}
+    return {"lines": n, "field_counts": dict(counts.most_common(30))}
 
 
 def main() -> None:
@@ -90,6 +111,7 @@ def main() -> None:
 
     tasks: dict = {}
     task_ids: dict = {}
+    global_logs: list = []
     global_channels = defaultdict(lambda: {"files": 0, "bytes": 0})
     months: Counter = Counter()
 
@@ -122,28 +144,27 @@ def main() -> None:
             t["files"] += 1
             t["by_channel"][ch] += size
             t["by_ext"][ext] += size
-        # 日志画像（行数/角色/工具名计数，无内容）
+        # 日志画像（行数/白名单字段计数，无内容）
         if p.name.endswith((".jsonl", ".ndjson")) and size < 200 * 1024 * 1024:
-            key = f"{tkey or 'global'}"
-            stats = jsonl_stats(p)
-            tasks.setdefault(key, {"bytes": 0, "files": 0,
-                                   "by_channel": defaultdict(int),
-                                   "by_ext": defaultdict(int)})
-            tasks[key].setdefault("log_stats", []).append(
-                {"channel": ch, **stats})
+            stats = {"channel": ch, **jsonl_stats(p)}
+            if tkey:
+                tasks[tkey].setdefault("log_stats", []).append(stats)
+            else:
+                global_logs.append(stats)
 
     sizes = sorted(t["bytes"] for k, t in tasks.items() if k.startswith("task_"))
     def pct(q):
         return sizes[min(len(sizes) - 1, int(q * len(sizes)))] if sizes else 0
     report = {
         "label": a.label,
-        "collector_version": "1.0",
+        "collector_version": "1.1",
         "n_tasks": len([k for k in tasks if k.startswith("task_")]),
         "task_bytes_percentiles": {p_: pct(q) for p_, q in
                                    [("p10", .1), ("p50", .5), ("p90", .9),
                                     ("p99", .99)]},
         "task_bytes_total": sum(sizes),
         "global_channels": {k: dict(v) for k, v in global_channels.items()},
+        "global_log_stats": global_logs[:50],
         "months_active": dict(months.most_common(24)),
         "tasks": {k: {"bytes": t["bytes"], "files": t["files"],
                       "by_channel": dict(t["by_channel"]),
