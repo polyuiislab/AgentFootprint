@@ -1,6 +1,6 @@
 # AgentFootprint 复现镜像：7 个公开框架各一 venv（锁定版本，Linux 过滤 mac-only 包）。
 # InfiAgent 依赖私有 SDK，不在镜像内（见 BENCHMARK_CARD.md）。
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
       git zstd build-essential && rm -rf /var/lib/apt/lists/*
