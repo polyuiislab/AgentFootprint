@@ -1,0 +1,63 @@
+name: verify
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install zstandard fastcdc numpy
+      - name: meter calibration (known-duplication corpus)
+        run: python src/meter_calibration.py
+      - name: R scorer construct validation
+        run: python src/r_scorer_validation.py
+      - name: regenerate published tables from archived data
+        run: python src/verify_expected.py
+
+  fixed-trace-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.11"}
+      - run: pip install zstandard fastcdc "openai-agents==0.18.0"
+      - name: offline fixed-trace (mock endpoint, zero API)
+        env:
+          FIXED_TRACE_FWS: openai_agents
+        run: |
+          export FOOTPRINT_PY_OPENAI_AGENTS=$(which python)
+          python src/fixed_trace.py
+          python - <<'EOF'
+          import json
+          rows = json.load(open("experiments/fixed_trace_runs/summary.json"))
+          r = [x for x in rows if x["framework"] == "openai_agents"][0]
+          assert r["n_correct"] == 1, f"fixed-trace answer failed: {r}"
+          assert r["S_total"] > 100_000, f"retention implausible: {r['S_total']}"
+          print("fixed-trace smoke OK:", r["S_total"], "bytes")
+          EOF
+
+  image:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: true
+          tags: |
+            ghcr.io/polyuiislab/agentfootprint:v1.0
+            ghcr.io/polyuiislab/agentfootprint:latest

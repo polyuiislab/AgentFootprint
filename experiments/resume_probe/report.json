@@ -1,0 +1,37 @@
+{
+  "langgraph": {
+    "phaseA": "OK",
+    "phaseB": "KRX-4471-BM",
+    "resume_ok": true
+  },
+  "autogen": {
+    "phaseA": "OK",
+    "phaseB": "KRX-4471-BM",
+    "resume_ok": true
+  },
+  "openai_agents": {
+    "phaseA": "OK",
+    "phaseB": "KRX-4471-BM",
+    "resume_ok": true
+  },
+  "llamaindex": {
+    "phaseA": "OK",
+    "phaseB": "KRX-4471-BM",
+    "resume_ok": true
+  },
+  "agno": {
+    "phaseA": "OK",
+    "phaseB": "KRX-4471-BM",
+    "resume_ok": true
+  },
+  "crewai": {
+    "phaseA": "OK",
+    "phaseB": "I don't have any record of a registry code being provided earlier in this session. The only file in the workspace (`note.txt`) contains the text \"Project workspace. No registry data in the files.\" repeated three times, and does not contain any code m",
+    "resume_ok": false
+  },
+  "infiagent": {
+    "phaseA": "OK",
+    "phaseB": "KRX-4471-BM",
+    "resume_ok": true
+  }
+}

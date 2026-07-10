@@ -1,0 +1,32 @@
+{
+  "S_total": 97,
+  "S_workspace": 97,
+  "S_home": 0,
+  "S_logical": 97,
+  "S_unique": 97,
+  "D": 1.0,
+  "zstd_bytes": 98,
+  "C": 0.99,
+  "input_bytes": 1222,
+  "echo_copies": 0.0,
+  "echo_bytes_est": 0,
+  "n_probes": 24,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "workspace/summary.csv",
+      "bytes": 97,
+      "logical_bytes": 97,
+      "probe_hits": 0
+    }
+  ],
+  "framework": "smolagents",
+  "task": "dtask_04",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 50.2,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}

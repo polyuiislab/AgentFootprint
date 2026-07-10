@@ -52,13 +52,32 @@ MODEL_BY_FW = {  # 同一后端模型；litellm 系（infiagent/crewai/smolagent
 
 
 def api_key() -> str:
-    for line in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
-        if line.startswith("OPENROUTER_API_KEY="):
-            return line.split("=", 1)[1].strip()
-    raise SystemExit("OPENROUTER_API_KEY not found in .env")
+    try:
+        for line in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
+            if line.startswith("OPENROUTER_API_KEY="):
+                return line.split("=", 1)[1].strip()
+    except OSError:
+        pass
+    env = os.environ.get("OPENROUTER_API_KEY")
+    if env:
+        return env
+    if os.environ.get("FOOTPRINT_BASE_URL"):   # mock/fixed-trace 场景无需真 key
+        return "sk-mock"
+    raise SystemExit("OPENROUTER_API_KEY not found in .env or environment")
 
 
 EXTRA_ENV: dict = {}
+
+
+def py_for(fw: str) -> Path:
+    """解释器解析：FOOTPRINT_PY_<FW> 环境覆盖 > 本地 venv > 当前解释器。"""
+    env = os.environ.get(f"FOOTPRINT_PY_{fw.upper()}")
+    if env:
+        return Path(env)
+    p = PY_BY_FW.get(fw)
+    if p and Path(p).exists():
+        return Path(p)
+    return Path(sys.executable)
 
 
 def run_one(fw: str, task_name: str, timeout: int = 1200,
@@ -92,7 +111,7 @@ def run_one(fw: str, task_name: str, timeout: int = 1200,
     if TASKS.name in ("write_tasks", "edit_tasks", "data_tasks"):  # rw 工具集套件
         env["FOOTPRINT_TOOLSET"] = "rw"
     env.update(EXTRA_ENV)
-    adapter = [str(PY_BY_FW[fw]), str(HERE / "adapters" / f"run_{fw}.py")]
+    adapter = [str(py_for(fw)), str(HERE / "adapters" / f"run_{fw}.py")]
     common = ["--task-dir", str(tdir), "--workspace", str(ws),
               "--home", str(home), "--out", str(sandbox / "answers.json")]
 
@@ -123,9 +142,13 @@ def run_one(fw: str, task_name: str, timeout: int = 1200,
         answers = {}
     n_correct = sum(1 for q in qs if q["answer"] in str(answers.get(str(q["qid"]), "")))
 
+    import platform
     rep.update({"framework": label, "task": task_name, "model": MODEL_BY_FW[fw],
                 "seed": seed or "s1", "wall_sec": wall, "returncode": rc,
-                "n_correct": n_correct, "n_questions": len(qs)})
+                "n_correct": n_correct, "n_questions": len(qs),
+                "benchmark_version": "v1.0-kdd",
+                "platform": platform.platform(),
+                "python": sys.version.split()[0]})
     (sandbox / "measurement.json").write_text(json.dumps(rep, indent=2), encoding="utf-8")
     return rep
 

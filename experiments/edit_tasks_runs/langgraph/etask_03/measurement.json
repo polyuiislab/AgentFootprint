@@ -1,0 +1,38 @@
+{
+  "S_total": 233076,
+  "S_workspace": 3700,
+  "S_home": 229376,
+  "S_logical": 186558,
+  "S_unique": 101443,
+  "D": 1.839,
+  "zstd_bytes": 6173,
+  "C": 37.757,
+  "input_bytes": 40065,
+  "echo_copies": 5.889,
+  "echo_bytes_est": 235938,
+  "n_probes": 36,
+  "excluded_bytes": 0,
+  "n_files": 2,
+  "files_top": [
+    {
+      "path": "home/langgraph_checkpoints.sqlite",
+      "bytes": 229376,
+      "logical_bytes": 182858,
+      "probe_hits": 207
+    },
+    {
+      "path": "workspace/ledger_fixed.md",
+      "bytes": 3700,
+      "logical_bytes": 3700,
+      "probe_hits": 5
+    }
+  ],
+  "framework": "langgraph",
+  "task": "etask_03",
+  "model": "deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 29.3,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}

@@ -1,0 +1,3 @@
+{
+  "0": "The top product and its total is: **P-KITE 5898**\n\n**Summary:** I aggregated units from both `sales_q1.csv` and `sales_q2.csv` across all regions for each product. The sorted results were written to `summary.csv`. The top product is P-KITE with a total of 5,898 units sold across both quarters."
+}

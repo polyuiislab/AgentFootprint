@@ -28,8 +28,11 @@ import mock_llm  # noqa: E402
 SRC_TASK = ROOT / "tasks" / "file_intensive" / "task_00"
 FT_TASK = ROOT / "tasks" / "fixed_trace" / "ftask_00"
 READS = ["records_algol.txt", "records_briar.txt", "records_algol.txt"]
-FWS = ["langgraph", "autogen", "openai_agents", "llamaindex", "agno",
-       "crewai", "infiagent"]
+import os
+FWS = (os.environ.get("FIXED_TRACE_FWS", "").split(",")
+       if os.environ.get("FIXED_TRACE_FWS") else
+       ["langgraph", "autogen", "openai_agents", "llamaindex", "agno",
+        "crewai", "infiagent"])
 
 
 def make_task() -> str:

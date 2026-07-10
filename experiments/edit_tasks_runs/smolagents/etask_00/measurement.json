@@ -1,0 +1,32 @@
+{
+  "S_total": 3664,
+  "S_workspace": 3664,
+  "S_home": 0,
+  "S_logical": 3664,
+  "S_unique": 3664,
+  "D": 1.0,
+  "zstd_bytes": 730,
+  "C": 5.019,
+  "input_bytes": 39927,
+  "echo_copies": 0.194,
+  "echo_bytes_est": 7763,
+  "n_probes": 36,
+  "excluded_bytes": 0,
+  "n_files": 1,
+  "files_top": [
+    {
+      "path": "workspace/ledger_fixed.md",
+      "bytes": 3664,
+      "logical_bytes": 3664,
+      "probe_hits": 7
+    }
+  ],
+  "framework": "smolagents",
+  "task": "etask_00",
+  "model": "openrouter/deepseek/deepseek-v4-flash",
+  "seed": "s1",
+  "wall_sec": 46.4,
+  "returncode": 0,
+  "n_correct": 1,
+  "n_questions": 1
+}
