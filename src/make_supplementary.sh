@@ -26,7 +26,7 @@ rsync -a "$ROOT/experiments/" "$STAGE/experiments/" \
 find "$STAGE" -type d -empty -delete
 
 # 路径脱敏：项目前缀 -> "."，其余用户绝对路径 -> "~"
-find "$STAGE" \( -name "*.json" -o -name "*.log" -o -name "*.txt" \) -type f \
+find "$STAGE" \( -name "*.json" -o -name "*.jsonl" -o -name "*.ndjson" -o -name "*.log" -o -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.md" \) -type f \
   -exec sed -i '' -e 's|/Users/[A-Za-z0-9_.-]*/[^"]*aaai2027-storage|.|g' \
                   -e 's|/Users/[A-Za-z0-9_.-]*|~|g' {} +
 
@@ -35,7 +35,7 @@ PAT="sk-or-""v1"
 if grep -rl "$PAT" "$STAGE" | head -1; then
   echo "LEAK: key fragment found, abort" >&2; exit 1
 fi
-if grep -rl "/Users/" "$STAGE" --include "*.json" | head -1; then
+if grep -rl "/Users/" "$STAGE" | grep -v "make_supplementary.sh" | head -1; then
   echo "LEAK: absolute /Users path remains, abort" >&2; exit 1
 fi
 
