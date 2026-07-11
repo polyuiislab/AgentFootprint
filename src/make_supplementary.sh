@@ -55,7 +55,7 @@ MEOF
 
 # 路径脱敏：项目前缀 -> "."，其余用户绝对路径 -> "~"
 find "$STAGE" -path "$STAGE/representative_stores" -prune -o \( -name "*.json" -o -name "*.jsonl" -o -name "*.ndjson" -o -name "*.log" -o -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.md" \) -type f \
-  -exec perl -pi -e 's{/Users/[A-Za-z0-9_.-]+/[^"]*aaai2027-storage}{.}g; s{/Users/[A-Za-z0-9_.-]+}{~}g' {} +
+  -exec perl -pi -e 's{/Users/[A-Za-z0-9_.-]+/[^"]*(?:aaai2027|kdd2027)-storage}{.}g; s{/Users/[A-Za-z0-9_.-]+}{~}g' {} +
 
 # 泄漏扫描：不允许任何 key 片段/绝对用户路径（模式拆分避免自匹配）
 PAT="sk-or-""v1"
