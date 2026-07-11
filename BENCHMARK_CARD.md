@@ -1,4 +1,4 @@
-# AgentFootprint Benchmark Card (v1.0)
+# AgentFootprint Benchmark Card (v1.0.1)
 
 ## Intended use
 Measure the **post-run persistent storage footprint** of LLM agent
@@ -57,7 +57,7 @@ See `TEMPLATE.py` and `docs/`: implement `setup`/`run` phases, read
 `answers.json`. Never reuse a task identity after a failed run.
 
 ## Versioning & results
-v1.0 at submission; adapters pin exact package versions
+v1.0.1 at submission (immutable tag v1.0.1-kdd); adapters pin exact package versions
 (`envlocks/*.txt`); results are grouped by benchmark and backend-model
 version, new framework versions enter as new rows. Result schema =
 `measurement.json` per run (keys documented in `src/meter.py`).

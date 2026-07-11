@@ -44,7 +44,6 @@ jobs:
   image:
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
-    continue-on-error: true
     permissions:
       contents: read
       packages: write

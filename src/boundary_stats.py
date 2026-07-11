@@ -16,7 +16,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 
 def staging() -> None:
-    runs = sorted((ROOT / "experiments/pilot_runs/infiagent").glob("task_*"))
+    runs = sorted(p for p in (ROOT / "experiments/pilot_runs/infiagent").glob("task_*")
+                  if not p.name.startswith("._"))
     stag, stot = [], []
     for sb in runs:
         b = json.loads((sb / "baseline.json").read_text(encoding="utf-8"))
@@ -33,15 +34,20 @@ def staging() -> None:
 
 def latest_only() -> None:
     pts = []
-    for sb in sorted((ROOT / "experiments/longhorizon_runs/llamaindex").glob("*")):
-        m = json.loads((sb / "measurement.json").read_text(encoding="utf-8"))
-        if "gpt" in m.get("model", ""):
-            continue
-        T = int(m["task"].split("_T")[1])
-        ctxs = sorted((sb / "home").glob("ctx_q*.json"),
-                      key=lambda p: int(p.stem.split("ctx_q")[1]))
-        if ctxs:
-            pts.append((T, ctxs[-1].stat().st_size))
+    for root in (ROOT / "experiments/longhorizon_runs/llamaindex",
+                 ROOT / "representative_stores/llamaindex_horizons"):
+        for sb in sorted(root.glob("lh_T*")) if root.exists() else []:
+            if sb.name.startswith("._") or not sb.is_dir():
+                continue
+            T = int(sb.name.split("_T")[1].split("__")[0])
+            home = sb / "home" if (sb / "home").exists() else sb
+            ctxs = sorted((f for f in home.glob("ctx_q*.json")
+                           if not f.name.startswith("._")),
+                          key=lambda p: int(p.stem.split("ctx_q")[1]))
+            if ctxs:
+                pts.append((T, ctxs[-1].stat().st_size))
+        if pts:
+            break
     pts.sort()
     a = np.polyfit(np.log([t for t, _ in pts]), np.log([s for _, s in pts]), 1)[0]
     sizes = ", ".join(f"{s/1024:.0f}KB@T{t}" for t, s in pts)

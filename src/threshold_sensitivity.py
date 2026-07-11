@@ -60,8 +60,10 @@ def main() -> None:
         rows = {t: [] for t in THRESHOLDS}
         for task in TASKS:
             sb = ROOT / "experiments" / "pilot_runs" / fw / task
-            if not sb.exists():
-                continue
+            if not (sb / "home").exists():          # 补充包降级：代表性库（仅 task_00）
+                sb = ROOT / "representative_stores" / fw
+                if task != "task_00" or not (sb / "home").exists():
+                    continue
             files = retained_files(sb)
             for t in THRESHOLDS:
                 d = d_at(files, t)
