@@ -86,6 +86,10 @@ def main() -> None:
                     d = ctx.to_dict(serializer=JsonSerializer())
                     (home / f"ctx_q{q['qid']}.json").write_text(
                         json.dumps(d, ensure_ascii=False), encoding="utf-8")
+                    # W3 executed variant: latest-only archival（只留最新快照）
+                    if os.environ.get("FOOTPRINT_VARIANT") == "latestonly":
+                        prev = home / f"ctx_q{int(q['qid']) - 1}.json"
+                        prev.unlink(missing_ok=True)
                 except Exception as e:
                     (home / f"ctx_q{q['qid']}.err").write_text(str(e),
                                                                encoding="utf-8")

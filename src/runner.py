@@ -52,15 +52,15 @@ MODEL_BY_FW = {  # 同一后端模型；litellm 系（infiagent/crewai/smolagent
 
 
 def api_key() -> str:
+    env = os.environ.get("OPENROUTER_API_KEY")   # 显式环境变量优先（多 key 并行）
+    if env:
+        return env
     try:
         for line in (ROOT / ".env").read_text(encoding="utf-8").splitlines():
             if line.startswith("OPENROUTER_API_KEY="):
                 return line.split("=", 1)[1].strip()
     except OSError:
         pass
-    env = os.environ.get("OPENROUTER_API_KEY")
-    if env:
-        return env
     if os.environ.get("FOOTPRINT_BASE_URL"):   # mock/fixed-trace 场景无需真 key
         return "sk-mock"
     raise SystemExit("OPENROUTER_API_KEY not found in .env or environment")
@@ -146,7 +146,7 @@ def run_one(fw: str, task_name: str, timeout: int = 1200,
     rep.update({"framework": label, "task": task_name, "model": MODEL_BY_FW[fw],
                 "seed": seed or "s1", "wall_sec": wall, "returncode": rc,
                 "n_correct": n_correct, "n_questions": len(qs),
-                "benchmark_version": "v1.0-kdd",
+                "benchmark_version": "v1.0.1",
                 "platform": platform.platform(),
                 "python": sys.version.split()[0]})
     (sandbox / "measurement.json").write_text(json.dumps(rep, indent=2), encoding="utf-8")

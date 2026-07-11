@@ -222,8 +222,12 @@ EXTRACTORS = {
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--framework", required=True, choices=sorted(EXTRACTORS))
+    ap.add_argument("--run-dir", default="",
+                    help="sandbox run dir override "
+                         "(default: experiments/pilot_runs/<fw>/task_00__rp)")
     a = ap.parse_args()
-    home = sandbox_of(a.framework) / "home"
+    run_dir = Path(a.run_dir) if a.run_dir else sandbox_of(a.framework)
+    home = run_dir / "home"
     msgs, notes = EXTRACTORS[a.framework](home)
     out = {"framework": a.framework, "messages": msgs, "notes": notes}
     p = RP / f"{a.framework}_reconstructed.json"

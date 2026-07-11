@@ -68,9 +68,13 @@ def main() -> None:
     tools = [list_files, read_file]
     if os.environ.get("FOOTPRINT_TOOLSET") == "rw":
         tools.append(write_file)
+    # FOOTPRINT_OR_IGNORE: OpenRouter 供应商黑名单（如 Phala 返回损坏 JSON）
+    _ig = os.environ.get("FOOTPRINT_OR_IGNORE")
+    _extra = ({"extra_body": {"provider": {"ignore": _ig.split(",")}}}
+              if _ig else {})
     model = LiteLLMModel(model_id=os.environ["FOOTPRINT_MODEL"],
                          api_key=os.environ["OPENROUTER_API_KEY"],
-                         temperature=0)
+                         temperature=0, **_extra)
     agent = ToolCallingAgent(tools=tools, model=model,
                              max_steps=12)
 

@@ -7,7 +7,9 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 STAGE="$(mktemp -d)/agentfootprint_supplementary"
 mkdir -p "$STAGE"
 
-rsync -a "$ROOT/src/" "$STAGE/src/" --exclude "__pycache__"
+rsync -a "$ROOT/src/" "$STAGE/src/" --exclude "__pycache__" \
+  --exclude "make_supplementary.sh" --exclude "publish_latest.sh" \
+  --exclude "launch_or_fleet.sh" --exclude "fleet_status.sh"
 cp "$ROOT/SUPPLEMENTARY_README.md" "$STAGE/README.md"
 cp "$ROOT/supplementary_requirements.txt" "$STAGE/requirements.txt"
 # 代表性原始留存库：每个持久化框架一个完整 file-QA 首重复沙箱（字节级原样）
@@ -37,6 +39,8 @@ rsync -a "$ROOT/experiments/" "$STAGE/experiments/" \
   --include "ledger_fixed.md" --include "summary.txt" \
   --include "meter_audit_report.json" --include "threshold_sensitivity.json" \
   --include "prod_footprint_*.json" \
+  --include "FINAL_AGGREGATE.txt" --include "*_NA_reason.txt" \
+  --include "ANOMALIES_MANIFEST.txt" --include "adapter_stderr.log" \
   --exclude "*"
 # tierb 缓存若为 json/csv 已被上面规则带上；replay_recon 证据单独补
 [ -d "$ROOT/experiments/replay_recon" ] && rsync -a "$ROOT/experiments/replay_recon/" "$STAGE/experiments/replay_recon/"
@@ -49,13 +53,13 @@ find "$STAGE" -type d -empty -delete
 cat > "$STAGE/MANIFEST.txt" <<MEOF
 PUBLIC_REPO_COMMIT=$(git -C "$ROOT/../agentfootprint" rev-parse HEAD 2>/dev/null || echo unknown)
 PAPER_REPO_COMMIT=$(git -C "$ROOT" rev-parse HEAD 2>/dev/null || echo unknown)
-PUBLIC_REPO_TAG=v1.0.1-kdd
+PUBLIC_REPO_TAG=v1.0.1
 ARTIFACT_BUILD_DATE=$(date -u +%Y-%m-%dT%H:%M:%SZ)
 MEOF
 
 # 路径脱敏：项目前缀 -> "."，其余用户绝对路径 -> "~"
-find "$STAGE" -path "$STAGE/representative_stores" -prune -o \( -name "*.json" -o -name "*.jsonl" -o -name "*.ndjson" -o -name "*.log" -o -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.md" \) -type f \
-  -exec perl -pi -e 's{/Users/[A-Za-z0-9_.-]+/[^"]*(?:aaai2027|kdd2027)-storage}{.}g; s{/Users/[A-Za-z0-9_.-]+}{~}g' {} +
+find "$STAGE" -path "$STAGE/representative_stores" -prune -o \( -name "*.json" -o -name "*.jsonl" -o -name "*.ndjson" -o -name "*.log" -o -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.md" -o -name "*.out" \) -type f \
+  -exec perl -pi -e 's{/Users/[A-Za-z0-9_.-]+/[^"]*(?:aaai2027|kdd2027)-storage}{.}g; s{/Users/[A-Za-z0-9_.-]+}{~}g; s{[A-Za-z0-9_./-]*(?:aaai2027|kdd2027)-storage}{.}g; s{v1\.0-kdd}{v1.0.1}g; s{v1\.0\.1-kdd}{v1.0.1}g' {} +
 
 # 泄漏扫描：不允许任何 key 片段/绝对用户路径（模式拆分避免自匹配）
 PAT="sk-or-""v1"
@@ -64,6 +68,10 @@ if grep -rl "$PAT" "$STAGE" | head -1; then
 fi
 if grep -rl "/Users/" "$STAGE" | grep -v "make_supplementary.sh" | grep -v "representative_stores" | head -1; then
   echo "LEAK: absolute /Users path remains, abort" >&2; exit 1
+fi
+# 场地历史残留：不允许任何 kdd 字样（大小写不敏感；排除二进制留存库）
+if grep -rli "kdd" "$STAGE" --exclude-dir "representative_stores" | head -1; then
+  echo "LEAK: kdd venue residue remains, abort" >&2; exit 1
 fi
 
 OUT="$ROOT/supplementary_v1.tar.zst"

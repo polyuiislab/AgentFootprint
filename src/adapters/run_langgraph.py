@@ -98,11 +98,24 @@ def main() -> None:
                 history = r
             else:
                 r = agent.invoke({"messages": [("user", q["question"])]}, cfg)
+                # W3 executed variant: 每问后仅保留最新 checkpoint（adapter 级剪枝）
+                if conn is not None and os.environ.get("FOOTPRINT_VARIANT") == "prunecheckpoint":
+                    row = conn.execute(
+                        "select checkpoint_id from checkpoints where thread_id=? "
+                        "order by rowid desc limit 1", ("session-1",)).fetchone()
+                    if row:
+                        conn.execute("delete from checkpoints where thread_id=? "
+                                     "and checkpoint_id<>?", ("session-1", row[0]))
+                        conn.execute("delete from writes where thread_id=? "
+                                     "and checkpoint_id<>?", ("session-1", row[0]))
+                        conn.commit()
             answers[str(q["qid"])] = text_of(r["messages"][-1].content)
         except Exception as e:  # 单题失败不拖垮整个任务
             answers[str(q["qid"])] = f"ADAPTER_ERROR: {e}"
     if conn is not None:
         conn.commit()
+        if os.environ.get("FOOTPRINT_VARIANT") == "prunecheckpoint":
+            conn.execute("VACUUM")  # 缩表观尺寸，否则删行后文件不缩、S_total 测不到
         conn.close()
     Path(a.out).write_text(json.dumps(answers, ensure_ascii=False, indent=2), encoding="utf-8")
     print("langgraph adapter done")

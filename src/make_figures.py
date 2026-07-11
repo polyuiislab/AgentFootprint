@@ -1,4 +1,4 @@
-"""四张主图（AAAI/KDD 版式，pdf+png）。
+"""四张主图（双栏会议版式，pdf+png）。
 
 固定实体→颜色/标记映射（全文一致，CVD 校验通过的 5 色 + 形状二次编码）：
   langgraph #0072B2 o | autogen #E69F00 s | infiagent #009E73 ^ |
@@ -119,25 +119,41 @@ def fig2() -> None:
     rows = [json.loads(p.read_text(encoding="utf-8"))
             for p in (ROOT / "experiments" / "longhorizon_runs").glob(
                 "*/lh_T*/measurement.json")]
-    by = defaultdict(list)
+    by = defaultdict(lambda: defaultdict(list))       # fw -> T -> [bytes]
+    per_seed = defaultdict(lambda: defaultdict(list))  # fw -> seed -> [(T, bytes)]
     for r in rows:
         if r["framework"].endswith(("-abl", "-finalsave")):
             continue
-        if r.get("seed", "s1") not in ("", "s1"):  # 排除 m2 第二后端复现行
+        seed = r.get("seed", "s1") or "s1"
+        if seed not in ("s1", "s2", "s3"):  # 排除 m2 第二后端复现行
             continue
         T = int(r["task"].split("T")[1])
         if r["S_total"] > 0:
-            by[r["framework"]].append((T, r["S_total"]))
-    fig, ax = plt.subplots(figsize=(3.6, 2.8))
+            by[r["framework"]][T].append(r["S_total"])
+            per_seed[r["framework"]][seed].append((T, r["S_total"]))
+    fig, ax = plt.subplots(figsize=(4.6, 1.95))
     for fw in FW:
-        pts = sorted(by.get(fw, []))
-        if len(pts) < 2:
+        d = by.get(fw)
+        if not d or len(d) < 2:
             continue
-        T = np.array([p[0] for p in pts], float)
-        S = np.array([p[1] for p in pts], float) / 1048576
-        alpha = np.polyfit(np.log(T), np.log(S), 1)[0]
-        ax.loglog(T, S, marker=MARKER[fw], color=COLOR[fw], lw=1.6, ms=4.5,
-                  label=f"{fw} (α={alpha:.2f})")
+        Ts = np.array(sorted(d), float)
+        mean = np.array([np.mean(d[t]) for t in sorted(d)]) / 1048576
+        sd = np.array([np.std(d[t], ddof=1) if len(d[t]) > 1 else 0.0
+                       for t in sorted(d)]) / 1048576
+        # α：有完整多种子时报 mean±SD（逐种子全区间拟合），否则单种子值
+        fits = []
+        for pts in per_seed[fw].values():
+            if len(pts) == len(d):
+                pts = sorted(pts)
+                fits.append(np.polyfit(np.log([p[0] for p in pts]),
+                                       np.log([p[1] for p in pts]), 1)[0])
+        lbl = (f"{fw} (α={np.mean(fits):.2f}±{np.std(fits, ddof=1):.2f})"
+               if len(fits) > 1 else f"{fw} (α={fits[0]:.2f})")
+        if sd.any():
+            ax.fill_between(Ts, np.maximum(mean - sd, 1e-3), mean + sd,
+                            color=COLOR[fw], alpha=0.16, lw=0)
+        ax.loglog(Ts, mean, marker=MARKER[fw], color=COLOR[fw], lw=1.6,
+                  ms=4.5, label=lbl)
     # 参考斜率
     Tref = np.array([25, 200], float)
     for a, lbl in ((1, "∝T"), (2, "∝T²")):
@@ -231,7 +247,7 @@ def fig4() -> None:
           and r.get("resolve_rate") is not None]
     x = np.array([r["mean_bytes"] / 1e6 for r in ok])
     y = np.array([r["resolve_rate"] * 100 for r in ok])
-    fig, ax = plt.subplots(figsize=(3.8, 2.8))
+    fig, ax = plt.subplots(figsize=(4.6, 1.95))
     in_band = (y >= 65) & (y <= 75)
     ax.axhspan(65, 75, color="#f0b429", alpha=0.12, zorder=1)
     ax.scatter(x[~in_band], y[~in_band], s=14, color="#9aa8b5", alpha=0.6,

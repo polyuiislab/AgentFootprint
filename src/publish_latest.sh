@@ -9,7 +9,7 @@ cp "$ROOT/paper/main.pdf"                "$DEST/AgentFootprint_paper.pdf"
 rsync -a --delete "$ROOT/paper/main.tex" "$ROOT/paper/references.bib" "$DEST/tex/"
 rsync -a --delete "$ROOT/paper/figures/" "$DEST/tex/figures/"
 cp "$ROOT/supplementary_v1.tar.zst"      "$DEST/supplementary.tar.zst"
-[ -f "$ROOT/agentfootprint_arxiv.tar.gz" ] && cp "$ROOT/agentfootprint_arxiv.tar.gz" "$DEST/arxiv_source.tar.gz"
+[ -f "$ROOT/arxiv/agentfootprint_arxiv.tar.gz" ] && cp "$ROOT/arxiv/agentfootprint_arxiv.tar.gz" "$DEST/arxiv_source.tar.gz"
 date -u +"synced %Y-%m-%dT%H:%M:%SZ" > "$DEST/最后同步时间.txt"
 git -C "$ROOT" rev-parse --short HEAD >> "$DEST/最后同步时间.txt" 2>/dev/null || true
 echo "投稿最新版本/ 已同步"

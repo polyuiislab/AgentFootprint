@@ -40,7 +40,9 @@ async def run() -> None:
     home = Path(a.home).resolve()
 
     ablation = os.environ.get("FOOTPRINT_ABLATION") == "1"
-    if not ablation:  # 消融：不落事件日志
+    # W3 executed variant: events-off（真实开关——不挂 event logger，State 通道保留）
+    events_off = os.environ.get("FOOTPRINT_VARIANT") == "eventsoff"
+    if not ablation and not events_off:  # 消融：不落事件日志
         ev = logging.getLogger(EVENT_LOGGER_NAME)
         ev.setLevel(logging.INFO)
         ev.addHandler(logging.FileHandler(home / "autogen_events.log", encoding="utf-8"))
@@ -58,7 +60,25 @@ async def run() -> None:
             return f"ERROR: no such file {filename}"
         return p.read_text(encoding="utf-8", errors="replace")
 
-    client = OpenAIChatCompletionClient(
+    _ckw = {}
+    if os.environ.get("FOOTPRINT_CLIENT_TIMEOUT"):
+        _ckw["timeout"] = float(os.environ["FOOTPRINT_CLIENT_TIMEOUT"])
+        _ckw["max_retries"] = int(os.environ.get("FOOTPRINT_CLIENT_RETRIES", "3"))
+
+    class _RetryEmptyClient(OpenAIChatCompletionClient):
+        # FOOTPRINT_RETRY_EMPTY=N：上游返回 200-空内容时在传输层重发同一请求，
+        # 会话历史只收最终响应；未设置该变量时 range(0) 短路，与基类零行为差异。
+        async def create(self, *args, **kwargs):
+            result = await super().create(*args, **kwargs)
+            for _ in range(int(os.environ.get("FOOTPRINT_RETRY_EMPTY", "0"))):
+                c = getattr(result, "content", None)
+                if isinstance(c, str) and not c.strip():
+                    result = await super().create(*args, **kwargs)
+                else:
+                    break
+            return result
+
+    client = _RetryEmptyClient(
         model=os.environ["FOOTPRINT_MODEL"],
         api_key=os.environ["OPENROUTER_API_KEY"],
         base_url=os.environ.get("FOOTPRINT_BASE_URL", "https://openrouter.ai/api/v1"),
@@ -68,6 +88,7 @@ async def run() -> None:
             "family": "unknown", "structured_output": False,
             "multiple_system_messages": True,
         },
+        **_ckw,
     )
     def write_file(filename: str, content: str) -> str:
         """Write content to a file in the workspace."""
