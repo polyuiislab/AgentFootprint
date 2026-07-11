@@ -36,6 +36,7 @@ rsync -a "$ROOT/experiments/" "$STAGE/experiments/" \
   --include "tierb/**" \
   --include "ledger_fixed.md" --include "summary.txt" \
   --include "meter_audit_report.json" --include "threshold_sensitivity.json" \
+  --include "prod_footprint_*.json" \
   --exclude "*"
 # tierb 缓存若为 json/csv 已被上面规则带上；replay_recon 证据单独补
 [ -d "$ROOT/experiments/replay_recon" ] && rsync -a "$ROOT/experiments/replay_recon/" "$STAGE/experiments/replay_recon/"
@@ -68,3 +69,4 @@ fi
 OUT="$ROOT/supplementary_v1.tar.zst"
 tar -cf - -C "$(dirname "$STAGE")" "$(basename "$STAGE")" | zstd -19 -T0 -o "$OUT" -f
 echo "built: $OUT ($(du -h "$OUT" | cut -f1))"
+bash "$ROOT/src/publish_latest.sh" || true

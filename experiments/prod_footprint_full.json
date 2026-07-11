@@ -1,0 +1,1188 @@
+{
+  "label": "coldchain-quoting-prod",
+  "collector_version": "1.1",
+  "n_tasks": 8,
+  "task_bytes_percentiles": {
+    "p10": 248,
+    "p50": 732420,
+    "p90": 85331853,
+    "p99": 85331853
+  },
+  "task_bytes_total": 148721988,
+  "global_channels": {
+    "other": {
+      "files": 155,
+      "bytes": 72806051
+    },
+    "task_store": {
+      "files": 171,
+      "bytes": 75109692
+    },
+    "config": {
+      "files": 26,
+      "bytes": 366364
+    },
+    "trajectory": {
+      "files": 1,
+      "bytes": 6148
+    },
+    "raw_trace": {
+      "files": 9,
+      "bytes": 155158770
+    },
+    "debug_log": {
+      "files": 6,
+      "bytes": 46269460
+    },
+    "conversation": {
+      "files": 37,
+      "bytes": 4997829
+    },
+    "service_log": {
+      "files": 68,
+      "bytes": 103240274
+    }
+  },
+  "global_log_stats": [
+    {
+      "channel": "raw_trace",
+      "lines": 12,
+      "field_counts": {
+        "type:function": 203,
+        "role:assistant": 32,
+        "role:tool": 21,
+        "debug_label:execution": 20,
+        "tool:execute_command": 14,
+        "tool:final_output": 13,
+        "kind:llm.io": 12,
+        "role:system": 12,
+        "role:user": 12,
+        "tool:file_write": 12,
+        "tool:load_skill": 10,
+        "tool:offload_skill": 10,
+        "tool:file_read": 10,
+        "tool:file_move": 10,
+        "tool:dir_list": 10,
+        "tool:task_history_search": 10,
+        "finish_reason:tool_calls": 9,
+        "tool:quote_task_init": 8,
+        "tool:pg_program_step": 8,
+        "tool:pg_resource_lookup": 8,
+        "tool:quote_json_read": 8,
+        "tool:quote_json_write": 8,
+        "tool:quote_quote_profile_update": 8,
+        "tool:quote_quote_output_plan_update": 8,
+        "tool:quote_workbook_read_table": 8,
+        "tool:quote_address_geocode": 8,
+        "debug_label:thinking": 4,
+        "tool:human_in_loop": 2,
+        "tool:fresh": 2,
+        "tool:judge_agent": 2
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 38,
+      "field_counts": {
+        "type:function": 701,
+        "role:tool": 647,
+        "role:assistant": 528,
+        "debug_label:execution": 74,
+        "tool:pg_program_step": 49,
+        "tool:quote_quote_profile_update": 45,
+        "tool:dir_list": 42,
+        "tool:pg_resource_lookup": 40,
+        "tool:quote_json_read": 39,
+        "tool:quote_workbook_read_table": 39,
+        "kind:llm.io": 38,
+        "role:system": 38,
+        "tool:file_read": 38,
+        "tool:quote_task_init": 38,
+        "tool:quote_json_write": 38,
+        "tool:file_write": 37,
+        "tool:file_move": 37,
+        "tool:execute_command": 37,
+        "tool:quote_quote_output_plan_update": 37,
+        "tool:quote_address_geocode": 37,
+        "tool:final_output": 37,
+        "tool:task_history_search": 37,
+        "tool:load_skill": 37,
+        "tool:offload_skill": 37,
+        "finish_reason:tool_calls": 27,
+        "role:user": 26,
+        "type:APIError": 4,
+        "type:MidStreamFallbackError": 3,
+        "type:TimeoutError": 3,
+        "debug_label:thinking": 2
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 1,
+      "field_counts": {
+        "debug_label:react_reflection": 2,
+        "role:user": 2,
+        "kind:llm.io": 1,
+        "role:system": 1,
+        "finish_reason:stop": 1,
+        "role:assistant": 1
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 200,
+      "field_counts": {
+        "type:function": 3447,
+        "role:tool": 3115,
+        "role:assistant": 3043,
+        "debug_label:execution": 348,
+        "kind:llm.io": 200,
+        "role:system": 200,
+        "tool:quote_quote_profile_update": 198,
+        "tool:pg_program_step": 197,
+        "tool:quote_quote_output_plan_update": 186,
+        "tool:pg_resource_lookup": 185,
+        "tool:dir_list": 184,
+        "tool:execute_command": 184,
+        "tool:final_output": 181,
+        "tool:file_read": 180,
+        "tool:file_write": 179,
+        "tool:quote_json_read": 178,
+        "tool:file_move": 174,
+        "tool:task_history_search": 174,
+        "tool:load_skill": 174,
+        "tool:offload_skill": 174,
+        "finish_reason:tool_calls": 173,
+        "tool:quote_workbook_read_table": 169,
+        "role:user": 166,
+        "tool:quote_task_init": 161,
+        "tool:quote_json_write": 161,
+        "tool:quote_address_geocode": 159,
+        "debug_label:react_reflection": 30,
+        "finish_reason:stop": 27,
+        "tool:web_search": 22,
+        "tool:parse_document": 17
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 184,
+      "field_counts": {
+        "type:function": 3423,
+        "role:tool": 3395,
+        "role:assistant": 3176,
+        "debug_label:execution": 358,
+        "tool:quote_quote_profile_update": 219,
+        "tool:pg_program_step": 210,
+        "tool:pg_resource_lookup": 204,
+        "tool:quote_quote_output_plan_update": 204,
+        "tool:quote_json_read": 195,
+        "tool:file_read": 193,
+        "tool:quote_workbook_read_table": 192,
+        "tool:execute_command": 191,
+        "tool:dir_list": 190,
+        "tool:file_write": 189,
+        "kind:llm.io": 184,
+        "role:system": 184,
+        "tool:quote_json_write": 181,
+        "tool:quote_task_init": 180,
+        "tool:final_output": 180,
+        "tool:file_move": 179,
+        "tool:quote_address_geocode": 179,
+        "tool:task_history_search": 179,
+        "tool:load_skill": 179,
+        "tool:offload_skill": 179,
+        "finish_reason:tool_calls": 179,
+        "role:user": 98,
+        "debug_label:thinking": 10,
+        "finish_reason:stop": 5
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 6,
+      "field_counts": {
+        "type:function": 78,
+        "role:assistant": 9,
+        "role:user": 8,
+        "debug_label:execution": 8,
+        "kind:llm.io": 6,
+        "role:system": 6,
+        "tool:dir_list": 5,
+        "tool:final_output": 5,
+        "debug_label:thinking": 4,
+        "tool:file_read": 4,
+        "tool:file_write": 4,
+        "tool:file_move": 4,
+        "tool:execute_command": 4,
+        "tool:task_history_search": 4,
+        "tool:load_skill": 4,
+        "tool:offload_skill": 4,
+        "finish_reason:stop": 3,
+        "tool:quote_task_init": 3,
+        "tool:pg_program_step": 3,
+        "tool:pg_resource_lookup": 3,
+        "tool:quote_json_read": 3,
+        "tool:quote_json_write": 3,
+        "tool:quote_quote_profile_update": 3,
+        "tool:quote_quote_output_plan_update": 3,
+        "tool:quote_workbook_read_table": 3,
+        "tool:quote_address_geocode": 3,
+        "finish_reason:tool_calls": 3,
+        "tool:human_in_loop": 2,
+        "role:tool": 1,
+        "tool:judge_agent": 1
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 4,
+      "field_counts": {
+        "type:function": 52,
+        "role:assistant": 10,
+        "role:user": 6,
+        "kind:llm.io": 4,
+        "debug_label:react_reflection": 4,
+        "role:system": 4,
+        "debug_label:execution": 4,
+        "tool:file_read": 3,
+        "tool:dir_list": 3,
+        "finish_reason:stop": 2,
+        "tool:execute_command": 2,
+        "tool:human_in_loop": 2,
+        "tool:load_skill": 2,
+        "tool:offload_skill": 2,
+        "tool:fresh": 2,
+        "tool:judge_agent": 2,
+        "tool:file_write": 2,
+        "tool:file_move": 2,
+        "tool:dir_create": 2,
+        "tool:final_output": 2,
+        "tool:image_read": 2,
+        "tool:parse_document": 2,
+        "tool:web_search": 2,
+        "tool:google_scholar_search": 2,
+        "tool:arxiv_search": 2,
+        "tool:crawl_page": 2,
+        "tool:file_download": 2,
+        "tool:create_image": 2,
+        "tool:reference_list": 2,
+        "tool:reference_add": 2
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 19,
+      "field_counts": {
+        "type:function": 282,
+        "role:assistant": 39,
+        "debug_label:execution": 26,
+        "role:tool": 25,
+        "kind:llm.io": 19,
+        "role:system": 19,
+        "role:user": 19,
+        "tool:final_output": 16,
+        "tool:file_read": 15,
+        "tool:dir_list": 15,
+        "tool:task_history_search": 14,
+        "tool:human_in_loop": 13,
+        "tool:load_skill": 13,
+        "tool:offload_skill": 13,
+        "finish_reason:tool_calls": 13,
+        "tool:file_write": 12,
+        "tool:judge_agent": 11,
+        "tool:execute_command": 10,
+        "tool:fresh": 10,
+        "tool:file_move": 10,
+        "tool:dir_create": 10,
+        "tool:image_read": 10,
+        "tool:parse_document": 10,
+        "tool:web_search": 10,
+        "tool:google_scholar_search": 10,
+        "tool:arxiv_search": 10,
+        "tool:crawl_page": 10,
+        "tool:file_download": 10,
+        "tool:create_image": 10,
+        "tool:reference_list": 10
+      }
+    },
+    {
+      "channel": "debug_log",
+      "lines": 6,
+      "field_counts": {
+        "role:user": 8,
+        "role:system": 6,
+        "debug_label:execution": 4,
+        "role:assistant": 3,
+        "debug_label:thinking": 2,
+        "type:function": 1,
+        "tool:dir_list": 1,
+        "role:tool": 1
+      }
+    },
+    {
+      "channel": "debug_log",
+      "lines": 11,
+      "field_counts": {
+        "role:assistant": 21,
+        "type:function": 21,
+        "role:tool": 21,
+        "tool:execute_command": 14,
+        "role:system": 11,
+        "role:user": 11,
+        "debug_label:execution": 9,
+        "tool:file_write": 7,
+        "debug_label:thinking": 2
+      }
+    },
+    {
+      "channel": "debug_log",
+      "lines": 19,
+      "field_counts": {
+        "type:function": 25,
+        "role:tool": 25,
+        "role:assistant": 20,
+        "role:system": 19,
+        "role:user": 19,
+        "debug_label:execution": 13,
+        "tool:dir_list": 7,
+        "tool:human_in_loop": 5,
+        "tool:task_history_search": 5,
+        "tool:file_read": 5,
+        "debug_label:thinking": 4,
+        "debug_label:context_builder": 2,
+        "tool:file_write": 2,
+        "tool:judge_agent": 1
+      }
+    },
+    {
+      "channel": "debug_log",
+      "lines": 2,
+      "field_counts": {
+        "role:user": 3,
+        "role:system": 2,
+        "debug_label:react_reflection": 1,
+        "debug_label:execution": 1,
+        "role:assistant": 1
+      }
+    },
+    {
+      "channel": "debug_log",
+      "lines": 184,
+      "field_counts": {
+        "type:function": 3480,
+        "role:tool": 3395,
+        "role:assistant": 2992,
+        "tool:quote_quote_output_plan_update": 693,
+        "tool:quote_quote_profile_update": 668,
+        "tool:pg_program_step": 470,
+        "tool:dir_list": 396,
+        "tool:quote_workbook_read_table": 338,
+        "tool:pg_resource_lookup": 229,
+        "tool:quote_json_read": 213,
+        "role:system": 184,
+        "debug_label:execution": 179,
+        "tool:file_read": 159,
+        "tool:execute_command": 140,
+        "tool:file_write": 101,
+        "role:user": 98,
+        "tool:quote_task_init": 39,
+        "tool:quote_json_write": 34,
+        "debug_label:thinking": 5
+      }
+    },
+    {
+      "channel": "debug_log",
+      "lines": 200,
+      "field_counts": {
+        "type:function": 3159,
+        "role:tool": 3115,
+        "role:assistant": 2843,
+        "tool:pg_program_step": 795,
+        "tool:quote_quote_profile_update": 556,
+        "tool:quote_quote_output_plan_update": 415,
+        "tool:quote_json_read": 363,
+        "tool:dir_list": 243,
+        "tool:quote_workbook_read_table": 239,
+        "role:system": 200,
+        "debug_label:execution": 174,
+        "role:user": 166,
+        "tool:pg_resource_lookup": 137,
+        "tool:web_search": 86,
+        "tool:execute_command": 82,
+        "tool:file_read": 77,
+        "tool:quote_task_init": 50,
+        "tool:quote_json_write": 47,
+        "tool:parse_document": 40,
+        "tool:file_write": 29,
+        "debug_label:react_reflection": 15,
+        "debug_label:thinking": 8,
+        "debug_label:context_builder": 3
+      }
+    },
+    {
+      "channel": "raw_trace",
+      "lines": 184,
+      "field_counts": {
+        "type:function": 3423,
+        "role:tool": 3395,
+        "role:assistant": 3176,
+        "debug_label:execution": 358,
+        "tool:quote_quote_profile_update": 219,
+        "tool:pg_program_step": 210,
+        "tool:pg_resource_lookup": 204,
+        "tool:quote_quote_output_plan_update": 204,
+        "tool:quote_json_read": 195,
+        "tool:file_read": 193,
+        "tool:quote_workbook_read_table": 192,
+        "tool:execute_command": 191,
+        "tool:dir_list": 190,
+        "tool:file_write": 189,
+        "kind:llm.io": 184,
+        "role:system": 184,
+        "tool:quote_json_write": 181,
+        "tool:quote_task_init": 180,
+        "tool:final_output": 180,
+        "tool:file_move": 179,
+        "tool:quote_address_geocode": 179,
+        "tool:task_history_search": 179,
+        "tool:load_skill": 179,
+        "tool:offload_skill": 179,
+        "finish_reason:tool_calls": 179,
+        "role:user": 98,
+        "debug_label:thinking": 10,
+        "finish_reason:stop": 5
+      }
+    },
+    {
+      "channel": "service_log",
+      "lines": 73056,
+      "field_counts": {
+        "tool_name:quote_quote_profile_update": 80,
+        "tool_name:pg_program_step": 62,
+        "tool_name:pg_resource_lookup": 50,
+        "tool_name:quote_quote_output_plan_update": 50,
+        "tool_name:quote_json_read": 32,
+        "tool_name:file_read": 28,
+        "tool_name:quote_workbook_read_table": 26,
+        "tool_name:execute_command": 24,
+        "tool_name:dir_list": 22,
+        "tool_name:file_write": 20,
+        "tool_name:quote_json_write": 4,
+        "tool_name:quote_task_init": 2,
+        "tool_name:final_output": 2
+      }
+    },
+    {
+      "channel": "service_log",
+      "lines": 2,
+      "field_counts": {}
+    },
+    {
+      "channel": "service_log",
+      "lines": 73057,
+      "field_counts": {
+        "type:reasoning_token": 48842,
+        "type:thinking_token": 16836,
+        "type:token": 6782,
+        "type:tool_call": 201,
+        "type:tool_result": 201,
+        "type:llm_end": 179,
+        "tool_name:quote_quote_profile_update": 80,
+        "tool_name:pg_program_step": 62,
+        "tool_name:pg_resource_lookup": 50,
+        "tool_name:quote_quote_output_plan_update": 50,
+        "tool_name:quote_json_read": 32,
+        "tool_name:file_read": 28,
+        "tool_name:quote_workbook_read_table": 26,
+        "tool_name:execute_command": 24,
+        "tool_name:dir_list": 22,
+        "tool_name:file_write": 20,
+        "type:thinking_start": 5,
+        "type:thinking_end": 5,
+        "tool_name:quote_json_write": 4,
+        "tool_name:quote_task_init": 2,
+        "tool_name:final_output": 2,
+        "type:start": 1,
+        "type:agent_start": 1,
+        "type:agent_end": 1,
+        "type:result": 1,
+        "type:final_result": 1,
+        "type:end": 1
+      }
+    },
+    {
+      "channel": "other",
+      "lines": 31,
+      "field_counts": {
+        "kind:manifest": 1
+      }
+    }
+  ],
+  "months_active": {
+    "2026-07": 293,
+    "2026-06": 119,
+    "2026-04": 47,
+    "2026-05": 10,
+    "2026-03": 4
+  },
+  "tasks": {
+    "task_0001": {
+      "bytes": 14340,
+      "files": 1,
+      "by_channel": {
+        "task_store": 14340
+      },
+      "by_ext": {
+        "(none)": 14340
+      }
+    },
+    "task_0002": {
+      "bytes": 1708933,
+      "files": 18,
+      "by_channel": {
+        "task_store": 242254,
+        "service_log": 1466679
+      },
+      "by_ext": {
+        ".txt": 419,
+        ".md": 64,
+        ".json": 241771,
+        ".jsonl": 1301557,
+        ".ndjson": 113253,
+        ".log": 51869
+      },
+      "log_stats": [
+        {
+          "channel": "service_log",
+          "lines": 420,
+          "field_counts": {
+            "type:thinking_token": 271,
+            "type:reasoning_token": 92,
+            "type:token": 42,
+            "type:llm_end": 2,
+            "type:tool_call": 2,
+            "tool_name:human_in_loop": 2,
+            "type:tool_result": 2,
+            "tool_name:file_write": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:human_in_loop": 1,
+            "type:text": 1,
+            "type:agent_end": 1,
+            "type:error": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 69,
+          "field_counts": {
+            "tool_name:human_in_loop": 6,
+            "tool_name:final_output": 6,
+            "tool_name:file_write": 4,
+            "tool_name:dir_list": 4,
+            "tool_name:file_read": 4,
+            "type:text": 3,
+            "tool_name:task_history_search": 2,
+            "tool_name:judge_agent": 2
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 6,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 1391,
+          "field_counts": {
+            "type:thinking_token": 999,
+            "type:reasoning_token": 325,
+            "type:token": 52,
+            "type:llm_end": 2,
+            "type:tool_call": 2,
+            "tool_name:human_in_loop": 2,
+            "type:tool_result": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:human_in_loop": 1,
+            "type:text": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 4614,
+          "field_counts": {
+            "type:reasoning_token": 2047,
+            "type:thinking_token": 2025,
+            "type:token": 500,
+            "type:tool_call": 10,
+            "type:tool_result": 10,
+            "type:llm_end": 9,
+            "tool_name:dir_list": 4,
+            "tool_name:file_read": 4,
+            "tool_name:final_output": 4,
+            "type:agent_start": 2,
+            "type:thinking_start": 2,
+            "type:thinking_end": 2,
+            "tool_name:task_history_search": 2,
+            "tool_name:human_in_loop": 2,
+            "tool_name:file_write": 2,
+            "tool_name:judge_agent": 2,
+            "type:agent_end": 2,
+            "type:start": 1,
+            "type:human_in_loop": 1,
+            "type:text": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        }
+      ]
+    },
+    "task_0003": {
+      "bytes": 85331853,
+      "files": 72,
+      "by_channel": {
+        "task_store": 55703875,
+        "service_log": 29627978
+      },
+      "by_ext": {
+        "(none)": 12292,
+        ".md": 12583,
+        ".json": 3872148,
+        ".xlsx": 51574372,
+        ".log": 375027,
+        ".ndjson": 16015047,
+        ".jsonl": 13243307,
+        ".py": 227077
+      },
+      "log_stats": [
+        {
+          "channel": "service_log",
+          "lines": 73056,
+          "field_counts": {
+            "tool_name:quote_quote_profile_update": 80,
+            "tool_name:pg_program_step": 62,
+            "tool_name:pg_resource_lookup": 50,
+            "tool_name:quote_quote_output_plan_update": 50,
+            "tool_name:quote_json_read": 32,
+            "tool_name:file_read": 28,
+            "tool_name:quote_workbook_read_table": 26,
+            "tool_name:execute_command": 24,
+            "tool_name:dir_list": 22,
+            "tool_name:file_write": 20,
+            "tool_name:quote_json_write": 4,
+            "tool_name:quote_task_init": 2,
+            "tool_name:final_output": 2
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 2,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 73057,
+          "field_counts": {
+            "type:reasoning_token": 48842,
+            "type:thinking_token": 16836,
+            "type:token": 6782,
+            "type:tool_call": 201,
+            "type:tool_result": 201,
+            "type:llm_end": 179,
+            "tool_name:quote_quote_profile_update": 80,
+            "tool_name:pg_program_step": 62,
+            "tool_name:pg_resource_lookup": 50,
+            "tool_name:quote_quote_output_plan_update": 50,
+            "tool_name:quote_json_read": 32,
+            "tool_name:file_read": 28,
+            "tool_name:quote_workbook_read_table": 26,
+            "tool_name:execute_command": 24,
+            "tool_name:dir_list": 22,
+            "tool_name:file_write": 20,
+            "type:thinking_start": 5,
+            "type:thinking_end": 5,
+            "tool_name:quote_json_write": 4,
+            "tool_name:quote_task_init": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "task_store",
+          "lines": 31,
+          "field_counts": {
+            "kind:manifest": 1
+          }
+        }
+      ]
+    },
+    "task_0004": {
+      "bytes": 732420,
+      "files": 20,
+      "by_channel": {
+        "task_store": 107303,
+        "service_log": 625117
+      },
+      "by_ext": {
+        ".md": 9171,
+        ".json": 54295,
+        ".ndjson": 24700,
+        ".log": 36503,
+        ".jsonl": 565623,
+        ".yaml": 40131,
+        ".py": 1997
+      },
+      "log_stats": [
+        {
+          "channel": "task_store",
+          "lines": 3,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 46,
+          "field_counts": {
+            "tool_name:execute_command": 8,
+            "tool_name:final_output": 6,
+            "tool_name:file_write": 4
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 1788,
+          "field_counts": {
+            "type:token": 1728,
+            "type:reasoning_token": 51,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:llm_end": 1,
+            "type:tool_call": 1,
+            "type:tool_result": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 6,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 1007,
+          "field_counts": {
+            "type:thinking_token": 425,
+            "type:reasoning_token": 320,
+            "type:token": 233,
+            "tool_name:execute_command": 8,
+            "type:llm_end": 7,
+            "type:tool_call": 7,
+            "type:tool_result": 7,
+            "tool_name:file_write": 4,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 543,
+          "field_counts": {
+            "type:thinking_token": 340,
+            "type:token": 147,
+            "type:reasoning_token": 45,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:llm_end": 1,
+            "type:tool_call": 1,
+            "type:tool_result": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        }
+      ]
+    },
+    "task_0005": {
+      "bytes": 60433749,
+      "files": 95,
+      "by_channel": {
+        "task_store": 19011902,
+        "service_log": 41421847
+      },
+      "by_ext": {
+        "(none)": 24584,
+        ".md": 46087,
+        ".json": 11558333,
+        ".xlsx": 7184965,
+        ".log": 406046,
+        ".ndjson": 16958891,
+        ".jsonl": 24064860,
+        ".py": 189983
+      },
+      "log_stats": [
+        {
+          "channel": "task_store",
+          "lines": 1,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 954,
+          "field_counts": {
+            "type:reasoning_token": 926,
+            "type:token": 18,
+            "type:llm_end": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:tool_call": 1,
+            "type:tool_result": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 1295,
+          "field_counts": {
+            "type:thinking_token": 1161,
+            "type:reasoning_token": 123,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:llm_end": 1,
+            "type:tool_call": 1,
+            "type:tool_result": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 77343,
+          "field_counts": {
+            "tool_name:quote_quote_profile_update": 78,
+            "tool_name:pg_program_step": 76,
+            "tool_name:quote_quote_output_plan_update": 54,
+            "tool_name:pg_resource_lookup": 52,
+            "tool_name:quote_json_read": 38,
+            "tool_name:dir_list": 20,
+            "tool_name:quote_workbook_read_table": 20,
+            "tool_name:execute_command": 20,
+            "tool_name:final_output": 14,
+            "tool_name:web_search": 14,
+            "tool_name:file_read": 12,
+            "tool_name:file_write": 10,
+            "tool_name:quote_task_init": 4,
+            "tool_name:quote_json_write": 4,
+            "tool_name:parse_document": 4
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 15,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 13021,
+          "field_counts": {
+            "type:reasoning_token": 9839,
+            "type:token": 1655,
+            "type:thinking_token": 1436,
+            "type:tool_call": 31,
+            "type:tool_result": 31,
+            "type:llm_end": 21,
+            "tool_name:pg_resource_lookup": 16,
+            "tool_name:pg_program_step": 14,
+            "tool_name:dir_list": 6,
+            "tool_name:quote_json_read": 6,
+            "tool_name:quote_workbook_read_table": 6,
+            "tool_name:file_read": 4,
+            "tool_name:quote_quote_profile_update": 2,
+            "tool_name:quote_quote_output_plan_update": 2,
+            "tool_name:quote_json_write": 2,
+            "tool_name:quote_task_init": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 12477,
+          "field_counts": {
+            "type:reasoning_token": 11997,
+            "type:token": 406,
+            "type:llm_end": 28,
+            "type:tool_call": 20,
+            "type:tool_result": 20,
+            "tool_name:web_search": 14,
+            "tool_name:file_read": 8,
+            "tool_name:execute_command": 8,
+            "tool_name:parse_document": 4,
+            "tool_name:dir_list": 2,
+            "tool_name:file_write": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 51809,
+          "field_counts": {
+            "type:reasoning_token": 37487,
+            "type:thinking_token": 8145,
+            "type:token": 5718,
+            "type:tool_call": 155,
+            "type:tool_result": 155,
+            "type:llm_end": 135,
+            "tool_name:quote_quote_profile_update": 76,
+            "tool_name:pg_program_step": 62,
+            "tool_name:quote_quote_output_plan_update": 52,
+            "tool_name:pg_resource_lookup": 36,
+            "tool_name:quote_json_read": 32,
+            "tool_name:quote_workbook_read_table": 14,
+            "tool_name:dir_list": 12,
+            "tool_name:execute_command": 12,
+            "tool_name:file_write": 8,
+            "type:thinking_start": 4,
+            "type:thinking_end": 4,
+            "tool_name:quote_task_init": 2,
+            "tool_name:quote_json_write": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 2455,
+          "field_counts": {
+            "type:token": 1926,
+            "type:thinking_token": 468,
+            "type:reasoning_token": 50,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:llm_end": 1,
+            "type:tool_call": 1,
+            "type:tool_result": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 753,
+          "field_counts": {
+            "type:thinking_token": 661,
+            "type:reasoning_token": 57,
+            "type:token": 24,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:llm_end": 1,
+            "type:tool_call": 1,
+            "type:tool_result": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "task_store",
+          "lines": 37,
+          "field_counts": {
+            "kind:manifest": 1,
+            "kind:demonstration": 1
+          }
+        }
+      ]
+    },
+    "task_0006": {
+      "bytes": 299151,
+      "files": 14,
+      "by_channel": {
+        "task_store": 24344,
+        "service_log": 274807
+      },
+      "by_ext": {
+        ".md": 9171,
+        ".json": 14280,
+        ".ndjson": 11328,
+        ".log": 13295,
+        ".jsonl": 251077
+      },
+      "log_stats": [
+        {
+          "channel": "task_store",
+          "lines": 1,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 773,
+          "field_counts": {
+            "type:thinking_token": 352,
+            "type:reasoning_token": 293,
+            "type:token": 113,
+            "type:llm_end": 3,
+            "type:tool_call": 2,
+            "tool_name:dir_list": 2,
+            "type:tool_result": 2,
+            "tool_name:final_output": 2,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:agent_end": 1,
+            "type:result": 1,
+            "type:final_result": 1,
+            "type:end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 21,
+          "field_counts": {
+            "tool_name:dir_list": 2,
+            "tool_name:final_output": 2,
+            "tool_name:human_in_loop": 1,
+            "type:text": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 4,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 812,
+          "field_counts": {
+            "type:reasoning_token": 501,
+            "type:thinking_token": 304,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:thinking_start": 1,
+            "type:thinking_end": 1,
+            "type:llm_end": 1,
+            "type:tool_call": 1,
+            "tool_name:human_in_loop": 1,
+            "type:human_in_loop": 1,
+            "type:text": 1
+          }
+        }
+      ]
+    },
+    "task_0007": {
+      "bytes": 248,
+      "files": 1,
+      "by_channel": {
+        "task_store": 248
+      },
+      "by_ext": {
+        ".json": 248
+      }
+    },
+    "task_0008": {
+      "bytes": 201294,
+      "files": 8,
+      "by_channel": {
+        "task_store": 5426,
+        "service_log": 195868
+      },
+      "by_ext": {
+        ".md": 32,
+        ".json": 5394,
+        ".log": 3699,
+        ".jsonl": 76929,
+        ".ndjson": 115240
+      },
+      "log_stats": [
+        {
+          "channel": "service_log",
+          "lines": 560,
+          "field_counts": {
+            "type:reasoning_token": 557,
+            "type:start": 1,
+            "type:agent_start": 1,
+            "type:llm_end": 1
+          }
+        },
+        {
+          "channel": "service_log",
+          "lines": 560,
+          "field_counts": {}
+        },
+        {
+          "channel": "service_log",
+          "lines": 2,
+          "field_counts": {}
+        }
+      ]
+    }
+  }
+}
