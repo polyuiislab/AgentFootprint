@@ -69,6 +69,22 @@ CASES = [
 ]
 
 
+def v3_zero_retention_case() -> int:
+    """回归测试（R9 发现的 v3 基线兼容 bug）：零留存 v3 沙箱必须 R=0。"""
+    import meter
+    sb = OUT / "v3-zero-retention" / TASK
+    if sb.parent.exists():
+        shutil.rmtree(sb.parent)
+    (sb / "workspace").mkdir(parents=True)
+    (sb / "home").mkdir()
+    for f in (TDIR / "corpus").iterdir():
+        shutil.copy2(f, sb / "workspace" / f.name)
+    meter.snapshot(sb, sb / "baseline.json")     # v3 基线（含 sha）
+    (sb / "measurement.json").write_text(
+        json.dumps({"framework": "v3check", "task": TASK}), encoding="utf-8")
+    return replay_probe.score(sb)["R"]
+
+
 def main() -> None:
     texts = corpus_texts()
     print("| case | intended | auto R | verdict | note |")
@@ -95,6 +111,12 @@ def main() -> None:
             verdict = "insensitive (disclosed)"
         rows.append((name, intended, r, verdict, note))
         print(f"| {name} | {intended} | {r} | {verdict} | {note} |")
+    r0 = v3_zero_retention_case()
+    verdict0 = "OK" if r0 == 0 else "REGRESSION"
+    rows.append(("v3-zero-retention", 0, r0, verdict0,
+                 "v3 基线+零留存（R9 回归测试）"))
+    print(f"| v3-zero-retention | 0 | {r0} | {verdict0} | v3 基线+零留存 |")
+    assert r0 == 0, "v3 baseline compatibility regression!"
     (OUT / "validation_report.json").write_text(
         json.dumps([{"case": c, "intended": i, "auto_R": r,
                      "verdict": v, "note": n} for c, i, r, v, n in rows],

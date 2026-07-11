@@ -7,6 +7,14 @@ STAGE="$(mktemp -d)/agentfootprint_supplementary"
 mkdir -p "$STAGE"
 
 rsync -a "$ROOT/src/" "$STAGE/src/" --exclude "__pycache__"
+cp "$ROOT/SUPPLEMENTARY_README.md" "$STAGE/README.md"
+cp "$ROOT/supplementary_requirements.txt" "$STAGE/requirements.txt"
+# 代表性原始留存库：每个持久化框架一个完整 file-QA 首重复沙箱（字节级原样）
+for fw in langgraph autogen infiagent agno llamaindex openai_agents crewai; do
+  mkdir -p "$STAGE/representative_stores/$fw"
+  cp "$ROOT/experiments/pilot_runs/$fw/task_00/baseline.json"      "$ROOT/experiments/pilot_runs/$fw/task_00/measurement.json"      "$STAGE/representative_stores/$fw/" 2>/dev/null
+  rsync -a "$ROOT/experiments/pilot_runs/$fw/task_00/home/"      "$STAGE/representative_stores/$fw/home/"
+done
 rsync -a "$ROOT/tasks/" "$STAGE/tasks/"
 # experiments：只带度量与报告类小文件，排除沙箱数据树
 rsync -a "$ROOT/experiments/" "$STAGE/experiments/" \
@@ -26,7 +34,7 @@ rsync -a "$ROOT/experiments/" "$STAGE/experiments/" \
 find "$STAGE" -type d -empty -delete
 
 # 路径脱敏：项目前缀 -> "."，其余用户绝对路径 -> "~"
-find "$STAGE" \( -name "*.json" -o -name "*.jsonl" -o -name "*.ndjson" -o -name "*.log" -o -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.md" \) -type f \
+find "$STAGE" -path "$STAGE/representative_stores" -prune -o \( -name "*.json" -o -name "*.jsonl" -o -name "*.ndjson" -o -name "*.log" -o -name "*.txt" -o -name "*.yaml" -o -name "*.yml" -o -name "*.md" \) -type f \
   -exec sed -i '' -e 's|/Users/[A-Za-z0-9_.-]*/[^"]*aaai2027-storage|.|g' \
                   -e 's|/Users/[A-Za-z0-9_.-]*|~|g' {} +
 
@@ -35,7 +43,7 @@ PAT="sk-or-""v1"
 if grep -rl "$PAT" "$STAGE" | head -1; then
   echo "LEAK: key fragment found, abort" >&2; exit 1
 fi
-if grep -rl "/Users/" "$STAGE" | grep -v "make_supplementary.sh" | head -1; then
+if grep -rl "/Users/" "$STAGE" | grep -v "make_supplementary.sh" | grep -v "representative_stores" | head -1; then
   echo "LEAK: absolute /Users path remains, abort" >&2; exit 1
 fi
 

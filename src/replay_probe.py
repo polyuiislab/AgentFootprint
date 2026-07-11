@@ -25,7 +25,8 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from meter import inventory, is_excluded, is_sqlite, sqlite_streams  # noqa: E402
+from meter import (inventory, is_excluded, is_sqlite, sqlite_streams,
+                   unchanged)  # noqa: E402
 
 PER_CALL_HINTS = {
     "llm_debug.jsonl": "per-call debug jsonl",
@@ -49,7 +50,7 @@ def retained(sandbox: Path) -> list[Path]:
             continue
         before = base[layer]
         for rel, size in inventory(root).items():
-            if rel in before and before[rel] == size:
+            if rel in before and unchanged(before[rel], root / rel, size):
                 continue
             if is_excluded(rel):
                 continue

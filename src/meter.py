@@ -94,6 +94,14 @@ def _base_entry(v):
     return v, ""
 
 
+def unchanged(before_entry, path: Path, size: int) -> bool:
+    """基线消费者统一判定：文件相对基线是否未变（v2 按尺寸；v3 按尺寸+哈希）。"""
+    b_size, b_sha = _base_entry(before_entry)
+    if b_sha:
+        return size == b_size and file_sha(path) == b_sha
+    return b_size == size
+
+
 # ---------- 逻辑流提取 ----------
 
 def is_sqlite(path: Path) -> bool:

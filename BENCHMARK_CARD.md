@@ -43,6 +43,14 @@ field-by-field conversation reconstruction against a logging proxy;
 a process-boundary resume probe checks session continuation. New
 adapters need a reconstruction extractor to obtain a verified grade.
 
+## Submissions & anti-gaming
+v1.0 accepts **audited adapters** (reconstruction extractor reviewed),
+not arbitrary self-reported results; task corpora are public with
+answers, so unaudited submissions could overfit graders. A
+hidden-seed task generator for open submissions is on the roadmap,
+as is a **byte-days** retention metric (integral of S over time) for
+compliance-oriented scoring.
+
 ## Adding a framework
 See `TEMPLATE.py` and `docs/`: implement `setup`/`run` phases, read
 `FOOTPRINT_MODEL` / `OPENROUTER_API_KEY` from the environment, write

@@ -161,7 +161,8 @@ def retained_files(sandbox: Path) -> list[Path]:
             if not (p.is_file() and not p.is_symlink()):
                 continue
             rel = str(p.relative_to(root))
-            if rel in before and before[rel] == p.stat().st_size:
+            from meter import unchanged
+            if rel in before and unchanged(before[rel], p, p.stat().st_size):
                 continue
             out.append(p)
     return out
