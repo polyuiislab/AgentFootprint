@@ -9,7 +9,7 @@ WORKDIR /bench
 COPY envlocks/ envlocks/
 
 RUN set -e; \
-    for fw in langgraph autogen crewai smolagents openai_agents llamaindex agno; do \
+    for fw in langgraph autogen crewai smolagents openai_agents llamaindex agno infiagent; do \
       python -m venv /opt/venvs/$fw; \
       grep -viE '^(appnope|pyobjc|macholib|applaunchservices)' envlocks/$fw.txt \
         | grep -v '^#' > /tmp/req-$fw.txt; \
