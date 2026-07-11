@@ -3,10 +3,10 @@
 ## Intended use
 Measure the **post-run persistent storage footprint** of LLM agent
 frameworks under their documented durable-session configurations, and
-what those bytes buy (history-exact recoverability, session resume).
+what those bytes buy (history-exact reconstructability, session resume).
 Six metrics per run: `S_total`, store-channel composition, duplication
 factor `D` (logical streams), growth exponent `alpha`, compressibility
-`C`, recoverability `R` (0–3).
+`C`, conversation-history reconstructability `R` (0–3).
 
 ## Protocol tracks
 v1.0 is a **system-track** benchmark: documented default configurations
@@ -35,7 +35,7 @@ difference). **Out of scope in v1.0:** system temp directories, remote
 telemetry. Framework setup-time staging is excluded from `S_total`
 and reported separately.
 
-## Recoverability scoring
+## Reconstructability (`R`) scoring
 The automated scorer yields a *candidate* grade (probe completeness +
 per-call structure with a JSON-record gate). Framework-level `R=3`
 additionally requires the adapter's serialization contract to pass
